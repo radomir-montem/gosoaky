@@ -11,3 +11,44 @@
     bottom: 10px;
     font-family: proxima-nova,sans-serif;
 }
+
+
+/* Siwper CSS */
+
+.swiper-button-next, .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media (min-width: 990px) {
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper:hover .swiper-button-next, .swiper:hover .swiper-button-prev {
+        display: flex;
+        animation: fadeOut 0.5s;
+    }
+}
+
+.swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgba(0, 0, 0, 1);
+}
+
+@keyframes fadeOut {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
