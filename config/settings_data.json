@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
@@ -86,7 +95,7 @@
     "social_twitter_link": "",
     "social_facebook_link": "",
     "social_pinterest_link": "",
-    "social_instagram_link": "https:\/\/www.instagram.com\/gosoaky_outerproofs\/",
+    "social_instagram_link": "https://www.instagram.com/gosoaky_outerproofs/",
     "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
@@ -95,7 +104,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "favicon": "shopify:\/\/shop_images\/penguin2.png",
+    "favicon": "shopify://shop_images/penguin2.png",
     "currency_code_enabled": true,
     "sections": {
       "announcement-bar": {
@@ -122,7 +131,7 @@
         ],
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/GOSOAKY-logo-image-2024.jpg",
+          "logo": "shopify://shop_images/GOSOAKY-logo-image-2024.jpg",
           "logo_width": 110,
           "logo_position": "middle-left",
           "menu": "main-menu-fw24",
@@ -152,22 +161,22 @@
             "type": "text",
             "settings": {
               "heading": "OUR MISSION",
-              "subtext": "<p>It’s our mission to make people happy with our garments and work towards a sustainable future.<\/p>"
+              "subtext": "<p>It’s our mission to make people happy with our garments and work towards a sustainable future.</p>"
             }
           },
           "21d5cf25-97b1-400b-ba79-fdf0466448cb": {
             "type": "link-image",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/GOFRANCK_Logo_White.png",
-              "link": "https:\/\/www.gofranck.com"
+              "image": "shopify://shop_images/GOFRANCK_Logo_White.png",
+              "link": "https://www.gofranck.com"
             }
           },
           "80804270-2659-41a4-8ec8-ee87e05e1735": {
             "type": "text",
             "settings": {
               "heading": "OUTERPROOFS FOR ADULTS",
-              "subtext": "<p><a href=\"https:\/\/gofranck.com\/\" target=\"_blank\" title=\"https:\/\/gofranck.com\/\">GOFRANCK.COM<\/a><\/p>"
+              "subtext": "<p><a href=\"https://gofranck.com/\" target=\"_blank\" title=\"https://gofranck.com/\">GOFRANCK.COM</a></p>"
             }
           }
         },
@@ -213,7 +222,7 @@
         "settings": {
           "button_label": "Contact Us",
           "header_text": "Get in touch",
-          "richtext": "<p>Check our <a href=\"\/pages\/faq\" title=\"FAQ\">faq page<\/a> for most of your questions. Still need help? Drop us an email below. We are here to help!<\/p>",
+          "richtext": "<p>Check our <a href=\"/pages/faq\" title=\"FAQ\">faq page</a> for most of your questions. Still need help? Drop us an email below. We are here to help!</p>",
           "submit_text": "Send Message"
         }
       }
@@ -221,29 +230,29 @@
     "content_for_index": [],
     "blocks": {
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-product-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {}
       },
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
       },
       "12120936241911852800": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/reviews_tab\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-product-reviews/blocks/reviews_tab/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": true,
         "settings": {
           "position": "right"
         }
       },
       "10112818894266855621": {
-        "type": "shopify:\/\/apps\/ufe-cross-sell-upsell-bundle\/blocks\/app-embed\/588d2ac5-62f3-4ccd-8638-da98ec61fa90",
+        "type": "shopify://apps/ufe-cross-sell-upsell-bundle/blocks/app-embed/588d2ac5-62f3-4ccd-8638-da98ec61fa90",
         "disabled": false,
         "settings": {}
       },
       "18228966181090706294": {
-        "type": "shopify:\/\/apps\/selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+        "type": "shopify://apps/selleasy/blocks/app-embed/790c1a03-a71f-4bc1-9869-00dad526d3c2",
         "disabled": false,
         "settings": {
           "storefrontAccessToken": ""
@@ -400,7 +409,7 @@
               "type": "text",
               "settings": {
                 "heading": "Our mission",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
               }
             }
           },
