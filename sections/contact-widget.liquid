@@ -1,0 +1,101 @@
+<div class="go-section-contact-widget">
+  <div
+    style="transform: translate3d(100vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+    class="go-contact-widget"
+  >
+    <div class="go-cw-close-bar">
+      <a data-w-id="6b6604b8-9a4a-01e9-fbb2-08d993e39ad0" href="#" class="go-cw-close-btn w-inline-block">
+        <div class="go-cw-close-btn-asset"></div>
+      </a>
+    </div>
+    <div class="go-cw-scroll-view">
+      <h2 class="go-cw-title">{{ section.settings.header_text | escape }}</h2>
+      <div class="go-paragraph">{{ section.settings.richtext }}</div>
+      <div class="cw-form-block w-form">
+
+        {% form 'contact' %}
+            {{ form.errors | default_errors }}
+
+        <label for="cw_name" class="go-cw-form-title">Name*:</label
+          ><input
+            class="go-cw-text-field w-input"
+            maxlength="256"
+            name="contact[name]"
+            placeholder="Your name"
+            type="text"
+            id="cw_name"
+            required=""
+
+          ><label for="cw_email" class="go-cw-form-title">Email Address*:</label
+          ><input
+            class="go-cw-text-field w-input"
+            maxlength="256"
+            name="contact[email]"
+            placeholder="Your email"
+            type="email"
+            id="cw_email"
+            required=""
+          ><label for="cw_message" class="go-cw-form-title">message:</label
+          ><textarea
+            id="cw_message"
+            name="contact[body]"
+            maxlength="5000"
+            placeholder="Your message"
+            required=""
+            class="go-cw-text-field-message w-input"
+          ></textarea
+          ><input type="submit" class="cw-form-button w-button" value=" {{ section.settings.submit_text | escape }}">
+
+        {% endform %}
+      </div>
+    </div>
+  </div>
+  <a
+    data-w-id="f2d5a5f9-b18b-ff5a-58d4-93705c2d7a5e"
+    style="opacity: 1;"
+    href="#"
+    class="go-contact-widget-btn w-inline-block"
+  >
+    <div class="go-cw-btn-title">{{ section.settings.button_label }}</div>
+  </a>
+</div>
+{% schema %}
+{
+  "name": "Go Contact Widget",
+  "tag": "section",
+  "class": "section",
+  "settings" : [
+    {
+        "type": "text",
+        "id": "button_label",
+        "label": "Side Button Label",
+        "default": "Contact Us"
+    },
+    {
+        "type": "text",
+        "id": "header_text",
+        "label": "Title",
+        "default": "Get in touch"
+    },
+      {
+        "type": "richtext",
+        "id": "richtext",
+        "label": "Subtitle",
+        "default": "<p>Check our <a href=\"#\">faq page</a> for most of your questions. Still need help? Drop us an email below. We are here to help!</p>"
+    },
+
+      {
+        "type": "text",
+        "id": "submit_text",
+        "label": "Submit Button Text",
+        "default": "Send Message"
+    },
+  ],
+
+  "presets": [
+    {
+      "name": "Contact Widget"
+    }
+  ]
+}
+{% endschema %}

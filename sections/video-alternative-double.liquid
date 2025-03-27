@@ -1,0 +1,148 @@
+{{ 'alternate-video.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+
+<div class="doublevideosection">
+  <div class="doublevideocontent">
+    <div class="doublevideocollectionlistwrapper w-dyn-list">
+      <div role="list" class="doublevideogridmedium w-dyn-items">
+        {%- for block in section.blocks -%}
+        <div role="listitem" class="doublevideocollectionitem w-dyn-item">
+          
+          <div class="title-wrapper title-wrapper">
+          <h2 class="title">{{ block.settings.heading }}</h2>
+        </div>
+        <noscript>
+      
+        <a href="{{ block.settings.video_url }}" class="video-section__poster media media--transparent media--landscape{% if block.settings.cover_image == blank %} video-section__placeholder{% endif %}">
+          {%- if block.settings.cover_image != blank -%}
+            <img
+              srcset="{%- if block.settings.cover_image.width >= 375 -%}{{ block.settings.cover_image | image_url: width: 375 }} 375w,{%- endif -%}
+                {%- if block.settings.cover_image.width >= 750 -%}{{ block.settings.cover_image | image_url: width: 750 }} 750w,{%- endif -%}
+                {%- if block.settings.cover_image.width >= 1100 -%}{{ block.settings.cover_image | image_url: width: 1100 }} 1100w,{%- endif -%}
+                {%- if block.settings.cover_image.width >= 1500 -%}{{ block.settings.cover_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                {%- if block.settings.cover_image.width >= 1780 -%}{{ block.settings.cover_image | image_url: width: 1780 }} 1780w,{%- endif -%}
+                {%- if block.settings.cover_image.width >= 2000 -%}{{ block.settings.cover_image | image_url: width: 2000 }} 2000w,{%- endif -%}
+                {%- if block.settings.cover_image.width >= 3000 -%}{{ block.settings.cover_image | image_url: width: 3000 }} 3000w,{%- endif -%}
+                {%- if block.settings.cover_image.width >= 3840 -%}{{ block.settings.cover_image | image_url: width: 3840 }} 3840w,{%- endif -%}
+                {{ block.settings.cover_image | image_url }} {{ block.settings.cover_image.width }}w"
+              src="{{ block.settings.cover_image | image_url: width: 1920 }}"
+              sizes="{% if block.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}"
+              alt="{{ 'sections.video.load_video' | t: description: block.settings.description | escape }}"
+              loading="lazy"
+              width="{{ block.settings.cover_image.width }}"
+              height="{{ block.settings.cover_image.height }}"
+            >
+          {%- else -%}
+            {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+          {%- endif -%}
+        </a>
+      
+    </noscript>
+    
+        
+    <deferred-media class="video-section__media deferred-media no-js-hidden gradient global-media-settings{% if block.settings.full_width %} global-media-settings--full-width{% endif %}" data-media-id="{{ section.settings.video_url.id }}"
+      {% if block.settings.cover_image != blank %} style="padding-bottom: {{ 1 | divided_by: block.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
+    >
+      
+      <button
+        id="Deferred-Poster-Modal-{{ block.settings.video_url.id }}"
+        class="video-section__poster media deferred-media__poster media--landscape"
+        type="button"
+      >
+        {%- if block.settings.cover_image != blank -%}
+          <img style="  object-position: right bottom;"
+            src="{{ block.settings.cover_image | image_url: width: 1920 }}"
+          >
+        {%- else -%}
+          {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+        {%- endif -%}
+        <span class="deferred-media__poster-button motion-reduce">
+          {%- render 'icon-play' -%}
+        </span>
+      </button>
+      <template>
+        {%- if block.settings.video_url.type == 'youtube' -%}
+          <iframe src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+        {%- else -%}
+          <iframe src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+        {%- endif -%}
+      </template>
+    </deferred-media>
+      </div>
+          {%endfor%}
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% schema %}
+  {
+    "name": "multiple-videos",
+    "tag": "section",
+    "class": "section",
+    "blocks": [
+      {
+        "type": "video",
+        "name": "video",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "default": "Video",
+                "label": "t:sections.video.settings.heading.label"
+              },
+              {
+                "type": "image_picker",
+                "id": "cover_image",
+                "label": "t:sections.video.settings.cover_image.label"
+              },
+            {
+                "type": "video_url",
+                "id": "video_url",
+                "accept": [
+                  "youtube",
+                  "vimeo"
+                ],
+                "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                "label": "t:sections.video.settings.video_url.label",
+                "placeholder": "t:sections.video.settings.video_url.placeholder",
+                "info": "t:sections.video.settings.video_url.info"
+              },
+              {
+                "type": "text",
+                "id": "description",
+                "label": "t:sections.video.settings.description.label",
+                "info": "t:sections.video.settings.description.info"
+              }
+      
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "multiple videos",
+        "blocks": [
+          {
+            "type": "video"
+          },
+          {
+            "type": "video"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+

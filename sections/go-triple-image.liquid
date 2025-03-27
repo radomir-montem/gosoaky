@@ -1,0 +1,230 @@
+<div class="go-section-three-images">
+  <div class="go-two-images-container">
+    <a
+      data-w-id="9c1e88a6-d3ca-619f-4919-36858146bfd5"
+      {% if section.settings.url_1 == blank %}
+        style="opacity: 0.5;"
+      {% else %}
+        href="{{ section.settings.url_1 }}"
+      {% endif %}
+      class="go-image-block-aligned-left w-inline-block"
+    >
+      {%- if section.settings.image_1 != blank -%}
+        {{
+          section.settings.image_1
+          | image_url: width: 1500
+          | image_tag:
+            loading: 'lazy',
+            class: 'go-image-block-background-image',
+            sizes: '(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 1279px) 100vw, 2912.2578125px',
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: section.settings.image_1.alt
+          | escape
+        }}
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+      <div class="go-image-block-overlay"></div>
+      <div class="go-image-block-container">
+        <div class="go-image-block-div-height">
+          <div
+            data-w-id="9c1e88a6-d3ca-619f-4919-36858146bfda"
+            class="go-title-text-wrapper"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+          >
+            <h2 class="go-image-heading2">{{ section.settings.header_1_text | escape }}</h2>
+          </div>
+        </div>
+        <div class="go-image-div-height">
+          <div
+            data-w-id="9c1e88a6-d3ca-619f-4919-36858146bfde"
+            class="go-two-image-button"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+          >
+            <div class="go-hero-button-text">{{ section.settings.button_1_text | escape }}</div>
+            <div class="go-triangle-white w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.8 14.9" style="enable-background:new 0 0 19.8 14.9;" xml:space="preserve">
+              <polygon class="st0" points="9.9,13 17.9,1 1.9,1 "></polygon>
+              </svg></div>
+          </div>
+        </div>
+      </div></a
+    ><a
+      data-w-id="9c1e88a6-d3ca-619f-4919-36858146bfe2"
+      {% if section.settings.url_2 == blank %}
+        style="opacity: 0.5;"
+      {% else %}
+        href="{{ section.settings.url_2 }}"
+      {% endif %}
+      class="go-image-block-aligned-left w-inline-block"
+    >
+      {%- if section.settings.image_2 != blank -%}
+        {{
+          section.settings.image_2
+          | image_url: width: 1500
+          | image_tag:
+            loading: 'lazy',
+            class: 'go-image-block-background-image',
+            sizes: '(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 1279px) 100vw, 2912.2578125px',
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: section.settings.image_2.alt
+          | escape
+        }}
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+      <div class="go-image-block-overlay"></div>
+      <div class="go-image-block-container">
+        <div class="go-image-block-div-height">
+          <div
+            data-w-id="9c1e88a6-d3ca-619f-4919-36858146bfe7"
+            class="go-title-text-wrapper"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+          >
+            <h2 class="go-image-heading2">{{ section.settings.header_2_text | escape }}</h2>
+          </div>
+        </div>
+        <div class="go-image-div-height">
+          <div
+            data-w-id="9c1e88a6-d3ca-619f-4919-36858146bfeb"
+            class="go-two-image-button"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+          >
+            <div class="go-hero-button-text">{{ section.settings.button_2_text | escape }}</div>
+            <div class="go-triangle-white w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.8 14.9" style="enable-background:new 0 0 19.8 14.9;" xml:space="preserve">
+              <polygon class="st0" points="9.9,13 17.9,1 1.9,1 "></polygon>
+              </svg></div>
+          </div>
+        </div>
+      </div></a
+    ><a
+      data-w-id="5051f99c-1082-8c89-3892-38496d7550ef"
+      {% if section.settings.url_3 == blank %}
+        style="opacity: 0.5;"
+      {% else %}
+        href="{{ section.settings.url_3 }}"
+      {% endif %}
+      class="go-image-block-aligned-left w-inline-block"
+    >
+      {%- if section.settings.image_3 != blank -%}
+        {{
+          section.settings.image_3
+          | image_url: width: 1500
+          | image_tag:
+            loading: 'lazy',
+            class: 'go-image-block-background-image',
+            sizes: '(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 1279px) 100vw, 2912.2578125px',
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: section.settings.image_3.alt
+          | escape
+        }}
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+      <div class="go-image-block-overlay"></div>
+      <div class="go-image-block-container">
+        <div class="go-image-block-div-height">
+          <div
+            data-w-id="5051f99c-1082-8c89-3892-38496d7550f4"
+            class="go-title-text-wrapper"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+          >
+            <h2 class="go-image-heading2">{{ section.settings.header_3_text | escape }}</h2>
+          </div>
+        </div>
+        <div class="go-image-div-height">
+          <div
+            data-w-id="5051f99c-1082-8c89-3892-38496d7550f8"
+            class="go-two-image-button"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+          >
+            <div class="go-hero-button-text">{{ section.settings.button_3_text | escape }}</div>
+            <div class="go-triangle-white w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.8 14.9" style="enable-background:new 0 0 19.8 14.9;" xml:space="preserve">
+              <polygon class="st0" points="9.9,13 17.9,1 1.9,1 "></polygon>
+              </svg></div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "go triple image",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Pick your first image"
+    },
+    {
+      "type": "text",
+      "id": "header_1_text",
+      "label": "First block title",
+      "default": "Title"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text",
+      "label": "First button text",
+      "default": "Button 1"
+    },
+    {
+      "type": "url",
+      "id": "url_1",
+      "label": "First url"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Pick your second image"
+    },
+    {
+      "type": "text",
+      "id": "header_2_text",
+      "label": "Second block title",
+      "default": "Title"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text",
+      "label": "Second button text",
+      "default": "Button 2"
+    },
+    {
+      "type": "url",
+      "id": "url_2",
+      "label": "Second url"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Pick your second image"
+    },
+    {
+      "type": "text",
+      "id": "header_3_text",
+      "label": "Second block title",
+      "default": "Title"
+    },
+    {
+      "type": "text",
+      "id": "button_3_text",
+      "label": "Second button text",
+      "default": "Button 3"
+    },
+    {
+      "type": "url",
+      "id": "url_3",
+      "label": "Second url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "go triple image banner"
+    }
+  ]
+}
+{% endschema %}

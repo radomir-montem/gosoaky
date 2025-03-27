@@ -1,0 +1,91 @@
+<div class="go-section-icon">
+  <div class="go-icon-container">
+    <h2 class="go-h2-title">{{ section.settings.heading }}</h2>
+    <p class="go-paragraph">
+      {{ section.settings.paragraph }}
+    </p>
+    <div class="go-icon-grid">
+      {%- for block in section.blocks -%}
+        <div id="w-node-_684ed54f-378e-ed8b-da1f-a943c04e6439-1658e309" class="go-icon-block">
+          <div class="go-icon-image-block">
+            {%- if block.settings.icon != blank -%}
+            {{
+              block.settings.icon
+              | image_url: width: 1500
+              | image_tag:
+                loading: 'lazy',
+                width: block.icon.width,
+                class: 'go-hero-background-image',
+                sizes: '100vw',
+                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                alt: section.settings.image.alt
+              | escape
+            }}
+            {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          </div>
+          <div class="go-icon-text-wrapper">
+            <div class="go-icon-title">{{ block.settings.heading }}</div>
+            <p class="go-icon-paragraph">
+              {{ block.settings.paragraph }}
+            </p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "go icon guide",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "icon guide title",
+      "label": "header"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph",
+      "default": "paragraph",
+      "label": "paragraph"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon",
+      "name": "icon",
+      "limit": 20,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "icon image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "icon title",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "textarea",
+          "id": "paragraph",
+          "default": "explanation",
+          "label": "explanation"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "go icon guide"
+    }
+  ]
+}
+{% endschema %}

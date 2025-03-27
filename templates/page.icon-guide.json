@@ -1,0 +1,109 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "center_header": false
+      }
+    },
+    "166081049132c39245": {
+      "type": "go-icon-guide",
+      "blocks": {
+        "9d7b000c-4042-438b-80d6-28c365ac9049": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/GOSOAKY_ICONS_230830-05_2ee61bf6-7bfd-4b44-9a46-4e3f6b9497b1.png",
+            "heading": "waterproof",
+            "paragraph": "Each GOSOAKY has a waterproof coating on the inside of the material, compatible with 20.000 mm column pressure."
+          }
+        },
+        "0d767e0b-96d5-4dd7-8438-b59622526a3e": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/GOSOAKY_ICONS_230830-01_d44bf299-6d2f-4936-adfa-e8a4d2733b8a.png",
+            "heading": "BIONIC FINISH®ECO WATER REPELLENT",
+            "paragraph": "Bionic finish®Eco, is a water repellent component based on a fluorine free recipe. This extra enhancing finish has been added to the waterproof materials so that raindrops simply glide off the jacket."
+          }
+        },
+        "e7f6ad97-e781-439a-a243-c8628f793893": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/GOSOAKY_ICONS_230830-04_47b71f33-feb9-4e29-8306-fa648df991a1.png",
+            "heading": "DUPONT™ SORONA® BIODEGRADABLE INSULATION",
+            "paragraph": "Our padded styles have Sorona® fibre filling by DuPont™, a plant-based insulation with high performance qualities. This biodegradable filling givestremendous warmth, is animal (cruelty) free, moisture wicking, washable and stays in shape."
+          }
+        },
+        "498a1362-eafa-4c9a-a0ec-1a39b71e6180": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/GOSOAKY_ICONS_230830-03_6d6ba9b5-f823-427e-9543-7bcb068de5c3.png",
+            "heading": "Breathable",
+            "paragraph": "Our materials have a vapor permeability up to 8.000 g\/m2. The inner waterproof coating blocks out outside moisture and wind whilst letting through the bodies own vapour to regulate heat."
+          }
+        },
+        "2c0b046b-f587-4e4c-8dd5-31410db48550": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/GOSOAKY_ICONS_230830-02_29b2ac68-9d51-4e1e-8002-efe7270af303.png",
+            "heading": "Windproof",
+            "paragraph": "All materials are windproof, thus not allowing wind to enter or move through the garment."
+          }
+        },
+        "b6f2495d-9e1c-4f2d-8883-54e53df1afcd": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/GOSOAKY_ICONS_230830-06_70daa6b2-c0dc-47d5-b7fd-f03eafa63da0.png",
+            "heading": "Taped Seams",
+            "paragraph": "All seams are hermetically heat-taped. This sealing Technique ensures no rain can penetrate through the seams."
+          }
+        },
+        "3a56fbce-b77c-400e-bb60-d3a6c5fcb43f": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/GOSOAKY_ICONS_230830-08_83d8881f-a0f5-4006-b04a-3c6f95a635e3.png",
+            "heading": "REFLECTIVE VISIBILITY STRIP",
+            "paragraph": "Each GOSOAKY style features a barely-there welted pocket on the backside of the garment, which conceals a fixed Reflective Visibility Strip. Wear the strip outside of the pocket during moments when extra visibility is of essence. Easily store the Reflective Visibility Strip in the pocket when not needed."
+          }
+        },
+        "97c173b8-8e06-4f90-807c-6860da567cbb": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/GOSOAKY_ICONS_230830-09_bda526bc-cca2-497f-ba02-e65c50c9152b.png",
+            "heading": "Waterproof Zippers",
+            "paragraph": "When exposed to the elements waterproof zippers are applied. These reversed coil zippers are enhanced with a TPU coating."
+          }
+        },
+        "ec37e39d-3e29-45b4-9da8-b26cb73beeb7": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/GOSOAKY_ICONS_230830-10_3665b1cb-ac89-4769-bb56-b3516206a856.png",
+            "heading": "Modular Features",
+            "paragraph": "Some GOSOAKY styles can be adapted to complement your exact needs and theforecast. Modular styles will feature a seperate hat or hood for a full waterproof look."
+          }
+        }
+      },
+      "block_order": [
+        "9d7b000c-4042-438b-80d6-28c365ac9049",
+        "0d767e0b-96d5-4dd7-8438-b59622526a3e",
+        "e7f6ad97-e781-439a-a243-c8628f793893",
+        "498a1362-eafa-4c9a-a0ec-1a39b71e6180",
+        "2c0b046b-f587-4e4c-8dd5-31410db48550",
+        "b6f2495d-9e1c-4f2d-8883-54e53df1afcd",
+        "3a56fbce-b77c-400e-bb60-d3a6c5fcb43f",
+        "97c173b8-8e06-4f90-807c-6860da567cbb",
+        "ec37e39d-3e29-45b4-9da8-b26cb73beeb7"
+      ],
+      "settings": {
+        "heading": "Terminology",
+        "paragraph": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166081049132c39245"
+  ]
+}

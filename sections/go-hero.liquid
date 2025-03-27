@@ -1,0 +1,195 @@
+{% comment %}
+  {{ "go-wf.css" | asset_url | stylesheet_tag }}
+  <script src="{{ "go-jquery.js" | asset_url }}" defer></script>
+  <script src="{{ "go-wf.js" | asset_url }}" defer></script>
+{% endcomment %}
+<div class="go-section-hero">
+  {%- if section.settings.image != blank -%}
+    {{
+      section.settings.image
+      | image_url: width: 1500
+      | image_tag:
+        loading: 'lazy',
+        width: section.settings.image.width,
+        class: 'go-hero-background-image',
+        sizes: '100vw',
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.image.alt
+      | escape
+    }}
+  {%- else -%}
+    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+  {%- endif -%}
+  <div class="w-embed">
+    <style>
+      .go-section-hero {
+        height: calc(100vh - 95px);
+      }
+    </style>
+  </div>
+  <div class="go-section-hero-overlay"></div>
+  <div class="go-hero-container">
+    <div class="go-hero-text-wrapper">
+      {% if section.settings.header_text != blank %}
+      <div class="go-hero-div-height">
+        
+        <h1
+          data-w-id="ad33d133-19a1-f710-7344-b7f3a530c232"
+          style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+          class="go-hero-heading"
+        >
+          {{ section.settings.header_text | escape }}
+        </h1>
+      </div>
+      {% endif %}
+      {% if section.settings.header_subtitle != blank and section.settings.header_subtitle != "" %}
+      <div
+        data-w-id="76d122e0-da71-90ac-8baa-810f29dbbeeb"
+        style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+        class="go-hero-div-height"
+      >
+        <p class="go-hero-paragraph">
+          {{ section.settings.header_subtitle | escape }}
+        </p>
+      </div>
+      {% endif %}
+      <div class="go-hero-div-height">
+        <div
+          data-w-id="d1254ee2-6d56-a320-bdae-3d3502bcaf80"
+          style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+          class="go-hero-buttons-wrapper"
+        >
+          {% if section.settings.button_1_text != blank and section.settings.url_1 != blank %}
+            <a
+              href="{{ section.settings.url_1 }}"
+              class="go-button-large {{ section.settings.button_1_style }} w-button"
+            >
+              {{ section.settings.button_1_text }}
+            </a>
+          {% endif %}
+
+          {% if section.settings.button_2_text != blank and section.settings.url_2 != blank %}
+            <a
+              href="{{ section.settings.url_2 }}"
+              class="go-button-large {{ section.settings.button_2_style }} w-button"
+            >
+              {{ section.settings.button_2_text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="go-hero-bottom-banner">
+    <div
+      data-w-id="fa265967-107a-7571-7ff5-2c25aa7ecc87"
+      style="opacity: 1; transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;"
+      class="go-hero-banner-text truncate"
+    >
+      {% for i in (1..30) %}
+        {{ section.settings.usps | escape }}
+      {% endfor %}
+    </div>
+    <div class="w-embed">
+      <style>
+        .truncate {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      </style>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "go-hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Pick your main image"
+    },
+    {
+      "type": "text",
+      "id": "header_text",
+      "label": "Title",
+      "default": "Enter your title here"
+    },
+   
+    {
+      "type": "textarea",
+      "id": "header_subtitle",
+      "label": "Hero subtitle",
+      "default": "Enter your subtitle here"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text",
+      "label": "First button text",
+      "default": "Button 1"
+    },
+    {
+      "type": "url",
+      "id": "url_1",
+      "label": "First button url"
+    },
+    {
+      "type": "select",
+      "id": "button_1_style",
+      "label": "First button style",
+      "default": "go-light",
+      "options": [
+        {
+          "value": "go-light",
+          "label": "Light"
+        },
+        {
+          "value": "go-dark",
+          "label": "Dark"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "button_2_text",
+      "label": "Second button text",
+      "default": "Button 2"
+    },
+    {
+      "type": "url",
+      "id": "url_2",
+      "label": "Second button url"
+    },
+    {
+      "type": "select",
+      "id": "button_2_style",
+      "label": "Second button style",
+      "default": "go-light",
+      "options": [
+        {
+          "value": "go-light",
+          "label": "Light"
+        },
+        {
+          "value": "go-dark",
+          "label": "Dark"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "usps",
+      "label": "USP text",
+      "default": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT | "
+    }
+  ],
+  "presets": [
+    {
+      "name": "go hero banner"
+    }
+  ]
+}
+{% endschema %}

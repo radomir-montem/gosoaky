@@ -1,0 +1,241 @@
+<div class="go-section-gosoakytv">
+  <div class="go-gosoakytv-container"><h2 class="go-h2-title">This is GOSOAKY tv</h2></div>
+  <div class="go-gosoakytv-grid">
+    
+    {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'video' %}
+            <a
+                href="#"
+                class="go-gosoakytv-lightbox-link w-inline-block w-lightbox"
+                aria-label="open lightbox"
+                aria-haspopup="dialog"
+              >
+                <div class="go-play-button-block">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/1012/6158/files/Triangle-GOSOAKY-black.png?v=1660919262"
+                    loading="lazy"
+                    alt=""
+                    class="go-play-button-png"
+                  >
+                </div>
+                <img
+                  src="{{ block.settings.thumbnail | image_url }}"
+                  loading="lazy"
+                  alt="video thumbnail"
+                  class="go-lightbox-thumbnail"
+                >
+                <script type="application/json" class="w-json">
+                  {
+                    "items": [
+                      {
+                        "url": "{{ block.settings.video_url }}",
+                        "originalUrl": "{{ block.settings.video_url }}",
+                        "width": 940,
+                        "height": 496,
+                        "thumbnailUrl": "{{ block.settings.thumbnail | image_url }}",
+                        "html": "<iframe class=\"embedly-embed\" src=\"{{ block.settings.video_url | url_escape }}\" width=\"940\" height=\"496\" scrolling=\"no\" title=\"Vimeo embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+                        "type": "video"
+                      }
+                    ],
+                    "group": "gosoaky-tv"
+                  }
+                </script></a
+              >
+         
+        {% endcase %}
+      {% endfor %}
+    
+    
+        
+{% comment %}         
+        <a
+      href="#"
+      class="go-gosoakytv-lightbox-link w-inline-block w-lightbox"
+      aria-label="open lightbox"
+      aria-haspopup="dialog"
+    >
+      <div class="go-play-button-block">
+        <img
+          src="https://uploads-ssl.webflow.com/62fa3062c203be10ec3b25e5/62ff7a792e31dc68cbc60b04_Triangle-GOSOAKY.png"
+          loading="lazy"
+          alt=""
+          class="go-play-button-png"
+        >
+      </div>
+      <img
+        src="https://uploads-ssl.webflow.com/img/placeholder-thumb.svg"
+        loading="lazy"
+        alt=""
+        class="go-lightbox-thumbnail"
+      >
+      <script type="application/json" class="w-json">
+        {
+          "items": [
+            {
+              "url": "https://www.youtube.com/watch?v=vrbAKFk4uhg",
+              "originalUrl": "https://www.youtube.com/watch?v=vrbAKFk4uhg",
+              "width": 940,
+              "height": 528,
+              "thumbnailUrl": "https://i.ytimg.com/vi/vrbAKFk4uhg/hqdefault.jpg",
+              "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FvrbAKFk4uhg%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DvrbAKFk4uhg&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FvrbAKFk4uhg%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+              "type": "video"
+            }
+          ],
+          "group": "gosoaky-tv"
+        }
+      </script></a
+    ><a
+      href="#"
+      class="go-gosoakytv-lightbox-link w-inline-block w-lightbox"
+      aria-label="open lightbox"
+      aria-haspopup="dialog"
+    >
+      <div class="go-play-button-block">
+        <img
+          src="https://uploads-ssl.webflow.com/62fa3062c203be10ec3b25e5/62ff7a792e31dc68cbc60b04_Triangle-GOSOAKY.png"
+          loading="lazy"
+          alt=""
+          class="go-play-button-png"
+        >
+      </div>
+      <img
+        src="https://uploads-ssl.webflow.com/img/placeholder-thumb.svg"
+        loading="lazy"
+        alt=""
+        class="go-lightbox-thumbnail"
+      >
+      <script type="application/json" class="w-json">
+        {
+          "items": [
+            {
+              "url": "https://www.youtube.com/watch?v=FgnXJu7jU9Q&t=195s",
+              "originalUrl": "https://www.youtube.com/watch?v=FgnXJu7jU9Q&t=195s",
+              "width": 940,
+              "height": 528,
+              "thumbnailUrl": "https://i.ytimg.com/vi/FgnXJu7jU9Q/hqdefault.jpg",
+              "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FFgnXJu7jU9Q%3Fstart%3D195%26feature%3Doembed%26start%3D195&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFgnXJu7jU9Q&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FFgnXJu7jU9Q%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+              "type": "video"
+            }
+          ],
+          "group": "gosoaky-tv"
+        }
+      </script></a
+    ><a
+      href="#"
+      class="go-gosoakytv-lightbox-link w-inline-block w-lightbox"
+      aria-label="open lightbox"
+      aria-haspopup="dialog"
+    >
+      <div class="go-play-button-block">
+        <img
+          src="https://uploads-ssl.webflow.com/62fa3062c203be10ec3b25e5/62ff7a792e31dc68cbc60b04_Triangle-GOSOAKY.png"
+          loading="lazy"
+          alt=""
+          class="go-play-button-png"
+        >
+      </div>
+      <img
+        src="https://uploads-ssl.webflow.com/img/placeholder-thumb.svg"
+        loading="lazy"
+        alt=""
+        class="go-lightbox-thumbnail"
+      >
+      <script type="application/json" class="w-json">
+        {
+          "items": [
+            {
+              "url": "https://vimeo.com/307333224",
+              "originalUrl": "https://vimeo.com/307333224",
+              "width": 940,
+              "height": 496,
+              "thumbnailUrl": "https://i.vimeocdn.com/video/747687683-8d8a8a9568e5f0e4135775c6204f59003cd32a9c516e8abb077fcf368e2cd909-d_1280",
+              "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F307333224%3Fh%3D8f33e3cea6%26app_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F307333224&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F747687683-8d8a8a9568e5f0e4135775c6204f59003cd32a9c516e8abb077fcf368e2cd909-d_1280&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=vimeo\" width=\"940\" height=\"496\" scrolling=\"no\" title=\"Vimeo embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+              "type": "video"
+            }
+          ],
+          "group": "gosoakytv"
+        }
+      </script></a
+    ><a
+      href="#"
+      class="go-gosoakytv-lightbox-link w-inline-block w-lightbox"
+      aria-label="open lightbox"
+      aria-haspopup="dialog"
+    >
+      <div class="go-play-button-block">
+        <img
+          src="https://uploads-ssl.webflow.com/62fa3062c203be10ec3b25e5/62ff7a792e31dc68cbc60b04_Triangle-GOSOAKY.png"
+          loading="lazy"
+          alt=""
+          class="go-play-button-png"
+        >
+      </div>
+      <img
+        src="https://uploads-ssl.webflow.com/img/placeholder-thumb.svg"
+        loading="lazy"
+        alt=""
+        class="go-lightbox-thumbnail"
+      >
+      <script type="application/json" class="w-json">
+        {
+          "items": [
+            {
+              "url": "https://vimeo.com/307333224",
+              "originalUrl": "https://vimeo.com/307333224",
+              "width": 940,
+              "height": 496,
+              "thumbnailUrl": "https://i.vimeocdn.com/video/747687683-8d8a8a9568e5f0e4135775c6204f59003cd32a9c516e8abb077fcf368e2cd909-d_1280",
+              "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F307333224%3Fh%3D8f33e3cea6%26app_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F307333224&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F747687683-8d8a8a9568e5f0e4135775c6204f59003cd32a9c516e8abb077fcf368e2cd909-d_1280&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=vimeo\" width=\"940\" height=\"496\" scrolling=\"no\" title=\"Vimeo embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+              "type": "video"
+            }
+          ],
+          "group": "gosoaky-tv"
+        }
+      </script>
+    </a> {% endcomment %}
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "go video grid",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Header",
+        "default": "GOSOAKY TV"
+      }
+  
+  ],
+
+  "blocks": [
+    {
+      "name": "Video",
+      "type": "video",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "thumbnail",
+          "label": "thumbnail"
+        },
+        {
+            "type": "url",
+            "id": "video_url",
+            "label": "url"
+        }
+      ]
+    }
+ ],
+
+  "presets": [
+    {
+      "name": "go video grid"
+    }
+  ]
+}
+{% endschema %}

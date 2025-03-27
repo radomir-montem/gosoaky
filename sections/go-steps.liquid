@@ -1,0 +1,179 @@
+<div class="go-section-steps">
+  <div class="go-container-steps">
+    {% if section.settings.title != blank %}
+      <h2 class="go-h2-title">{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.settings.description != blank %}
+      <p class="go-paragraph">
+        {{ section.settings.description }}
+      </p>
+    {% endif %}
+    <div class="go-step-grid">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'step' %}
+            <div id="w-node-{{ block.id }}-c83b25e8" class="go-step-block">
+              <div class="go-step-block-image">
+                {% if block.settings.image %}
+                  {{
+                    block.settings.image
+                    | image_url: width: 1500
+                    | image_tag:
+                      loading: 'lazy',
+                      width: section.settings.image.width,
+                      class: 'go-step-block-image-content',
+                      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                      alt: section.settings.image.alt
+                    | escape
+                  }}
+                {%- else -%}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+              </div>
+              <h3 class="go-h3-title">{{ block.settings.step_title }}</h3>
+              <div class="go-paragraph small">
+                {{ block.settings.step_description }}
+              </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'buttons' %}
+          <div class="go-button-wrapper">
+            {% if block.settings.button_text1 != blank and block.settings.button_link1 != blank %}
+              <a
+                href="{{ block.settings.button_link1 }}"
+                class="go-button-large w-button {{ block.settings.button_1_style }}"
+              >
+                {{- block.settings.button_text1 -}}
+              </a>
+            {% endif %}
+            {% if block.settings.button_text2 != blank and block.settings.button_link2 != blank %}
+              <a
+                href="{{ block.settings.button_link2 }}"
+                class="go-button-large w-button {{ block.settings.button_2_style }}"
+              >
+                {{- block.settings.button_text2 -}}
+              </a>
+            {% endif %}
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "go steps",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "section title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra sodales justo non auctor. Etiam eu faucibus leo, at tincidunt velit. Ut non tristique dolor, et porttitor odio. Phasellus eget interdum mi."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Step Image"
+        },
+        {
+          "type": "text",
+          "id": "step_title",
+          "label": "Step Title",
+          "default": "Step"
+        },
+        {
+          "type": "richtext",
+          "id": "step_description",
+          "label": "Step Description"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text1",
+          "label": "Button Text",
+          "default": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link1",
+          "label": "Button Link"
+        },
+        {
+          "type": "select",
+          "id": "button_1_style",
+          "label": "first button style",
+          "default": "go-light",
+          "options": [
+            {
+              "value": "go-light",
+              "label": "Light"
+            },
+            {
+              "value": "go-dark",
+              "label": "Dark"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "button_text2",
+          "label": "Button Text",
+          "default": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link2",
+          "label": "Button Link"
+        },
+        {
+          "type": "select",
+          "id": "button_2_style",
+          "label": "Second button style",
+          "default": "go-light",
+          "options": [
+            {
+              "value": "go-light",
+              "label": "Light"
+            },
+            {
+              "value": "go-dark",
+              "label": "Dark"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "go steps"
+    }
+  ]
+}
+{% endschema %}

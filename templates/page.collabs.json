@@ -1,0 +1,197 @@
+{
+  "sections": {
+    "go_hero_rpdUrr": {
+      "type": "go-hero",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DSC_2680.jpg",
+        "header_text": "Become a brand ambassador",
+        "header_subtitle": "",
+        "button_1_text": "apply now",
+        "url_1": "https:\/\/api.collabs.shopify.com\/creator\/signup\/community_application\/d698b7a5112baa7a?origin=THEME_EXTENSION",
+        "button_1_style": "go-light",
+        "button_2_text": "login",
+        "url_2": "https:\/\/api.collabs.shopify.com\/creator\/login\/community_application\/d698b7a5112baa7a?origin=THEME_EXTENSION",
+        "button_2_style": "go-light",
+        "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
+      }
+    },
+    "go_text_with_buttons_QYTpNk": {
+      "type": "go-text-with-buttons",
+      "custom_css": [
+        ".go-section-text {padding-bottom: 0px;}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "We're looking for city-based families who enjoy discovering new places and activities, sharing their experiences, and inspiring others to explore their urban outdoors. To apply, click below and simply continue posting your favorite city adventures on social media, tag our account, and use our designated hashtag. As an ambassador, you'll have the chance to earn and win exclusive items from GOSOAKY, making your adventures even more exciting!",
+        "button_text1": "",
+        "button_link1": "",
+        "button_1_style": "go-dark",
+        "button_text2": "",
+        "button_link2": "",
+        "button_2_style": "go-dark"
+      }
+    },
+    "go_steps_BgxHJU": {
+      "type": "go-steps",
+      "blocks": {
+        "step_T3n48a": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wesbite_icons-01_3ad21903-0c25-4cd4-b0d6-90c0770ee5ac.png",
+            "step_title": "1. sign up",
+            "step_description": "<p>Click the button below to sign up with Shopify Collabs (you need at least 1,000 followers on any of your social accounts). Keep an eye on your email for a confirmation and a welcome gift!<\/p>"
+          }
+        },
+        "step_cWhxNd": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wesbite_icons-02_40beea41-f27c-4aa5-81d8-9433ca5490d9.png",
+            "step_title": "2. Post On Social",
+            "step_description": "<p>Create content wearing your GOSOAKY, following our posting guidelines.<\/p>"
+          }
+        },
+        "step_Bpd9k7": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wesbite_icons-03_98585fc8-3b53-4220-b135-b94cc88fa3f6.png",
+            "step_title": "3. Get Rewarded",
+            "step_description": "<p>Complete the deliverables outlined below and upon completion you will receive special rewards offered only to ambassadors!<\/p>"
+          }
+        },
+        "buttons_9qKw7n": {
+          "type": "buttons",
+          "settings": {
+            "button_text1": "Apply Now",
+            "button_link1": "https:\/\/api.collabs.shopify.com\/creator\/signup\/community_application\/d698b7a5112baa7a?origin=THEME_EXTENSION",
+            "button_1_style": "go-dark",
+            "button_text2": "",
+            "button_link2": "",
+            "button_2_style": "go-light"
+          }
+        }
+      },
+      "block_order": [
+        "step_T3n48a",
+        "step_cWhxNd",
+        "step_Bpd9k7",
+        "buttons_9qKw7n"
+      ],
+      "settings": {
+        "title": "How does it work?",
+        "description": ""
+      }
+    },
+    "go_link_grid_zx9w9t": {
+      "type": "go-link-grid",
+      "blocks": {
+        "link_gbGkDa": {
+          "type": "link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2025-02-11_at_10.51.48_a9cb1729-ed19-4548-bccc-aca1cc7f8874.png",
+            "url": ""
+          }
+        },
+        "link_t4JTMg": {
+          "type": "link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2025-02-11_at_10.50.12_5760ffda-8a3c-4bfa-b42e-e4dd7ea910de.png",
+            "url": ""
+          }
+        },
+        "link_aA7gap": {
+          "type": "link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2025-02-11_at_10.52.21_a4fd4c2e-65cb-459f-9ca4-93dbbae10bff.png",
+            "url": ""
+          }
+        },
+        "link_dWwwNQ": {
+          "type": "link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2025-02-11_at_10.56.53_25bb9efc-9c78-455d-86c4-4bb2a1b04071.png",
+            "url": ""
+          }
+        },
+        "buttons_MTG4X3": {
+          "type": "buttons",
+          "settings": {
+            "button_text1": "Apply Now",
+            "button_link1": "https:\/\/api.collabs.shopify.com\/creator\/signup\/community_application\/d698b7a5112baa7a?origin=THEME_EXTENSION",
+            "button_1_style": "go-dark",
+            "button_text2": "login",
+            "button_link2": "https:\/\/api.collabs.shopify.com\/creator\/login\/community_application\/d698b7a5112baa7a?origin=THEME_EXTENSION",
+            "button_2_style": "go-dark"
+          }
+        }
+      },
+      "block_order": [
+        "link_gbGkDa",
+        "link_t4JTMg",
+        "link_aA7gap",
+        "link_dWwwNQ",
+        "buttons_MTG4X3"
+      ],
+      "settings": {
+        "title": "The Perfect GOSOAKY Ambassador",
+        "description": "We are looking for vibrant and happy families that love to explore and have fun in the urban outdoors, capturing the adventures in high quality content that inspire other families to go out and explore!"
+      }
+    },
+    "go_faq_B4EFFa": {
+      "type": "go-faq",
+      "blocks": {
+        "question_68kcVM": {
+          "type": "question",
+          "settings": {
+            "question": "How do I become eligible to the ambassador program?",
+            "answer": "<p>The eligibility is decided based on: follower base number <strong>(minimum 1000 followers)<\/strong> and region, as well as aligning with our brand's values and aesthetic. The GOSOAKY team manually reviews every applicant. <\/p>"
+          }
+        },
+        "question_74xaHD": {
+          "type": "question",
+          "settings": {
+            "question": "How do I become an Ambassador?",
+            "answer": "<p><span style=\"text-decoration:underline\">Follow the steps:<\/span><\/p><ol><li>Sign up <a href=\"https:\/\/collabs.shopify.com\/gifts\" title=\"https:\/\/accounts.shopify.com\/signup?rid=45d169ea-5c49-4cb2-b38f-c852b1891ea5\"><strong>here<\/strong><\/a> and follow instructions to send your application.<\/li><li>Wait for an official response via email from one of our  GOSOAKY team members  and see if you have been accepted and become part of the Ambassador programme. <\/li><li>If you are accepted, you will receive an email confirmation that explains the program and following steps.<\/li><\/ol>"
+          }
+        },
+        "question_9EFqnr": {
+          "type": "question",
+          "settings": {
+            "question": "How do I promote the products on Social Media?",
+            "answer": "<p>The products will be promoted on Instagram and TikTok using the following formats:<\/p><p><span style=\"text-decoration:underline\">Instagram<\/span>:<\/p><ul><li>Stories, reels and preferably videos <\/li><li>Images promoting the products\/with GOSOAKY jackets tagging the brand<\/li><li>Hauls\/try on videos<\/li><\/ul><p><\/p><p><span style=\"text-decoration:underline\">TikTok:<\/span><\/p><ul><li>Stories<\/li><li>Hauls\/try on videos<\/li><li>“How to take care of a GOSOAKY jacket” video<\/li><li>Unboxing videos<\/li><\/ul>"
+          }
+        },
+        "question_zeTiCM": {
+          "type": "question",
+          "settings": {
+            "question": "What are the content requirements?",
+            "answer": "<p>In order for the content to be eligible with our brand’s requirements, it should:<\/p><p><\/p><ul><li>Be made only from accounts that are public<\/li><li>Visibly display <strong>@gosoaky_outerproofs <\/strong>in the caption OR tag us. <\/li><li>Mandatory use <strong>#gosoakyandme <\/strong>throughout all posts <\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "question_68kcVM",
+        "question_74xaHD",
+        "question_9EFqnr",
+        "question_zeTiCM"
+      ],
+      "settings": {
+        "title": "Ambassador's faq",
+        "description": ""
+      }
+    },
+    "1721375347062809e1": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "go_hero_rpdUrr",
+    "go_text_with_buttons_QYTpNk",
+    "go_steps_BgxHJU",
+    "go_link_grid_zx9w9t",
+    "go_faq_B4EFFa",
+    "1721375347062809e1"
+  ]
+}

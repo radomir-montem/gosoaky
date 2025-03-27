@@ -1,0 +1,13 @@
+.go-section-contact-widget {
+    width: 0;
+}
+
+.go-product-card-badge  {
+    position: absolute;
+    z-index: 1;
+    background: #ffffff;
+    padding: 5px 12px;
+    right: 10px;
+    bottom: 10px;
+    font-family: proxima-nova,sans-serif;
+}

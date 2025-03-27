@@ -1,0 +1,147 @@
+{%comment%}
+{{ "go-wf.css" | asset_url | stylesheet_tag }}
+<script src="{{ "go-jquery.js" | asset_url }}" defer></script>
+<script src="{{ "go-wf.js" | asset_url }}" defer></script>
+{% endcomment %}
+<div class="go-section-philosophy">
+  <div class="go-philosophy-container">
+    <h2 class="go-h2-title">{{ section.settings.header_text }}</h2>
+    <p class="go-paragraph">
+      {{ section.settings.paragraph_text }}
+    </p>
+    <div class="go-button-block">
+      <a
+        data-w-id="4472b1f6-b13c-4405-a8c5-df77fce2c696"
+        href="{{section.settings.url_1}}"
+        class="go-button-black w-inline-block"
+      >
+        <div class="go-button-text">{{ section.settings.button_1_text }}</div>
+        <div class="go-triangle-black w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.8 14.9" style="enable-background:new 0 0 19.8 14.9;" xml:space="preserve">
+          <polygon class="go-triangle-black-svg" points="9.9,13 17.9,1 1.9,1 "></polygon>
+          </svg></div></a
+      ><a
+        data-w-id="191d4648-e773-7e88-7d3e-4353c2544669"
+        href="{{section.settings.url_2}}"
+        class="go-button-black w-inline-block"
+      >
+        <div class="go-button-text">{{ section.settings.button_2_text }}</div>
+        <div class="go-triangle-black w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.8 14.9" style="enable-background:new 0 0 19.8 14.9;" xml:space="preserve">
+          <polygon class="go-triangle-black-svg" points="9.9,13 17.9,1 1.9,1 "></polygon>
+          </svg></div>
+      </a>
+    </div>
+    <div data-w-id="474d74a8-0806-db96-b608-cba0a33f379a" class="go-philosophy-image-block">
+      <div id="w-node-_6e5582b3-69a1-7c3e-2f73-18dbd06cf900-1658e309" class="go-philosophy-image-wrapper-vh">
+        {%- if section.settings.image_1 != blank -%}
+          {{
+            section.settings.image_1 | image_url: width: 1500 | image_tag:
+            loading: 'lazy',
+            class: "go-philosophy-image-center",
+            sizes: "(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw",
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            style : "will-change: transform; transform: translate3d(0px, -8.153599999999997px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;",
+            data-w-id:"e6f9fa01-cb8b-2066-5493-74f2f28e9fe5",
+            alt: section.settings.image_1.alt | escape
+          }}
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+      <div id="w-node-_4178e442-27c0-c440-fada-695c0411cb93-1658e309" class="go-philosophy-image-wrapper-vh">
+        {%- if section.settings.image_2 != blank -%}
+          {{
+            section.settings.image_2 | image_url: width: 1500 | image_tag:
+            loading: 'lazy',
+            class: "go-philosophy-image-center",
+            sizes: "(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw",
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            style: "will-change: transform; transform: translate3d(0px, -6.1152000000000015px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;",
+            data-w-id:"4178e442-27c0-c440-fada-695c0411cb94",
+            alt: section.settings.image_2.alt | escape
+          }}
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+      <div id="w-node-_027c85a2-76ad-589a-047a-74a2067a03e3-c83b25e8" class="go-philosophy-image-wrapper-vh">
+        {%- if section.settings.image_3 != blank -%}
+          {{
+            section.settings.image_3 | image_url: width: 1500 | image_tag:
+            loading: 'lazy',
+            class: "go-philosophy-image-center",
+            sizes: "(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw",
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            style: "will-change: transform; transform: translate3d(0px, 1.6544000000000096px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;",
+            data-w-id:"027c85a2-76ad-589a-047a-74a2067a03e4",
+            alt: section.settings.image_3.alt | escape
+          }}
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "go-text-three-detail",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header_text",
+      "label": "Header text",
+      "default": "Enter your title here"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_text",
+      "label": "Paragraph text",
+      "default": "Enter your paragraph here"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text",
+      "label": "First button text",
+      "default": "Button 1"
+    },
+    {
+      "type": "url",
+      "id": "url_1",
+      "label": "Fecond Hero url"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text",
+      "label": "Second button text",
+      "default": "Button 2"
+    },
+    {
+      "type": "url",
+      "id": "url_2",
+      "label": "Second hero url"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Pick your first image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Pick your second image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Pick your third image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "go text three details image"
+    }
+  ]
+}
+{% endschema %}

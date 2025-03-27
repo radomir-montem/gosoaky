@@ -1,0 +1,52 @@
+<div class="go-section-we-care">
+
+    {{
+        section.settings.image | image_url: width: 1500 | image_tag:
+        loading: 'lazy',
+        class: "go-hero-background-image",
+        sizes: "100vw",
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.image.alt | escape
+      }}
+  <div class="w-embed">
+    <style>
+      .go-section-we-care{
+          height: calc(100vh - 85px);
+      }
+    </style>
+  </div>
+  <div class="go-section-hero-overlay"></div>
+  <div class="go-hero-container">
+    <div class="go-hero-text-wrapper">
+      <div class="go-hero-div-height"><h1 class="go-hero-heading">{{ section.settings.header }}</h1></div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "go hero without buttons",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+        "type": "text",
+        "id": "header",
+        "label": "header",
+        "default": "header"
+      },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "image"
+      }
+  
+  ],
+  "presets": [
+    {
+      "name": "go hero without buttons"
+    }
+  ]
+}
+{% endschema %}

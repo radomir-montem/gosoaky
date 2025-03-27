@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "banner": {
+      "type": "go-collection-banner",
+      "settings": {}
+    },
+    "product-grid": {
+      "type": "go-main-collection-product-grid",
+      "settings": {
+        "products_per_page": 48,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_aspect_ratio": 75
+      }
+    },
+    "custom_liquid_t6Utmy": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.go-product-card-soldout {\n  display: none;\n}\n.price__container:after {\n  content: \"Coming Soon\";\n  color: #b7b7b7;\n  text-transform: uppercase;\n  font-family: proxima-nova, sans-serif;\n  font-size: 12px;\n  line-height: 1em;\n  font-weight: 700;\n}\n<\/style>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "custom_liquid_t6Utmy"
+  ]
+}

@@ -1,0 +1,147 @@
+{% liquid
+  assign anatomy_count = 0
+  assign should_show_anatomy = false
+  #modular
+  if section.settings.product.metafields.product_information.modular
+    assign anatomy_count = anatomy_count | plus: 1 
+  endif
+
+  #Bionic Finish Eco water repelent
+  if section.settings.product.metafields.product_information.eco_water_repelent
+  assign anatomy_count = anatomy_count | plus: 1 
+  endif
+
+  #breathable
+  if section.settings.product.metafields.product_information.breathable != "no" and section.settings.product.metafields.product_information.breathable != nil
+  assign anatomy_count = anatomy_count | plus: 1 
+  endif
+
+  #Waterproof zipper
+  if section.settings.product.metafields.product_information.waterproof_zipper
+  assign anatomy_count = anatomy_count | plus: 1 
+  endif
+
+  #Reflective visibility strip
+  if section.settings.product.metafields.product_information.reflective_visibility_strip
+  assign anatomy_count = anatomy_count | plus: 1 
+  endif
+
+  #Windproof
+  if section.settings.product.metafields.product_information.windproof
+  assign anatomy_count = anatomy_count | plus: 1 
+  endif
+
+  #Dupont sorona biodegradable insulation
+  if section.settings.product.metafields.product_information.bio_insulation
+  assign anatomy_count = anatomy_count | plus: 1 
+  endif
+
+  #Cycling features
+  if section.settings.product.metafields.product_information.cycling_features
+  assign anatomy_count = anatomy_count | plus: 1 
+  endif
+
+  #taped seams
+  if section.settings.product.metafields.product_information.taped_seams
+  assign anatomy_count = anatomy_count | plus: 1 
+  endif
+
+  #waterproof
+  if section.settings.product.metafields.product_information.waterproof != "no" and section.settings.product.metafields.product_information.waterproof != nil 
+  assign anatomy_count = anatomy_count | plus: 1 
+  endif
+
+  assign show_anatomy_metafield = section.settings.product.metafields.product_information.show_anatomy
+  assign anatomy_image = section.settings.product.metafields.product_information.anatomy_image
+
+  if section.settings.product != empty and show_anatomy_metafield and anatomy_image != nil and anatomy_count >= 2
+    assign should_show_anatomy = true
+  endif
+
+  if section.settings.product.metafields.product_information.text_overlay_color == "black"
+    assign text_color = "#000"
+  else
+    assign text_color = "#fff"
+  endif
+
+%}
+
+
+
+
+
+
+{% if should_show_anatomy == true %}
+  {% if section.settings.product.metafields.product_information.background_hex != nil %}
+    <style>
+      .go-section-anatomy{
+        background-color: {{ section.settings.product.metafields.product_information.background_hex }};
+      }
+    </style>
+  {% endif %}
+  {% if text_color != nil %}
+    <style>
+      .go-h2-title-anatomy
+      {
+        color: {{ text_color }};
+      }
+    </style>
+  {% endif %}
+  <div class="go-section-anatomy">
+    <div data-w-id="24a58652-fd9d-d904-3e38-9459fbecdf9f" class="go-anatomy-container">
+      <h2 class="go-h2-title-anatomy">
+        {{ section.settings.header }}
+        {% if section.settings.show_name %}
+          {% assign name = section.settings.product.title | split: " | " %}
+          {% if name.first != blank %}
+            {{ name.first }}
+          {% else %}
+            {{ section.settings.product.title }}
+          {% endif %}
+        {% endif %}
+      </h2>
+    </div>
+  </div>
+  {%
+    render "go-anatomy-snippet",
+    anatomy_product: section.settings.product,
+    icon_guide_url: section.settings.icon_guide_url
+  %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "go-anatomy",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header for Anatomy",
+      "default": "Header"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_name",
+      "label": "Add product name to end of the header",
+      "default": true
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product for anatomy"
+    },
+    {
+      "type": "url",
+      "id": "icon_guide_url",
+      "label": "Icon guide url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "go anatomy"
+    }
+  ]
+}
+{% endschema %}

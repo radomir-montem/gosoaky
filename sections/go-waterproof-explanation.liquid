@@ -1,0 +1,129 @@
+<div class="go-section-waterproof">
+  <div class="go-waterproof-container">
+    <div class="go-waterproofness">
+      <h2 class="go-h2-title">{{ section.settings.header }}</h2>
+      <p class="go-paragraph-diagram">
+        {{ section.settings.paragraph_text }}
+      </p>
+      <div class="go-button-block"><a data-w-id="b2d202e4-93c1-a1cc-9481-5b778694dabf" href="{{ section.settings.url_1 }}" class="go-button-black w-inline-block"><div class="go-button-text"> {{ section.settings.button_text }}</div><div class="go-triangle-black w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.8 14.9" style="enable-background:new 0 0 19.8 14.9;" xml:space="preserve">
+        <polygon class="go-triangle-black-svg" points="9.9,13 17.9,1 1.9,1 "></polygon>
+        </svg></div></a></div>
+      
+    </div>
+    <div id="w-node-_26558260-d217-b376-863d-9e2611042ee7-1658e309" class="go-waterproof-image-block">
+      {%- if section.settings.image_1 != blank -%}
+        {{
+          section.settings.image_1 | image_url: width: 1500 | image_tag:
+          loading: 'lazy',
+          class: "go-image-block-background-waterproof",
+          sizes: "(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw",
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image_1.alt | escape
+        }}
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+      <div class="go-image-block-overlay-right"></div>
+      <div class="go-waterproof-text-wrapper">
+        <div class="go-hero-div-height"><h3 class="go-h3-title-white">{{section.settings.photo_header | escape}}</h3></div>
+        {% comment %} <div class="go-hero-div-height">
+          <div class="go-hero-buttons-wrapper">
+            <a href="{{section.settings.url_1}}" class="go-hero-button w-inline-block">
+              <div class="go-hero-button-text">{{section.settings.button_1_text | escape}}</div>
+              <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div></a
+            ><a href="{{section.settings.url_2}}" class="go-hero-button w-inline-block">
+              <div class="go-hero-button-text">{{section.settings.button_2_text | escape}}</div>
+              <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div>
+            </a>
+          </div>
+        </div> {% endcomment %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "go-waterproof",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "section header",
+      "default": "How waterproof is GOSOAKY"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_text",
+      "label": "Paragraph text",
+      "default": "Enter your paragraph here"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "button text",
+      "default": "Shop now"
+    },
+    {
+      "type": "url",
+      "id": "url_1",
+      "label": "button url"
+    },
+    {
+      "type": "text",
+      "id": "eightk_text",
+      "label": "8K header",
+      "default": "8K | 8.000 MM"
+    },
+    {
+      "type": "textarea",
+      "id": "eightk_paragraph",
+      "label": "8K paragraph",
+      "default": "Enter your paragraph here"
+    },
+    {
+      "type": "text",
+      "id": "tenk_text",
+      "label": "10K header",
+      "default": "10K | 10.000 MM"
+    },
+    {
+      "type": "textarea",
+      "id": "tenk_paragraph",
+      "label": "10K paragraph",
+      "default": "Enter your paragraph here"
+    },
+    {
+      "type": "text",
+      "id": "twentyk_text",
+      "label": "20K header",
+      "default": "20K | 20.000 MM"
+    },
+    {
+      "type": "textarea",
+      "id": "twentyk_paragraph",
+      "label": "20K paragraph",
+      "default": "Enter your paragraph here"
+    },
+    {
+      "type": "text",
+      "id": "photo_header",
+      "label": "header on photo",
+      "default": "20K COLUMN PRESSURE"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Pick your first image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "go waterproof explanation"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,43 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "center_header": false
+      }
+    },
+    "16609209280542c96b": {
+      "type": "go-hero-without-buttons",
+      "settings": {
+        "header": "WE CARE",
+        "image": "shopify:\/\/shop_images\/DSC_2844_f5c2bc4b-90a5-4bc3-a114-d78cb047d248.jpg"
+      }
+    },
+    "go_steps_hgyG8z": {
+      "type": "go-steps",
+      "settings": {
+        "title": "LET'S CHANGE THE STATUS QUO!",
+        "description": "We love fashion but it makes us very sad that this industry is also one of the biggest sources of pollution. Let’s change the status quo! It’s our mission to make people happy with our garments and work towards a sustainable future. That’s why we recycle where possible and make high quality garments that can be passed on from sibling to sibling. It’s why no animal products or toxic chemicals are used in our materials and finishes. Every GOSOAKY is PFC + AZO-free, because these toxic chemicals, which are used in a lot of materials, could cause harm to our small ones as well as the environment. Instead we use BIONIC-FINISH® ECO on all our garments."
+      }
+    },
+    "go_steps_fMUKpk": {
+      "type": "go-steps",
+      "custom_css": [
+        ".go-section-steps {padding-top: 0px;}"
+      ],
+      "settings": {
+        "title": "LET’S TAKE CARE OF THE EARTH AS WELL AS EACH OTHER",
+        "description": "We have a very good relationship with our manufacturers, who hand make all our garments in their small factory, North of Beijing, China. By only working with certified suppliers we can guarantee that all the people involved in making our outerwear work in safe conditions, get fair pay and work normal hours. Choosing conscious means not looking away, controlling that conditions are upheld with annual reports and knowing that what you buy really matters. Change starts with you!The GOSOAKY team loves penguins, and therefore we support projects in the Antarctic. These dashing dressers may seem to waddle around like they just don’t care, but climate change, overfishing and pollution are becoming a serious penguin problem. By buying a GOSOAKY item, you contribute to making the penguin-world a better place. Play outside and help a penguin!"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16609209280542c96b",
+    "go_steps_hgyG8z",
+    "go_steps_fMUKpk"
+  ]
+}

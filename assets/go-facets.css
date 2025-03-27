@@ -1,0 +1,46 @@
+.facets__disclosure{
+    margin-right: 30px !important;
+}
+.facets__summary {
+    padding: 0px !important;
+}
+.facets__form h2,
+.facets__summary span,
+.facets__form select,
+.facets__form label{
+
+    font-family:proxima-nova, Assistant;
+    margin-right:10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom:0px;
+    color:black;
+}
+
+#ProductCountDesktop{
+    color:#d7d7d8;
+}
+.facets__display {
+
+    z-index:10 !important;
+
+}
+
+.facets-wrapper span,
+.facets-wrapper h2,
+.facets-wrapper button,
+.facets-wrapper label,
+.facets-wrapper select,
+.facets-wrapper p{
+    text-transform: uppercase;
+}
+
+.facets__disclosure[open] .go-product-page-diamond-block {
+    background-color: rgba(0, 0, 0, 1);
+}
+.facets__disclosure .go-product-page-diamond-block {
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}

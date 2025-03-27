@@ -1,0 +1,17 @@
+{% comment %} 
+ Accepts:
+    product: product object
+    first_name: string
+
+usage:
+    {% render 'go-product-page-title' product:product, first_name:first_name %}
+
+{% endcomment %}
+
+
+
+
+<div class="sg-product-page-wrapper">
+    <h1 class="sg-product-page-h1-title">{{ first_name }}</h1>
+    <div class="sg-product-page-purchase-title">{% render 'price', product: product, price_class: '' %}</div>
+</div>

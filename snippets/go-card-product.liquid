@@ -1,0 +1,132 @@
+{% comment %}
+  Renders a product card
+
+  Accepts:
+  - card_product: {Object} Product Liquid object (optional)
+  - media_aspect_ratio: {Int} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
+  - show_secondary_image: {Boolean} Show the secondary image on hover. Default: false (optional)
+  - show_vendor: {Boolean} Show the product vendor. Default: false
+  - show_rating: {Boolean} Show the product rating. Default: false
+  - extend_height: {Boolean} Card height extends to available container space. Default: true (optional)
+  - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+  - show_quick_add: {Boolean} Show the quick add button.
+  - section_id: {String} The ID of the section that contains this card.
+  -
+
+  Usage:
+  {% render 'card-product', show_vendor: section.settings.show_vendor %}
+{% endcomment %}
+
+{% comment %}
+  {{ "go-wf.css" | asset_url | stylesheet_tag }}
+  <script src="{{ "go-jquery.js" | asset_url }}" defer></script>
+  <script src="{{ "go-wf.js" | asset_url }}" defer></script>
+{% endcomment %}
+
+{% assign n = card_product.title | split: " | " %}
+{% if n.first != blank %}
+  {% assign first_name = n.first %}
+  {% if n[1] != blank %}
+    {% assign second_name = n[1] %}
+  {% endif %}
+{% else %}
+  {% assign first_name = n.title %}
+{% endif %}
+
+{%liquid
+  if card_product.metafields.product_information.text_overlay_color == "black"
+    assign text_color = "#000"
+  else
+    assign text_color = "#fff"
+  endif
+
+%}
+
+<a
+  id="w-node-_150500cd-2c46-ef72-3344-b1d24d58810e-65b0fd59"
+  href="{{ card_product.url | within: collection }}"
+  class="go-product-card-block w-inline-block"
+>
+  <div class="go-product-card-image-block">
+    {%- if card_product.featured_media -%}
+      {{
+        card_product.featured_media | image_url: width: 1500 | image_tag:
+        loading: 'lazy',
+        class: "go-product-card-first-image",
+        sizes: "(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw",
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        style: "opacity:1;",
+        alt: section.settings.image_1.alt | escape
+         
+      }}
+      {% if card_product.media[1] %}
+        {{
+          card_product.media[1] | image_url: width: 1500 | image_tag:
+          loading: 'lazy',
+          class: "go-product-card-second-image",
+          sizes: "(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw",
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: card_product.media[1].alt | escape
+        }}
+      {% else %}
+        {{
+          card_product.featured_media | image_url: width: 1500 | image_tag:
+          loading: 'lazy',
+          class: "go-product-card-second-image",
+          sizes: "(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw",
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: card_product.media[1].alt | escape
+        }}
+      {% endif %}
+    {% else %}
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+
+    <div
+      class="go-product-card-text-block"
+      style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+    >
+      <div
+        class="go-product-card-text-block-title"
+        style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+      >
+        <div class="go-title-text-wrapper">
+          <div class="go-collection-image-title-black">{{ first_name }}</div>
+        </div>
+      </div>
+      <div
+        class="go-product-card-text-block-subtitle"
+        style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+      >
+        <div class="go-title-text-wrapper">
+          <div class="go-collection-image-subtitle-black" style="color:{{text_color}} ">
+            {{ card_product.metafields.product_information.product_number }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% if card_product.compare_at_price > card_product.price %}
+      {% assign discount = card_product.price | times: 1.0 | divided_by: card_product.compare_at_price | times: 100 | round %}
+      <span class="go-product-card-badge">-{{ 100 | minus: discount }}%</span>
+    {% endif %}
+  </div>
+  <div class="go-product-card-text-wrapper">
+    <div class="go-product-card-title">
+      {{ first_name | escape }}
+      <span class="go-collection-subtitle">| {{ second_name | escape }}</span>
+    </div>
+    <div class="go-product-card-price">{% render 'price', product: card_product, price_class: '' %}</div>
+    {%- if card_product.available == false -%}
+      <div class="go-product-card-soldout">sold out</div>
+    {% endif %}
+  </div>
+</a>
+
+{% if reload_js == true %}
+  <script>
+    (function() {
+      console.log("run");
+      
+   })();
+  </script>
+{% endif %} 

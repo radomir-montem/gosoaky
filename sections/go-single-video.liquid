@@ -1,0 +1,73 @@
+<div class="go-section-video-hero">
+    <a
+        href="#"
+        class="go-full-video-lightbox-link w-inline-block w-lightbox"
+        aria-label="open lightbox"
+        aria-haspopup="dialog"
+      >
+        <div class="go-play-button-block">
+          <img
+            src="https://cdn.shopify.com/s/files/1/1012/6158/files/Triangle-GOSOAKY-black.png?v=1660919262"
+            loading="lazy"
+            alt="play button"
+            class="go-play-button-png"
+          >
+        </div>
+        <img
+          src="{{ section.settings.thumbnail | image_url }}"
+          loading="lazy"
+          alt="video thumbnail"
+          class="go-lightbox-thumbnail"
+        >
+        <script type="application/json" class="w-json">
+          {
+            "items": [
+              {
+                "url": "{{ section.settings.video_url }}",
+                "originalUrl": "{{ section.settings.video_url }}",
+                "width": 940,
+                "height": 496,
+                "thumbnailUrl": "{{ section.settings.thumbnail | image_url }}",
+                "html": "<iframe class=\"embedly-embed\" src=\"{{ section.settings.video_url | url_escape }}\" width=\"940\" height=\"496\" scrolling=\"no\" title=\"Vimeo embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+                "type": "video"
+              }
+            ],
+            "group": "gosoaky-tv"
+          }
+        </script></a
+      >
+  <div class="w-embed">
+    <style>
+      .go-section-video-hero{
+          height: calc(100vh - 85px);
+      }
+    </style>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "go single video",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "thumbnail",
+        "label": "thumbnail"
+      },
+      {
+          "type": "url",
+          "id": "video_url",
+          "label": "url"
+      }
+  
+  ],
+  "presets": [
+    {
+      "name": "go single video"
+    }
+  ]
+}
+{% endschema %}

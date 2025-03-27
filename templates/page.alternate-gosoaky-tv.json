@@ -1,0 +1,67 @@
+{
+  "sections": {
+    "166091876099e6f811": {
+      "type": "go-video-grid",
+      "blocks": {
+        "f8e9e729-2081-4a5b-9888-ed3cd3b089a8": {
+          "type": "video",
+          "settings": {
+            "thumbnail": "shopify:\/\/shop_images\/e9l_9mfFuUo-HD.jpg",
+            "video_url": "https:\/\/www.youtube.com\/embed\/e9l_9mfFuUo"
+          }
+        },
+        "b9022ca2-82d7-4cf1-a17c-52559abb5fe8": {
+          "type": "video",
+          "settings": {
+            "thumbnail": "shopify:\/\/shop_images\/14TZKeD7BY4-HD.jpg",
+            "video_url": "https:\/\/www.youtube.com\/embed\/14TZKeD7BY4"
+          }
+        },
+        "d1fdaa7c-0d0a-42b1-8810-e843b03f295c": {
+          "type": "video",
+          "settings": {
+            "thumbnail": "shopify:\/\/shop_images\/1uJbZEuh8X8-HD.jpg",
+            "video_url": "https:\/\/www.youtube.com\/embed\/1uJbZEuh8X8"
+          }
+        },
+        "9a586ec9-8ae8-49ff-975b-e9b2d71c4bbb": {
+          "type": "video",
+          "settings": {
+            "thumbnail": "shopify:\/\/shop_images\/wAiVcpiDHVg-HD.jpg",
+            "video_url": "https:\/\/www.youtube.com\/embed\/wAiVcpiDHVg"
+          }
+        },
+        "dc5f222c-132f-42f5-94a5-d38600b66606": {
+          "type": "video",
+          "settings": {
+            "thumbnail": "shopify:\/\/shop_images\/OUqk70fXDwA-HD.jpg",
+            "video_url": "https:\/\/www.youtube.com\/embed\/OUqk70fXDwA"
+          }
+        }
+      },
+      "block_order": [
+        "f8e9e729-2081-4a5b-9888-ed3cd3b089a8",
+        "b9022ca2-82d7-4cf1-a17c-52559abb5fe8",
+        "d1fdaa7c-0d0a-42b1-8810-e843b03f295c",
+        "9a586ec9-8ae8-49ff-975b-e9b2d71c4bbb",
+        "dc5f222c-132f-42f5-94a5-d38600b66606"
+      ],
+      "settings": {
+        "title": "GOSOAKY TV"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0,
+        "center_header": true
+      }
+    }
+  },
+  "order": [
+    "166091876099e6f811",
+    "main"
+  ]
+}

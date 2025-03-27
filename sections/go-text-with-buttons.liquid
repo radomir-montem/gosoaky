@@ -1,0 +1,112 @@
+<div class="go-section-text">
+  <div class="go-container-text">
+    {% if section.settings.title != blank %}
+      <h2 class="go-h2-title">{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.settings.description != blank %}
+      <p class="go-paragraph">
+        {{ section.settings.description }}
+      </p>
+    {% endif %}
+    <div class="go-button-wrapper">
+      {% if section.settings.button_text1 != blank and section.settings.button_link1 != blank %}
+        <a
+          href="{{ section.settings.button_link1 }}"
+          class="go-button-large w-button {{ section.settings.button_1_style }}"
+        >
+          {{- section.settings.button_text1 -}}
+        </a>
+      {% endif %}
+      {% if section.settings.button_text2 != blank and section.settings.button_link2 != blank %}
+        <a
+          href="{{ section.settings.button_link2 }}"
+          class="go-button-large w-button {{ section.settings.button_2_style }}"
+        >
+          {{- section.settings.button_text2 -}}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "go text with buttons",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "section title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra sodales justo non auctor. Etiam eu faucibus leo, at tincidunt velit. Ut non tristique dolor, et porttitor odio. Phasellus eget interdum mi."
+    },
+    {
+      "type": "text",
+      "id": "button_text1",
+      "label": "Button Text",
+      "default": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link1",
+      "label": "Button Link"
+    },
+    {
+      "type": "select",
+      "id": "button_1_style",
+      "label": "first button style",
+      "default": "go-light",
+      "options": [
+        {
+          "value": "go-light",
+          "label": "Light"
+        },
+        {
+          "value": "go-dark",
+          "label": "Dark"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "button_text2",
+      "label": "Button Text",
+      "default": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link2",
+      "label": "Button Link"
+    },
+    {
+      "type": "select",
+      "id": "button_2_style",
+      "label": "Second button style",
+      "default": "go-light",
+      "options": [
+        {
+          "value": "go-light",
+          "label": "Light"
+        },
+        {
+          "value": "go-dark",
+          "label": "Dark"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Text",
+      "name": "Text with buttons"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,156 @@
+{% comment %}
+  <link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'section-product-recommendations.css' | asset_url }}" media="print" onload="this.media='all'">
+
+  <noscript>{{ 'component-card.css' | asset_url | stylesheet_tag }}</noscript>
+  <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
+  <noscript>{{ 'section-product-recommendations.css' | asset_url | stylesheet_tag }}</noscript>
+{% endcomment %}
+
+
+<div class="go-section-featured-collection" id="test" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}">
+    {% if recommendations.performed and recommendations.products_count > 0 %}
+      <script>
+        console.log("features have loaded")
+      </script>
+      <div class="go-featured-collection-container">
+        <h2 class="go-h2-title">{{ section.settings.heading | escape }}</h2>
+        <div id="w-node-_2b6bbb20-4399-9bfe-c426-be0e63bde3ae-1658e309" class="w-embed w-script">
+          <style>
+            @supports ( aspect-ratio:0.75) {
+              .go-product-card-image-block{
+                aspect-ratio:{{section.settings.image_aspect_ratio | divided_by: 100.0}};
+              }
+            }
+          </style>
+      
+          <script>
+            if(!CSS.supports("aspect-ratio:0.75")){
+      
+            console.log("run")
+              addEventListener('resize', (event) => {
+               gridRatio();
+               console.log("resize")
+              });
+      
+      
+                window.addEventListener("load", function() {
+            console.log("initial setup")
+      
+            gridRatio();
+            });
+            }
+      
+            function gridRatio() {
+                const s = document.querySelector('.go-product-card-block');
+              console.log(s)
+              const h = s.offsetWidth
+              console.log(h)
+      
+              const allElements = document.getElementsByClassName("go-product-card-image-block");
+              for (var i = 0; i < allElements.length; i++){
+                let el = allElements[i];
+                console.log(el)
+                el.style["height"] = (h * {{100.0 | divided_by: section.settings.image_aspect_ratio }}) + "px";
+              }
+      
+            }
+          </script>
+        </div>
+        <div class="go-featured-collection-grid">
+          {% for recommendation in recommendations.products %}
+            
+            {%
+              render 'go-card-product',
+              card_product: recommendation,
+              reload_js: false
+            %}
+          {% endfor %}
+        </div>
+      </div>
+    
+    {% endif %}
+</div>
+
+
+  {% javascript %}
+     const handleIntersection = (entries, observer) => {
+    if (!entries[0].isIntersecting) return;
+
+    observer.unobserve(productRecommendationsSection);
+
+    const url = productRecommendationsSection.dataset.url;
+    
+    fetch(url)
+      .then(response => response.text())
+      .then(text => {
+        const html = document.createElement('div');
+        html.innerHTML = text;
+        const recommendations = html.querySelector('#test');
+
+        if (recommendations && recommendations.innerHTML.trim().length) {
+          productRecommendationsSection.innerHTML = recommendations.innerHTML;
+          console.log("update wf")
+          window.Webflow && window.Webflow.destroy();
+          window.Webflow && window.Webflow.ready();
+          window.Webflow && window.Webflow.require( 'ix2' ).init();
+          document.dispatchEvent( new Event( 'readystatechange' ) );
+        }
+      })
+      .catch(e => {
+        console.error(e);
+      });
+      
+
+  };
+
+  const productRecommendationsSection = document.querySelector('#test');
+  const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
+
+  observer.observe(productRecommendationsSection);
+
+  
+  {% endjavascript %}
+
+  {% schema %}
+  {
+    "name": "go product recomendations",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "You may also like",
+        "label": "t:sections.product-recommendations.settings.heading.label"
+      },
+      {
+        "type": "range",
+        "id": "image_aspect_ratio",
+        "min": 50,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Image aspect ratio in % (width/height)",
+        "default": 75
+      },
+      {
+        "type": "range",
+        "id": "products_to_show",
+        "min": 2,
+        "max": 10,
+        "step": 1,
+        "default": 4,
+        "label": "t:sections.product-recommendations.settings.products_to_show.label"
+      }
+    ],
+    "presets": [
+      {
+        "name": "go product recomendations"
+      }
+    ]
+  }
+
+  {% endschema %}
+</div>

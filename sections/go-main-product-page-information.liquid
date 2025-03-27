@@ -1,0 +1,238 @@
+
+  <div class="sg-section scroll-link">
+    <div class="sg-scrolllink-wrapper">
+      {% for block in section.blocks %}
+       {% if block.type == "description" %}
+        {% if product.metafields.product_information.product_description != blank %}
+          <a href="#sg-description-link" class="sg-scroll-link-wrapper w-inline-block">
+            <div class="sg-scroll-link-title">{{ block.settings.description_link_title }}</div>
+          </a>
+        {% endif %}
+      {% endif %}
+      {% if block.type == "shipping" %}
+        {% if block.settings.shipping_information != blank %}
+          <a href="#sg-shipping-link" class="sg-scroll-link-wrapper w-inline-block">
+            <div class="sg-scroll-link-title">{{ block.settings.shipping_information_link_title }}</div>
+          </a>
+        {% endif %}
+      {% endif %}
+      {% if block.type == "specifications" %}
+        {% if product.metafields.product_information.product_specifications != blank %}
+          <a href="#sg-specifications-link" class="sg-scroll-link-wrapper w-inline-block">
+            <div class="sg-scroll-link-title">{{ block.settings.specifications_link_title }}</div>
+          </a>
+        {% endif %}
+      {% endif %}
+
+      {% if block.type == "sizing_information" %}
+        {% if block.settings.sizing_information != blank and block.settings.sizing_information_link_title != blank and product.metafields.product_information.show_size_information %}
+          <a href="#sg-sizing-information-link" class="sg-scroll-link-wrapper w-inline-block">
+            <div class="sg-scroll-link-title">{{ block.settings.sizing_information_link_title }}</div>
+          </a>
+        {% endif %}
+      {% endif %}
+
+      {% if block.type == "general_information" %}
+        {% if block.settings.general_information != blank and block.settings.general_information_link_title != blank %}
+          <a href="#sg-{{ block.settings.general_information_link_title | replace: " ", "-" }}-link" class="sg-scroll-link-wrapper w-inline-block">
+            <div class="sg-scroll-link-title">{{ block.settings.general_information_link_title }}</div>
+          </a>
+        {% endif %}
+      {% endif %}
+
+
+      {% endfor %}
+
+    </div>
+  </div>
+    {% for block in section.blocks %}
+    {% if block.type == 'description' %}
+      {% if product.metafields.product_information.product_description != blank %}
+      <div id="sg-description-link" class="sg-section sg-description">
+        <div class="sg-container">
+          <div class="sg-product-description max-width-67">
+            <h2 class="sg-h2-title">{{ product.title }}</h2>
+              {{ product.metafields.product_information.product_description }}
+          </div>
+        </div>
+      </div>
+        {% endif %}
+      {% endif %}
+      {% if block.type == 'shipping' %}
+        {% if block.settings.shipping_information != blank %}
+          <div id="sg-shipping-link" class="sg-section sg-description">
+          <div class="sg-container">
+            <div class="sg-product-description max-width-67">
+              <h2 class="sg-h2-title">{{ block.settings.shipping_information_link_title }}</h2>
+                {{ block.settings.shipping_information }}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endif %}
+      {% if block.type == 'specifications' %}
+        {% if product.metafields.product_information.product_specifications != blank and block.settings.specifications_link_title != blank %}
+          <div id="sg-specifications-link" class="sg-section sg-description">
+          <div class="sg-container">
+            <div class="sg-product-description max-width-67">
+              <h2 class="sg-h2-title">{{ block.settings.specifications_link_title }}</h2>
+                {{ product.metafields.product_information.product_specifications }}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endif %}
+
+      {% if block.type == 'sizing_information' %}
+        {% if  product.metafields.product_information.show_size_information and block.settings.sizing_information != blank and block.settings.sizing_information_link_title != blank %}
+          <div id="sg-sizing-information-link" class="sg-section sg-description">
+          <div class="sg-container">
+            <div class="sg-product-description max-width-67">
+              <h2 class="sg-h2-title">{{ block.settings.sizing_information_link_title }}</h2>
+                {{ block.settings.sizing_information }}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endif %}
+
+      {% if block.type == 'general_information' %}
+        {% if block.settings.general_information != blank and block.settings.general_information_link_title != blank %}
+          <div id="sg-{{ block.settings.general_information_link_title | replace: " ", "-" }}-link" class="sg-section sg-description">
+          <div class="sg-container">
+            <div class="sg-product-description max-width-67">
+              <h2 class="sg-h2-title">{{ block.settings.general_information_link_title }}</h2>
+                {{ block.settings.general_information }}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+
+
+
+{% schema %}
+{
+  "name": "Go Product Information 2",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "test"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "description",
+      "name": "Product Description",
+      "settings": [
+        {
+          "type": "text",
+          "id": "description_link_title",
+          "label": "description link title",
+          "default": "description"
+        }
+      ]
+    },
+    {
+      "type": "shipping",
+      "name": "Shipping Information",
+      "settings": [
+        {
+          "type": "text",
+          "id": "shipping_information_link_title",
+          "label": "Shipping Information link title",
+          "default": "Shipping Information"
+        },
+        {
+          "type": "richtext",
+          "id": "shipping_information",
+          "label": "Shipping Information"
+        }
+      ]
+    },
+    {
+      "type": "sizing_information",
+      "name": "Sizing Information",
+      "settings": [
+        {
+          "type": "text",
+          "id": "sizing_information_link_title",
+          "label": "Sizing Information link title",
+          "default": "Sizing Information"
+        },
+        {
+          "type": "richtext",
+          "id": "sizing_information",
+          "label": "Sizing Information"
+        }
+      ]
+    },
+    {
+      "type": "specifications",
+      "name": "Specifications",
+      "settings": [
+        {
+          "type": "text",
+          "id": "specifications_link_title",
+          "label": "Specifications link title",
+          "default": "Sizing information"
+        },
+        {
+          "type": "richtext",
+          "id": "specifications",
+          "label": "Specification"
+        }
+      ]
+    },
+    {
+      "type": "general_information",
+      "name": "General Information",
+      "settings": [
+        {
+          "type": "text",
+          "id": "general_information_link_title",
+          "label": "General Information link title",
+          "default": "General Information"
+        },
+        {
+          "type": "richtext",
+          "id": "general_information",
+          "label": "General Information"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Go Product Information 2",
+      "category": "Go Product Information 2",
+      "blocks": [
+        {
+          "type": "description",
+          "settings": {
+            "description_link_title": "description"
+          }
+        },
+        {
+          "type": "shipping",
+          "settings": {
+            "shipping_information_link_title": "Shipping Information"
+          }
+        },
+        {
+          "type": "specifications",
+          "settings": {
+            "specifications_link_title": "Specifications"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

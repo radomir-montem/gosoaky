@@ -1,0 +1,145 @@
+{
+  "sections": {
+    "main": {
+      "type": "go-main-product",
+      "blocks": {
+        "2624cab2-33dd-40d5-8218-dde183dbadbc": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "9f3629bc-fafb-4231-b3bc-dbdc418fee05": {
+          "type": "product-title",
+          "settings": {}
+        },
+        "bafbc6a6-4003-41e4-8a8f-4f354e32312c": {
+          "type": "variant-selectors",
+          "settings": {
+            "sizing_section_link_title": "Sizing"
+          }
+        },
+        "a61eb5f3-07d2-4a0e-8141-b257cf7947b7": {
+          "type": "add-buttons",
+          "settings": {
+            "coming_soon": false,
+            "coming_soon_text": "Coming soon"
+          }
+        },
+        "b52f5f81-5c4b-4969-a1f3-4dce082a3b25": {
+          "type": "usp-content",
+          "settings": {
+            "usp1": "Free Shipping above €150",
+            "usp2": "Sustainable Outerproofs™",
+            "usp3": "Order before 15:00, shipped out today"
+          }
+        }
+      },
+      "block_order": [
+        "2624cab2-33dd-40d5-8218-dde183dbadbc",
+        "9f3629bc-fafb-4231-b3bc-dbdc418fee05",
+        "bafbc6a6-4003-41e4-8a8f-4f354e32312c",
+        "a61eb5f3-07d2-4a0e-8141-b257cf7947b7",
+        "b52f5f81-5c4b-4969-a1f3-4dce082a3b25"
+      ],
+      "custom_css": [],
+      "settings": {}
+    },
+    "52e14f4e-bd0f-43c3-9c95-7fda897d6f54": {
+      "type": "go-main-product-page-information",
+      "blocks": {
+        "template--16135476740283__52e14f4e-bd0f-43c3-9c95-7fda897d6f54-description-1": {
+          "type": "description",
+          "settings": {
+            "description_link_title": "description"
+          }
+        },
+        "template--16135476740283__52e14f4e-bd0f-43c3-9c95-7fda897d6f54-specifications-1": {
+          "type": "specifications",
+          "settings": {
+            "specifications_link_title": "Specifications",
+            "specifications": ""
+          }
+        },
+        "template--16135476740283__52e14f4e-bd0f-43c3-9c95-7fda897d6f54-shipping-1": {
+          "type": "shipping",
+          "settings": {
+            "shipping_information_link_title": "Shipping Information",
+            "shipping_information": ""
+          }
+        },
+        "cde45a5b-444d-4c85-a181-c4fc9cd92c76": {
+          "type": "sizing_information",
+          "settings": {
+            "sizing_information_link_title": "Sizing Information",
+            "sizing_information": "<p>All garments are based on EU standard sizing. As age and size can differ across countries, we advise you to measure the height your kid to find out the correct size. For instance, if your child is 114 cm tall, choose size 110\/116. In cases where your child falls between two sizes, consider selecting the larger size to ensure a comfortable fit as they continue to grow.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16135476740283__52e14f4e-bd0f-43c3-9c95-7fda897d6f54-description-1",
+        "template--16135476740283__52e14f4e-bd0f-43c3-9c95-7fda897d6f54-specifications-1",
+        "template--16135476740283__52e14f4e-bd0f-43c3-9c95-7fda897d6f54-shipping-1",
+        "cde45a5b-444d-4c85-a181-c4fc9cd92c76"
+      ],
+      "settings": {
+        "product": ""
+      }
+    },
+    "1658149516ba83ec13": {
+      "type": "go-anatomy-home-page",
+      "settings": {
+        "header": "Anatomy of the",
+        "show_name": true,
+        "product": "{{ product }}",
+        "icon_guide_url": "shopify:\/\/pages\/icon-guide"
+      }
+    },
+    "169650068531d1b37e": {
+      "type": "apps",
+      "blocks": {
+        "5cfb12c2-e473-4121-9734-971f5abcd596": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "5cfb12c2-e473-4121-9734-971f5abcd596"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "go-product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_aspect_ratio": 75,
+        "products_to_show": 4
+      }
+    },
+    "1730973735106289d4": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_jNBXwr": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "SUWVQ7"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_jNBXwr"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "52e14f4e-bd0f-43c3-9c95-7fda897d6f54",
+    "1658149516ba83ec13",
+    "169650068531d1b37e",
+    "product-recommendations",
+    "1730973735106289d4"
+  ]
+}

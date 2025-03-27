@@ -1,0 +1,13 @@
+<div class="sg-container">
+  <a href= "{{ url }}" class="sg-logo-link-block w-inline-block"
+    >
+        {{
+            image | image_url: width: auto | image_tag:
+            loading: 'lazy',
+            class: "sg-logo-block-image",
+            sizes: "(max-width: 2084px) 100vw, 2084px",
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: ""
+          }}
+        </a>
+</div>

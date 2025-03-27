@@ -1,0 +1,330 @@
+{% comment %}
+  Renders a product card
+
+  Accepts:
+  - anatomy_product: {Object} Product Liquid object (optional)
+  -
+
+  Usage:
+  {% render 'go-anatomy-snippet', show_vendor: section.settings.show_vendor %}
+
+
+{{ "go-wf.css" | asset_url | stylesheet_tag }}
+<script src="{{ "go-jquery.js" | asset_url }}" defer></script>
+<script src="{{ "go-wf.js" | asset_url }}" defer></script>
+{% endcomment %}
+
+{%liquid
+  if anatomy_product.metafields.product_information.text_overlay_color == "black"
+    assign color = "#000"
+  else
+    assign color = "#fff"
+  endif
+%}
+{% if anatomy_product.metafields.product_information.background_hex != nil %}
+  <style>
+    .go-anatomy-track{
+      background-color: {{ anatomy_product.metafields.product_information.background_hex }};
+    }
+  </style>
+{% endif %}
+
+{% if color != nil %}
+  <style>
+    .go-anatomy-feature-title-right, 
+    .go-anatomy-feature-title{
+      color: {{ color }};
+    }
+
+     
+    .go-anatomy-grid-block-line-left-aligned{
+      background-image: linear-gradient(90deg,hsla(0,0%,100%,0),hsla(0,0%,100%,0) 5%, {{color}})
+    }
+
+    .go-anatomy-grid-block-line-right-aligned{
+      background-image: linear-gradient(90deg,{{color}},hsla(0,0%,100%,0) 95%,hsla(0,0%,100%,0));
+    }
+
+  </style>
+{% endif %}
+
+
+<div data-w-id="88317cd1-ff81-b5aa-58e6-17026a16f011" class="go-anatomy-track">
+  
+  <div class="go-anatomy-camera">
+    <div data-w-id="88d0891a-12c7-5773-5366-c859f98089ba" class="go-anatomy-frame">
+      <div class="go-anatomy-block">
+        <div class="go-anatomy-image-block">
+          {% comment %}
+            product image in center
+            namespace.key   :product_information.anatomy_image
+          {% endcomment %}
+          {{
+            anatomy_product.metafields.product_information.anatomy_image | image_url: width: 1500 | image_tag:
+            loading: 'eager',
+            class: "go-anatomy-image",
+            sizes: "(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw",
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: section.settings.image_1.alt | escape
+          }}
+        </div>
+        <div class="go-anatomy-grid">
+          {% comment %} LEFT 1 {% endcomment %}
+          <div
+            id="w-node-_17b6545b-e8f7-c94b-ca2f-6b7592cb8b14-1658e309"
+            data-w-id="17b6545b-e8f7-c94b-ca2f-6b7592cb8b14"
+            class="go-anatomy-grid-block-left"
+          >
+            {% comment %}
+              waterproof:     8K // 10K // 20K // no as String
+              namespace.key:  product_information.waterproof
+            {% endcomment %}
+            {% if anatomy_product.metafields.product_information.waterproof_zipper == true %}
+              {% render 'feature-icons', icon:"zippers", color: color%}
+              <div
+                data-w-id="4b4b5b5d-c2aa-d564-7c1f-bbc509994e72"
+                class="go-anatomy-feature-title"
+                style="will-change: opacity; opacity: 1;"
+              >
+                WATERPROOF ZIPPERS
+              </div>
+              <div
+                data-w-id="7119c56d-5609-9593-ca99-2536ca579221"
+                class="go-anatomy-grid-block-line-right-aligned"
+                style="will-change: width, height; width: 100%;"
+              ></div>
+            {% endif %}
+          </div>
+          {% comment %} RIGHT 1 {% endcomment %}
+          <div id="w-node-cefe2142-de81-af83-b97e-07555e689132-1658e309" class="go-anatomy-grid-block-right">
+            {% comment %}
+              Modular features:     true // false as Bool
+              namespace.key:        product_information.modular
+            {% endcomment %}
+            {% if anatomy_product.metafields.product_information.modular == true %}
+              
+              {% render 'feature-icons', icon:"modular", color:color%}
+              <div
+                data-w-id="cefe2142-de81-af83-b97e-07555e689134"
+                class="go-anatomy-feature-title-right"
+                style="will-change: opacity; opacity: 1;"
+              >
+                MODULAR FEATURES
+              </div>
+
+              <div
+                data-w-id="cefe2142-de81-af83-b97e-07555e689136"
+                class="go-anatomy-grid-block-line-left-aligned"
+                style="will-change: width, height; width: 100%;"
+              ></div>
+            {% endif %}
+          </div>
+          <div
+            id="w-node-_3ee9678f-39a3-454c-87fc-982092bf0806-1658e309"
+            data-w-id="3ee9678f-39a3-454c-87fc-982092bf0806"
+            class="go-anatomy-grid-block-left"
+          >
+            {% comment %} LEFT 2 {% endcomment %}
+            {% comment %}
+              BIONIC FINISH ECO WATER REPELENT:     true // false as Bool
+              namespace.key:                        product_information.eco_water_repelent
+            {% endcomment %}
+
+            {% if anatomy_product.metafields.product_information.eco_water_repelent == true %}
+              {% render 'feature-icons', icon:"eco-water-repelent", color:color%}
+              <div
+                data-w-id="3ee9678f-39a3-454c-87fc-982092bf0808"
+                class="go-anatomy-feature-title"
+                style="will-change: opacity; opacity: 1;"
+              >
+                BIONIC FINISH®ECO WATER REPELLENT
+              </div>
+              <div
+                data-w-id="3ee9678f-39a3-454c-87fc-982092bf080a"
+                class="go-anatomy-grid-block-line-right-aligned"
+                style="will-change: width, height; width: 100%;"
+              ></div>
+            {% endif %}
+          </div>
+          {% comment %} RIGHT 2 {% endcomment %}
+          <div id="w-node-_4cbc2f90-72d5-0bf0-e977-491e7283e625-1658e309" class="go-anatomy-grid-block-right">
+            {% comment %}
+              BREATHABLE: 8K as String
+              namespace.key:        product_information.breathable
+            {% endcomment %}
+            {% if anatomy_product.metafields.product_information.breathable != "no" and  anatomy_product.metafields.product_information.breathable != blank %}
+              {% render 'feature-icons', icon:"breathable", color:color%}
+              <div
+                data-w-id="4cbc2f90-72d5-0bf0-e977-491e7283e627"
+                class="go-anatomy-feature-title-right"
+                style="will-change: opacity; opacity: 1;"
+              >
+                BREATHABLE {{ anatomy_product.metafields.product_information.breathable }}
+              </div>
+              <div
+                data-w-id="4cbc2f90-72d5-0bf0-e977-491e7283e629"
+                class="go-anatomy-grid-block-line-left-aligned"
+                style="will-change: width, height; width: 100%;"
+              ></div>
+            {% endif %}
+          </div>
+          {% comment %} LEFT 3 {% endcomment %}
+          <div
+            id="w-node-_50e08cce-6049-cab5-7016-38333ba7a414-1658e309"
+            data-w-id="50e08cce-6049-cab5-7016-38333ba7a414"
+            class="go-anatomy-grid-block-left"
+          >
+            {% comment %}
+              Taped seams: true // false as Bool
+              namespace.key:        product_information.taped_seams
+            {% endcomment %}
+
+            {% if anatomy_product.metafields.product_information.taped_seams == true %}
+              {% render 'feature-icons', icon:"taped-seams", color:color%}
+              <div
+                data-w-id="50e08cce-6049-cab5-7016-38333ba7a416"
+                class="go-anatomy-feature-title"
+                style="will-change: opacity; opacity: 1;"
+              >
+                TAPED SEAMS
+              </div>
+              <div
+                data-w-id="50e08cce-6049-cab5-7016-38333ba7a418"
+                class="go-anatomy-grid-block-line-right-aligned"
+                style="will-change: width, height; width: 100%;"
+              ></div>
+            {% endif %}
+          </div>
+          {% comment %} RIGHT 3 {% endcomment %}
+          <div id="w-node-_63597cf4-016f-f303-f629-eca3ae0ad37d-1658e309" class="go-anatomy-grid-block-right">
+            {% comment %}
+              waterproof:     8K // 10K // 20K // no as String
+              namespace.key:  product_information.waterproof
+            {% endcomment %}
+            {% if anatomy_product.metafields.product_information.waterproof != "no" and  anatomy_product.metafields.product_information.waterproof != blank %}
+              {% render 'feature-icons', icon:"waterproof", color:color%}
+              <div
+                data-w-id="63597cf4-016f-f303-f629-eca3ae0ad37f"
+                class="go-anatomy-feature-title-right"
+                style="will-change: opacity; opacity: 1;"
+              >
+                WATERPROOF {{ anatomy_product.metafields.product_information.waterproof }}
+              </div>
+              <div
+                data-w-id="63597cf4-016f-f303-f629-eca3ae0ad381"
+                class="go-anatomy-grid-block-line-left-aligned"
+                style="will-change: width, height; width: 100%;"
+              ></div>
+            {% endif %}
+          </div>
+          {% comment %} LEFT 4 {% endcomment %}
+          <div
+            id="w-node-_39dd8189-8bbb-84fd-ad87-691b43114ba3-1658e309"
+            data-w-id="39dd8189-8bbb-84fd-ad87-691b43114ba3"
+            class="go-anatomy-grid-block-left"
+          >
+            {% comment %}
+              Reflective visibility strip: true // false as Bool
+              namespace.key:        product_information.reflective_visibility_strip
+            {% endcomment %}
+            {% if anatomy_product.metafields.product_information.reflective_visibility_strip == true %}
+              {% render 'feature-icons', icon:"reflective-visibility-strip", color:color%}
+              <div
+                data-w-id="39dd8189-8bbb-84fd-ad87-691b43114ba5"
+                class="go-anatomy-feature-title"
+                style="will-change: opacity; opacity: 1;"
+              >
+                REFLECTIVE VISIBILITY STRIP
+              </div>
+              <div
+                data-w-id="39dd8189-8bbb-84fd-ad87-691b43114ba7"
+                class="go-anatomy-grid-block-line-right-aligned"
+                style="will-change: width, height; width: 100%;"
+              ></div>
+            {% endif %}
+          </div>
+          {% comment %} RIGHT 4 {% endcomment %}
+          <div id="w-node-f4931144-a5c0-b068-435d-84990f13cca9-1658e309" class="go-anatomy-grid-block-right">
+            {% comment %}
+              Windproof: true // false as Bool
+              namespace.key:        product_information.windproof
+            {% endcomment %}
+            {% if anatomy_product.metafields.product_information.windproof == true %}
+              {% render 'feature-icons', icon:"windproof", color:color%}
+              <div
+                data-w-id="f4931144-a5c0-b068-435d-84990f13ccab"
+                class="go-anatomy-feature-title-right"
+                style="will-change: opacity; opacity: 1;"
+              >
+                WINDPROOF
+              </div>
+              <div
+                data-w-id="f4931144-a5c0-b068-435d-84990f13ccad"
+                class="go-anatomy-grid-block-line-left-aligned"
+                style="will-change: width, height; width: 100%;"
+              ></div>
+            {% endif %}
+          </div>
+          {% comment %} LEFT 5 {% endcomment %}
+          <div
+            id="w-node-b03cd8dd-1cef-5c0b-24bb-b3ab4adb6489-1658e309"
+            data-w-id="b03cd8dd-1cef-5c0b-24bb-b3ab4adb6489"
+            class="go-anatomy-grid-block-left"
+          >
+            {% comment %}
+              Dupont sorona biodegradable insulation: true // false as Bool
+              namespace.key:        product_information.bio_insulation
+            {% endcomment %}
+            {% if anatomy_product.metafields.product_information.bio_insulation == true %}
+              {% render 'feature-icons', icon:"bio-isolation", color:color%}
+              <div
+                data-w-id="b03cd8dd-1cef-5c0b-24bb-b3ab4adb648b"
+                class="go-anatomy-feature-title"
+                style="will-change: opacity; opacity: 1;"
+              >
+                DUPONT™ SORONA® BIODEGRADABLE INSULATION
+              </div>
+              <div
+                data-w-id="b03cd8dd-1cef-5c0b-24bb-b3ab4adb648d"
+                class="go-anatomy-grid-block-line-right-aligned"
+                style="will-change: width, height; width: 100%;"
+              ></div>
+            {% endif %}
+          </div>
+          {% comment %} RIGHT 5 {% endcomment %}
+          <div id="w-node-_339cba83-45fc-4894-4e44-f80a3979d033-1658e309" class="go-anatomy-grid-block-right">
+            {% comment %}
+              cycling features: true // false as Bool
+              namespace.key:        product_information.cycling_features
+            {% endcomment %}
+            {% if anatomy_product.metafields.product_information.cycling_features == true %}
+              {% render 'feature-icons', icon:"cycling-features", color:color%}
+            <div
+              data-w-id="339cba83-45fc-4894-4e44-f80a3979d035"
+              class="go-anatomy-feature-title-right"
+              style="will-change: opacity; opacity: 1;"
+            >
+              CYCLING FEATURES
+            </div>
+            <div
+              data-w-id="339cba83-45fc-4894-4e44-f80a3979d037"
+              class="go-anatomy-grid-block-line-left-aligned"
+              style="will-change: width, height; width: 100%;"
+            ></div>
+            {%endif%}
+          </div>
+        </div>
+        <div class="go-anatomy-button-block">
+          <div class="go-hero-div-height">
+            <a data-w-id="565f41e2-3cb7-f548-0dc3-fb6ff2cb5118" href="{{ icon_guide_url }}" class="go-button-black w-inline-block" target="_blank">
+              <div class="{%if color == "#fff" %}go-button-text-white {%else%} go-button-text-black {%endif%}">icon guide</div>
+              <div class="{%if color == "#fff" %}go-triangle-white {%else%} go-triangle-black {%endif%}w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.8 14.9" style="enable-background:new 0 0 19.8 14.9;" xml:space="preserve">
+                <polygon class="{%if color == "#fff" %}st0 {%else%} go-triangle-black-svg {%endif%}" points="9.9,13 17.9,1 1.9,1 "></polygon>
+                </svg></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

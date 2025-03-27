@@ -1,0 +1,50 @@
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "show_vendor": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "show_cart_note": false
+      }
+    },
+    "166124263991b826e2": {
+      "type": "go-featured-products",
+      "settings": {
+        "header": "You may also like",
+        "image_aspect_ratio": 75,
+        "product_1": "fast-camel-greener-pastures",
+        "product_2": "desert-fox-leather-brown",
+        "product_3": "striped-fox-greener-pastures",
+        "product_4": "snake-pit-trellis-green",
+        "button_1_text": "View entire collection",
+        "url_1": "shopify:\/\/collections\/kids-winter-clothes-1"
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "166124263991b826e2"
+  ]
+}

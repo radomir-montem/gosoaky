@@ -1,0 +1,18 @@
+{
+  "parent": "product.json",
+  "context": {
+    "market": "united-states-and-canada"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "b52f5f81-5c4b-4969-a1f3-4dce082a3b25": {
+          "settings": {
+            "usp1": "Fast Shipping"
+          }
+        }
+      }
+    }
+  }
+}

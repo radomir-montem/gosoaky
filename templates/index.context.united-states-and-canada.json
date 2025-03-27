@@ -1,0 +1,14 @@
+{
+  "parent": "index.json",
+  "context": {
+    "market": "united-states-and-canada"
+  },
+  "sections": {
+    "16606505673e469e8c": {
+      "settings": {
+        "header_text": "AUTUMN WINTER 2024"
+      },
+      "blocks": {}
+    }
+  }
+}

@@ -1,0 +1,45 @@
+
+	
+	.st0{
+  fill:#fff;
+  fill-opacity:0;
+  stroke:#FFFFFF;
+  stroke-width:2;
+  stroke-miterlimit:10;
+  transition: fill-opacity 0.3s ease-in-out;
+  width:16px;
+  height:12px;
+  
+  }
+  
+  .go-hero-button:hover .st0, 
+  .go-two-image-button:hover .st0,
+  .go-button-black:hover .st0{
+  fill-opacity:1;
+  } 
+  
+  	.go-triangle-black-svg{
+
+  fill:#000;
+  fill-opacity:0;
+  stroke:#000;
+  stroke-width:2;
+  stroke-miterlimit:10;
+  transition: fill-opacity 0.3s ease-in-out;
+  width:16px;
+  height:12px;
+  
+  }
+  
+
+  .go-hero-button:hover .go-triangle-black-svg, 
+  .go-two-image-button:hover .go-triangle-black-svg,
+  .go-button-black:hover .go-triangle-black-svg{
+  fill-opacity:1;
+  } 
+  
+  
+.w-embed svg{
+  width:100%;
+  height:100%
+}

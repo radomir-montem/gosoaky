@@ -1,0 +1,146 @@
+{% comment %}
+  accepts:
+     product: product object
+     product_color: string
+{% endcomment %}
+
+{% comment %} COLOR SWATCH {% endcomment %}
+<style>
+
+.sg-color-swatches::-webkit-scrollbar {
+  display: none;
+}
+.sg-color-swatches {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+</style>
+<div class="sg-product-page-input-form-wrapper">
+{% if product.metafields.product_information.product_color_collection != blank %}
+  <div class="sg-product-page-wrapper">
+    <div class="sg-product-page-info-wrapper">
+      <h2 class="sg-product-page-h2-title">color:</h2>
+      <div class="sg-product-page-label">{{ product_color }}</div>
+    </div>
+    <div class="sg-color-swatches">
+      {% for color_product in product.metafields.product_information.product_color_collection.value.products %}
+        {% if color_product == product %}
+          <div class="sg-colour-block sg-selected">
+            {{
+              color_product.featured_media
+              | image_url: width: 1500
+              | image_tag:
+                loading: 'lazy',
+                class: 'sg-colour-block-image',
+                sizes: '(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw',
+                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                alt: prdct.title
+            }}
+          </div>
+        {% else %}
+          <a href="{{ color_product.url }}" class="sg-colour-block sg-unselected w-inline-block">
+            {{
+              color_product.featured_media
+              | image_url: width: 1500
+              | image_tag:
+                loading: 'lazy',
+                class: 'sg-colour-block-image',
+                sizes: '(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw',
+                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                alt: prdct.title
+            }}
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% comment %} SIZE SELECTOR {% endcomment %}
+{% if product.variants.size > 1 %}
+<div class="sg-product-page-wrapper">
+  <variant-radios class="no-js-hidden" data-section="{{ section_id }}" data-url="{{ product.url }}">
+    {%- for option in product.options_with_values -%}
+      {% if option.name != 'Color' %}
+        <div class="sg-size-title-wrapper">
+          <div class="sg-size-fit-wrapper">
+            <h2 class="sg-product-page-h2-title">size:</h2>
+            {% if product.metafields.product_information.product_fit != blank
+              and product.metafields.product_information.gender
+            %}
+              <a href="#fit-and-size" class="sg-product-page-label">
+                {{- product.metafields.product_information.product_fit }} fit</a
+              >
+            {% endif %}
+          </div>
+          {% if sizing_link_title != blank and product.metafields.product_information.show_size_information
+          %}
+            <a href="#sg-sizing-information-link" class="sg-product-page-label underlined">{{ sizing_link_title }}</a>
+          {% endif %}
+        </div>
+      {% endif %}
+      <fieldset
+        class="js product-form__input"
+        {% if option.name == 'Color' %}
+          style="display:none"
+        {% endif %}
+      >
+        {%- for value in option.values -%}
+          <input
+            type="radio"
+            id="{{ section_id }}-{{ option.position }}-{{ forloop.index0 }}"
+            name="{{ option.name }}"
+            value="{{ value | escape }}"
+            form="{{ product_form_id }}"
+            {% if option.selected_value == value and product.available %}
+              checked
+            {% endif %}
+          >
+          <label for="{{ section_id }}-{{ option.position }}-{{ forloop.index0 }}">
+            {{ value }}
+          </label>
+        {%- endfor -%}
+      </fieldset>
+    {% endfor %}
+    {% if product.metafields.product_information.sizing_information != blank %}
+    <div class="sg-model-size-information">
+      {{ product.metafields.product_information.sizing_information }}
+    </div>
+  {% endif %}
+    <script type="application/json">
+      {{ product.variants | json }}
+    </script>
+  </variant-radios>
+</div>
+{% endif %}
+
+{% comment %} VARIANT SELECTOR NO SCRIPT {% endcomment %}
+
+<noscript class="product-form__noscript-wrapper-{{ section_id }}">
+  <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
+    <label class="form__label" for="Variants-{{ section_id }}">
+      {{- 'products.product.product_variants' | t -}}
+    </label>
+    <div class="select">
+      <select name="id" id="Variants-{{ section_id }}" class="select__select" form="{{ product_form_id }}">
+        {%- for variant in product.variants -%}
+          <option
+            {% if variant == product.selected_or_first_available_variant %}
+              selected="selected"
+            {% endif %}
+            {% if variant.available == false %}
+              disabled
+            {% endif %}
+            value="{{ variant.id }}"
+          >
+            {{ variant.title }}
+            {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+            - {{ variant.price | money | strip_html }}
+          </option>
+        {%- endfor -%}
+      </select>
+      {% render 'icon-caret' %}
+    </div>
+  </div>
+</noscript>
+</div>

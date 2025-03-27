@@ -1,0 +1,22 @@
+@media screen and (max-width:989px){
+    .go-section-featured-collection {
+        padding-top:60px;
+        padding-bottom:0px;
+    }
+    .go-featured-collection-container .go-h2-title{
+        margin-bottom:16px;
+    }
+ }
+
+ @media screen and (min-width:990px){
+    .go-section-featured-collection {
+        padding-top:120px;
+        padding-bottom:0px;
+    }
+    .go-featured-collection-container .go-h2-title{
+        margin-bottom:30px;
+    }
+}
+    
+
+    

@@ -1,0 +1,49 @@
+{
+  "sections": {
+    "product-grid": {
+      "type": "go-main-collection-product-grid",
+      "settings": {
+        "products_per_page": 48,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_aspect_ratio": 75
+      }
+    },
+    "banner": {
+      "type": "go-collection-banner",
+      "settings": {}
+    },
+    "173097376181e32688": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_dW9EYg": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "SUWVQ7"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_dW9EYg"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "product-grid",
+    "banner",
+    "173097376181e32688"
+  ]
+}

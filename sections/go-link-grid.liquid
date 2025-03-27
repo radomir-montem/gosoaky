@@ -1,0 +1,158 @@
+<div class="go-section-link-grid">
+  <div class="go-container-link-grid">
+    <h2 class="go-h2-title">{{ section.settings.title }}</h2>
+    <p class="go-paragraph">
+      {{ section.settings.description }}
+    </p>
+    <div class="go-link-grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'link' %}
+          <a href="{{ block.settings.url }}" class="go-link-grid-block w-inline-block">
+            {% if block.settings.image != blank %}
+              {{
+                block.settings.image
+                | image_url: width: 1500
+                | image_tag:
+                  loading: 'lazy',
+                  width: section.settings.image.width,
+                  class: 'go-link-grid-image',
+                  widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                  alt: section.settings.image.alt
+                | escape
+              }}
+            {%- else -%}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% for block in section.blocks %}
+      {% if block.type == 'buttons' %}
+        <div class="go-button-wrapper">
+          {% if block.settings.button_text1 != blank and block.settings.button_link1 != blank %}
+            <a
+              href="{{ block.settings.button_link1 }}"
+              class="go-button-large w-button {{ block.settings.button_1_style }}"
+            >
+              {{- block.settings.button_text1 -}}
+            </a>
+          {% endif %}
+          {% if block.settings.button_text2 != blank and block.settings.button_link2 != blank %}
+            <a
+              href="{{ block.settings.button_link2 }}"
+              class="go-button-large w-button {{ block.settings.button_2_style }}"
+            >
+              {{- block.settings.button_text2 -}}
+            </a>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "go link grid",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "section title"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra sodales justo non auctor. Etiam eu faucibus leo, at tincidunt velit. Ut non tristique dolor, et porttitor odio. Phasellus eget interdum mi."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Link",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text1",
+          "label": "Button Text 1",
+          "default": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link1",
+          "label": "Button Link 1"
+        },
+        {
+          "type": "select",
+          "id": "button_1_style",
+          "label": "Button Style 1",
+          "default": "go-dark",
+          "options": [
+            {
+              "value": "go-dark",
+              "label": "Dark"
+            },
+            {
+              "value": "go-light",
+              "label": "Light"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "button_text2",
+          "label": "Button Text 2",
+          "default": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link2",
+          "label": "Button Link 2"
+        },
+        {
+          "type": "select",
+          "id": "button_2_style",
+          "label": "Button Style 2",
+          "default": "go-dark",
+          "options": [
+            {
+              "value": "go-dark",
+              "label": "Dark"
+            },
+            {
+              "value": "go-light",
+              "label": "Light"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "go link grid"
+    }
+  ]
+}
+{% endschema %}

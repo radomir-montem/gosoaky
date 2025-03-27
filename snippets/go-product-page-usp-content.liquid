@@ -1,0 +1,22 @@
+{% liquid 
+  assign usp1 = block.settings.usp1
+  assign usp2 = block.settings.usp2
+  assign usp3 = block.settings.usp3
+%}
+
+
+
+<div class="sg-product-page-wrapper">
+    <div class="sg-product-page-shipping-usp">
+      <div class="sg-shipping-circle-icon"></div>
+      <div class="text-block-5">{{ usp1 }}</div>
+    </div>
+    <div class="sg-product-page-shipping-usp">
+      <div class="sg-shipping-circle-icon"></div>
+      <div class="text-block-5">{{ usp2 }}</div>
+    </div>
+    <div class="sg-product-page-shipping-usp">
+      <div class="sg-shipping-circle-icon"></div>
+      <div class="text-block-5">{{ usp3 }}</div>
+    </div>
+  </div>

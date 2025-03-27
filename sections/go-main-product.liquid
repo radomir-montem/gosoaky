@@ -1,0 +1,336 @@
+<section id="MainProduct-{{ section.id }}" data-section="{{ section.id }}">
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <media-gallery id="MediaGallery-{{ section.id }}"> </media-gallery>
+  <style> @supports (scroll-snap-type: x mandatory) and (scroll-snap-align: start) { .sg-product-page-image-grid{ overflow-x: auto; scroll-snap-type: x mandatory; } .sg-product-page-image { scroll-snap-align: start; } } </style>
+  {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+  {% assign n = product.title | split: ' | ' %}
+  {% if n.first != blank %}
+    {% assign first_name = n.first %}
+    {% if n[1] != blank %}
+      {% assign product_color = n[1] %}
+    {% endif %}
+  {% else %}
+    {% assign first_name = product.title %}
+  {% endif %}
+  {%- assign product_form_id = 'product-form-' | append: section.id -%}
+  {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+  <div class="sg-section sg-product-hero">
+    <div class="sg-container">
+      <div class="sg-product-page-hero">
+        <div class="sg-product-page-image-block">
+          <a id="sg-product-page-arrow-left" href="#" class="sg-product-page-arrow-left w-inline-block"
+            ><img
+              src="https://uploads-ssl.webflow.com/62c6d941799ed7d263b0fd58/64f6ce82fcde0908ec98d035_ArrowLeft.svg"
+              loading="lazy"
+              width="24"
+              height="24"
+              alt=""></a
+          ><a id="sg-product-page-arrow-right" href="#" class="sg-product-page-arrow-right w-inline-block"
+            ><img
+              src="https://uploads-ssl.webflow.com/62c6d941799ed7d263b0fd58/64f6ce82da20efb55e1a7c8c_ArrowRight.svg"
+              loading="lazy"
+              width="24"
+              height="24"
+              alt=""
+          ></a>
+          <div class="sg-product-page-image-gradient"></div>
+          <div class="sg-product-page-image-grid">
+            {% comment %} loop over the product images and load the images {% endcomment %}
+
+            {% for media in product.media %}
+              {% liquid
+                assign media_position = media_position | default: 0 | plus: 1
+                assign lazy_load = false
+                if media_position > 1
+                  assign lazy_load = true
+                endif
+                assign product_number = product.metafields.product_information.product_number
+                render 'go-product-thumbnail', media: media, position: media_position, modal_id: section.id, xr_button: true, lazy_load: lazy_load, first_name: first_name, product_number: product_number
+              %}
+            {% endfor %}
+          </div>
+        </div>
+        <div id="w-node-a95a11dc-0588-69d3-c78e-57fe78be433d-1658e309" class="sg-product-page-purchase-block">
+      
+            
+            
+
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when '@app' %}
+                {% render block %}
+              {% when 'product-title' %}
+                {% render 'go-product-page-title', product: product, first_name: first_name %}
+              {% when 'variant-selectors' %}
+                {% render 'go-product-page-variant-selectors', product: product, product_form_id: product_form_id , section_id: section.id, product_color: product_color, sizing_link_title: block.settings.sizing_section_link_title %}
+              {% when 'add-buttons' %}
+                {% render 'go-product-page-add-buttons', product: product, product_form_id: product_form_id , section_id: section.id, coming_soon: block.settings.coming_soon, coming_soon_text: block.settings.coming_soon_text %}
+              {% when 'usp-content' %}
+                {% render 'go-product-page-usp-content', product: product, block: block %}
+            {% endcase %}
+          {% endfor %}
+      </div>
+    </div>
+  </div>
+  {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+    {{ form | payment_terms }}
+  {%- endform -%}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function isIE() {
+        const ua = window.navigator.userAgent;
+        const msie = ua.indexOf('MSIE ');
+        const trident = ua.indexOf('Trident/');
+
+        return msie > 0 || trident > 0;
+      }
+
+      if (!isIE()) return;
+      const hiddenInput = document.querySelector('#{{ product_form_installment_id }} input[name="id"]');
+      const noScriptInputWrapper = document.createElement('div');
+      const variantSwitcher =
+        document.querySelector('variant-radios[data-section="{{ section.id }}"]') ||
+        document.querySelector('variant-selects[data-section="{{ section.id }}"]');
+      noScriptInputWrapper.innerHTML = document.querySelector(
+        '.product-form__noscript-wrapper-{{ section.id }}'
+      ).textContent;
+      variantSwitcher.outerHTML = noScriptInputWrapper.outerHTML;
+
+      document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function (event) {
+        hiddenInput.value = event.currentTarget.value;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const variantObjects = JSON.parse(
+        document.querySelector('div.sg-product-page-input-form-wrapper [type="application/json"]').textContent
+      );
+      if (!variantObjects) {
+        return;
+      }
+      const sameColor = variantObjects.every(
+        (obj) => obj.option1 === variantObjects[0].option1 && obj.option3 === variantObjects[0].option3
+      );
+
+      variantObjects.forEach(function (object) {
+        if (sameColor) {
+          if (!object.available) {
+            var inputItem = document.querySelector(`input[value="${object.option2}"]`);
+            inputItem.setAttribute('disabled', '');
+          }
+        }
+      });
+      console.log(variantObjects);
+    });
+  </script>
+  {%- liquid
+    if product.selected_or_first_available_variant.featured_media
+      assign seo_media = product.selected_or_first_available_variant.featured_media
+    else
+      assign seo_media = product.featured_media
+    endif
+  -%}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "Product",
+      "name": {{ product.title | json }},
+      "url": {{ request.origin | append: product.url | json }},
+      {% if seo_media -%}
+        "image": [
+          {{ seo_media | image_url: width: seo_media.preview_image.width | prepend: "https:" | json }}
+        ],
+      {%- endif %}
+      "description": {{ product.description | strip_html | json }},
+      {% if product.selected_or_first_available_variant.sku != blank -%}
+        "sku": {{ product.selected_or_first_available_variant.sku | json }},
+      {%- endif %}
+      "brand": {
+        "@type": "Brand",
+        "name": {{ product.vendor | json }}
+      },
+      "offers": [
+        {%- for variant in product.variants -%}
+          {
+            "@type" : "Offer",
+            {%- if variant.sku != blank -%}
+              "sku": {{ variant.sku | json }},
+            {%- endif -%}
+            {%- if variant.barcode.size == 12 -%}
+              "gtin12": {{ variant.barcode }},
+            {%- endif -%}
+            {%- if variant.barcode.size == 13 -%}
+              "gtin13": {{ variant.barcode }},
+            {%- endif -%}
+            {%- if variant.barcode.size == 14 -%}
+              "gtin14": {{ variant.barcode }},
+            {%- endif -%}
+            "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+            "price" : {{ variant.price | divided_by: 100.00 | json }},
+            "priceCurrency" : {{ cart.currency.iso_code | json }},
+            "url" : {{ request.origin | append: variant.url | json }}
+          }{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      ]
+    }
+  </script>
+
+  <script>
+    function mod(n, m) {
+      return ((n % m) + m) % m;
+    }
+    var productImageContainer = document.querySelector(".sg-product-page-image-grid");
+    var listOfProductImages = document.querySelectorAll(".sg-product-page-image");
+    var right = document.getElementById("sg-product-page-arrow-right");
+    var left = document.getElementById("sg-product-page-arrow-left");
+    
+    enableDisableArrows()
+    
+    right.addEventListener("click", () => {
+        scrollImages("r");
+    })
+    
+    left.addEventListener("click", () => {
+        scrollImages("l");
+    })
+
+    productImageContainer.addEventListener("scroll",  (event) => {
+      enableDisableArrows();
+    })
+
+    function enableDisableArrows(){
+        var scroll = productImageContainer.scrollLeft;
+        var widthOfImage = listOfProductImages[0].offsetWidth;
+        var index = Math.round(scroll / widthOfImage);
+    
+        if(index == 0){
+            left.style.display = "none";
+        }else{
+            left.style.display = "flex";
+        }
+    
+        if(Math.round(productImageContainer.scrollLeft/10) == Math.round((productImageContainer.scrollWidth - productImageContainer.offsetWidth)/10)){
+            right.style.display = "none";
+        }else{
+            right.style.display = "flex";
+        }
+    }
+
+    
+    function scrollImages(scrollDirection){
+        
+        var scroll = productImageContainer.scrollLeft;
+        var widthOfImage = listOfProductImages[0].offsetWidth;
+        var index = Math.round(scroll / widthOfImage);
+    
+        var dir = 0;
+        if(scrollDirection == "l"){
+            dir = -1;
+        }else if (scrollDirection == "r"){
+            dir = 1;
+        }
+        enableDisableArrows();
+        // check if scrolled to max position and if so, scroll to beginning
+        // devision by 10 to avoid rounding errors
+        if(Math.round(productImageContainer.scrollLeft/10) == Math.round((productImageContainer.scrollWidth - productImageContainer.offsetWidth)/10) && dir == 1){  
+            return
+        }else if(Math.round(productImageContainer.scrollLeft/10) == 0 && dir == -1){
+            return
+        }
+        else {
+            var nextIndex = mod(index + dir, listOfProductImages.length)
+            productImageContainer.scrollTo({
+                left: nextIndex * widthOfImage,
+                behavior: 'smooth'
+            });
+    
+        }
+    
+    }
+  </script>
+</div>
+</section>
+
+{% schema %}
+{
+  "name": "go-main-product",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "product-title",
+      "name": "Product title",
+      "limit": 1,
+      "settings": [
+
+      ]
+    },
+    {
+      "type": "variant-selectors",
+      "name": "Variant options",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "sizing_section_link_title",
+          "label": "Title of the sizing section",
+          "default": "Sizing"
+        }
+      ]
+    },
+    {
+      "type": "add-buttons",
+      "name": "Form buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "coming_soon",
+          "label": "Coming soon",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "coming_soon_text",
+          "label": "Coming soon text",
+          "default": "Coming soon"
+        }
+
+      ]
+    },
+    {
+      "type": "usp-content",
+      "name": "USP Content",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "usp1",
+          "label": "USP 1",
+          "default": "USP 1"
+        },
+        {
+          "type": "text",
+          "id": "usp2",
+          "label": "USP 2",
+          "default": "USP 2"
+        },
+        {
+          "type": "text",
+          "id": "usp3",
+          "label": "USP 3",
+          "default": "USP 3"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
