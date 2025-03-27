@@ -1,7 +1,52 @@
 {
   "sections": {
+    "hero_slideshow_q67epj": {
+      "type": "hero-slideshow",
+      "blocks": {
+        "slide_KjanyX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC_1620_fb2773e3-1d45-4e28-b9d4-6259091297bd.jpg",
+            "header_text": "SPRING SUMMER 25",
+            "header_subtitle": "",
+            "button_1_text": "N",
+            "url_1": "",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT | WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT"
+          }
+        },
+        "slide_TbYLVm": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "header_text": "Enter your title here",
+            "header_subtitle": "Enter your subtitle here",
+            "button_1_text": "Button 1",
+            "url_1": "",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
+          }
+        }
+      },
+      "block_order": [
+        "slide_KjanyX",
+        "slide_TbYLVm"
+      ],
+      "settings": {
+        "autoplay": false,
+        "autoplay_speed": 3,
+        "enable_arrow": false
+      }
+    },
     "16606505673e469e8c": {
       "type": "go-hero",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/DSC_1620_fb2773e3-1d45-4e28-b9d4-6259091297bd.jpg",
         "header_text": "SPRING SUMMER 25",
@@ -127,6 +172,7 @@
     }
   },
   "order": [
+    "hero_slideshow_q67epj",
     "16606505673e469e8c",
     "16606506679e84436b",
     "go_double_image_CtHtLG",
