@@ -29,8 +29,8 @@
         },
         "slide_TbYLVm": {
           "type": "slide",
-          "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/GOSOAKY_SS25_ROARING_CAT_TRUE_BLUE_4_6e0314a1-fa5f-4de2-90ab-f9e06f113c34.jpg",
             "header_text": "Enter your title here",
             "header_subtitle": "Enter your subtitle here",
             "button_1_text": "Button 1",
@@ -48,9 +48,9 @@
         "slide_TbYLVm"
       ],
       "settings": {
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_speed": 3,
-        "enable_arrow": false
+        "enable_arrow": true
       }
     },
     "16606505673e469e8c": {
