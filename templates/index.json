@@ -34,7 +34,7 @@
             "mobile_image": "shopify://shop_images/DSC_1749_copy.jpg",
             "header_text": "SPRING SUMMER 25",
             "header_subtitle": "",
-            "button_1_text": "OUTERWEAR",
+            "button_1_text": "SHOP OUTERWEAR",
             "url_1": "shopify://collections/spring-summer-2025-outerwear",
             "button_1_style": "go-light",
             "button_2_text": "Button 2",
@@ -50,7 +50,7 @@
       ],
       "settings": {
         "autoplay": true,
-        "autoplay_speed": 7,
+        "autoplay_speed": 5,
         "enable_arrow": false
       }
     },
