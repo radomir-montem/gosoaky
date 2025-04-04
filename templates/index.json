@@ -51,7 +51,7 @@
       "settings": {
         "autoplay": true,
         "autoplay_speed": 5,
-        "enable_arrow": false
+        "enable_arrow": true
       }
     },
     "16606505673e469e8c": {
