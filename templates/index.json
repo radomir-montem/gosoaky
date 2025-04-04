@@ -29,6 +29,7 @@
         },
         "slide_TbYLVm": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DSC_1749_copy.jpg",
             "mobile_image": "shopify://shop_images/DSC_1749_copy.jpg",
