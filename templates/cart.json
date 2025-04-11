@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "cart-items": {
@@ -33,12 +42,12 @@
       "settings": {
         "header": "You may also like",
         "image_aspect_ratio": 75,
-        "product_1": "fast-camel-greener-pastures",
-        "product_2": "desert-fox-leather-brown",
+        "product_1": "jungle-cat-white-gap-grey-brown-rice",
+        "product_2": "roaring-cat-first-blush-pink",
         "product_3": "striped-fox-greener-pastures",
-        "product_4": "snake-pit-trellis-green",
+        "product_4": "jungle-cat-iceberg-green-white-gap-grey",
         "button_1_text": "View entire collection",
-        "url_1": "shopify:\/\/collections\/kids-winter-clothes-1"
+        "url_1": "shopify://collections/kids-winter-clothes-1"
       }
     }
   },
