@@ -113,7 +113,7 @@
           "announcement_zzjiiP": {
             "type": "announcement",
             "settings": {
-              "text": "Free Shipping Weekend!",
+              "text": "Free Shipping Weekend! Use SS25_FREESHIPPING at checkout",
               "color_scheme": "accent-1",
               "link": ""
             }
