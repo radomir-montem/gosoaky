@@ -1,10 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "go-main-product",
       "blocks": {
         "2624cab2-33dd-40d5-8218-dde183dbadbc": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
         "9f3629bc-fafb-4231-b3bc-dbdc418fee05": {
@@ -70,7 +79,7 @@
           "type": "sizing_information",
           "settings": {
             "sizing_information_link_title": "Sizing Information",
-            "sizing_information": "<p>All garments are based on EU standard sizing. As age and size can differ across countries, we advise you to measure the height your kid to find out the correct size. For instance, if your child is 114 cm tall, choose size 110\/116. In cases where your child falls between two sizes, consider selecting the larger size to ensure a comfortable fit as they continue to grow.<\/p>"
+            "sizing_information": "<p>All garments are based on EU standard sizing. As age and size can differ across countries, we advise you to measure the height your kid to find out the correct size. For instance, if your child is 114 cm tall, choose size 110/116. In cases where your child falls between two sizes, consider selecting the larger size to ensure a comfortable fit as they continue to grow.</p>"
           }
         }
       },
@@ -90,18 +99,23 @@
         "header": "Anatomy of the",
         "show_name": true,
         "product": "{{ product }}",
-        "icon_guide_url": "shopify:\/\/pages\/icon-guide"
+        "icon_guide_url": "shopify://pages/icon-guide"
       }
     },
     "169650068531d1b37e": {
       "type": "apps",
       "blocks": {
+        "selleasy_lb_upsell_widget_bl_keyPcE": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
+        },
         "5cfb12c2-e473-4121-9734-971f5abcd596": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         }
       },
       "block_order": [
+        "selleasy_lb_upsell_widget_bl_keyPcE",
         "5cfb12c2-e473-4121-9734-971f5abcd596"
       ],
       "settings": {
@@ -120,7 +134,7 @@
       "type": "apps",
       "blocks": {
         "klaviyo_email_marketing_sms_form_embed_block_jNBXwr": {
-          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
             "formId": "SUWVQ7"
           }
