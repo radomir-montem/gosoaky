@@ -27,11 +27,16 @@
         "buttons": {
           "type": "buttons",
           "settings": {}
+        },
+        "selleasy_lb_upsell_widget_icuc_G9Rt9L": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-icuc/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
         }
       },
       "block_order": [
         "subtotal",
-        "buttons"
+        "buttons",
+        "selleasy_lb_upsell_widget_icuc_G9Rt9L"
       ],
       "settings": {
         "show_cart_note": false
