@@ -56,3 +56,22 @@
 .template--cart .go-contact-widget-btn {
     display: none !important;
 }
+
+#product-checkout-form {
+    width: 100%;
+    margin-top: -20px;
+}
+
+#product-checkout-form .button {
+    transform: scale3d(1none,1none,1none);
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    flex: none;
+    width: 100%;
+    height: 54px;
+    padding: 0 20px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    transition: transform .2s ease-in-out, opacity .2s;
+}
