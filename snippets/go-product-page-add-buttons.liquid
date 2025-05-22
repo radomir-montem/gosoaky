@@ -86,6 +86,6 @@
   {% endif %}
 </product-form>
 
-<form action="{{ routes.cart_url }}" method="post" id="product-checkout-form">
+{% comment %} <form action="{{ routes.cart_url }}" method="post" id="product-checkout-form">
   <button class="button button--secondary button--full-width" name="checkout">{{ 'products.product.checkout' | t }}</button>
-</form>
+</form> {% endcomment %}
