@@ -29,7 +29,6 @@
         },
         "slide_BxGHr8": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_3.png",
             "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_7.png",
@@ -46,7 +45,6 @@
         },
         "slide_TbYLVm": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_01615b82-4bef-4e10-a5bf-395c47f80eec.png",
             "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_01615b82-4bef-4e10-a5bf-395c47f80eec.png",
@@ -63,7 +61,6 @@
         },
         "slide_a9HwnF": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_2.png",
             "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_6.png",
@@ -93,6 +90,7 @@
     },
     "16606505673e469e8c": {
       "type": "go-hero",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/DSC_1620_fb2773e3-1d45-4e28-b9d4-6259091297bd.jpg",
         "header_text": "SPRING SUMMER 25",
