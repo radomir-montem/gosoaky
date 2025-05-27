@@ -29,6 +29,7 @@
         },
         "slide_BxGHr8": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_3.png",
             "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_7.png",
@@ -45,6 +46,7 @@
         },
         "slide_TbYLVm": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_01615b82-4bef-4e10-a5bf-395c47f80eec.png",
             "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_01615b82-4bef-4e10-a5bf-395c47f80eec.png",
@@ -61,6 +63,7 @@
         },
         "slide_a9HwnF": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_2.png",
             "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_6.png",
