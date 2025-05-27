@@ -42,11 +42,28 @@
             "button_2_style": "go-light",
             "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
           }
+        },
+        "slide_a9HwnF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_2.png",
+            "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_6.png",
+            "header_text": "#GOSOAKYINTHECITY",
+            "header_subtitle": "",
+            "button_1_text": "Button 1",
+            "url_1": "",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
+          }
         }
       },
       "block_order": [
         "slide_KjanyX",
-        "slide_TbYLVm"
+        "slide_TbYLVm",
+        "slide_a9HwnF"
       ],
       "settings": {
         "autoplay": true,
