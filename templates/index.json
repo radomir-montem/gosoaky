@@ -27,8 +27,25 @@
             "usps": "WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT | WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT"
           }
         },
+        "slide_BxGHr8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_3.png",
+            "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_7.png",
+            "header_text": "#GOSOAKYINTHECITY",
+            "header_subtitle": "Enter your subtitle here",
+            "button_1_text": "Button 1",
+            "url_1": "",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
+          }
+        },
         "slide_TbYLVm": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_01615b82-4bef-4e10-a5bf-395c47f80eec.png",
             "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_01615b82-4bef-4e10-a5bf-395c47f80eec.png",
@@ -45,6 +62,7 @@
         },
         "slide_a9HwnF": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_2.png",
             "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_6.png",
@@ -62,6 +80,7 @@
       },
       "block_order": [
         "slide_KjanyX",
+        "slide_BxGHr8",
         "slide_TbYLVm",
         "slide_a9HwnF"
       ],
