@@ -9,6 +9,21 @@
  */
 {
   "sections": {
+    "1748608099975707c2": {
+      "type": "apps",
+      "blocks": {
+        "selleasy_lb_upsell_widget_bl_CdcLgf": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "selleasy_lb_upsell_widget_bl_CdcLgf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "main": {
       "type": "go-main-product",
       "blocks": {
@@ -105,17 +120,12 @@
     "169650068531d1b37e": {
       "type": "apps",
       "blocks": {
-        "selleasy_lb_upsell_widget_bl_keyPcE": {
-          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-          "settings": {}
-        },
         "5cfb12c2-e473-4121-9734-971f5abcd596": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         }
       },
       "block_order": [
-        "selleasy_lb_upsell_widget_bl_keyPcE",
         "5cfb12c2-e473-4121-9734-971f5abcd596"
       ],
       "settings": {
@@ -150,6 +160,7 @@
   },
   "order": [
     "main",
+    "1748608099975707c2",
     "52e14f4e-bd0f-43c3-9c95-7fda897d6f54",
     "1658149516ba83ec13",
     "169650068531d1b37e",
