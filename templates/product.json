@@ -107,7 +107,6 @@
       "blocks": {
         "selleasy_lb_upsell_widget_bl_keyPcE": {
           "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-          "disabled": true,
           "settings": {}
         },
         "5cfb12c2-e473-4121-9734-971f5abcd596": {
