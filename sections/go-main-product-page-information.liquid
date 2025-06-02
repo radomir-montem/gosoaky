@@ -3,7 +3,7 @@
     <div class="sg-scrolllink-wrapper">
       {% for block in section.blocks %}
        {% if block.type == "description" %}
-        {% if product.metafields.product_information.product_description != blank %}
+        {% if product.metafields.custom.product_description != blank %}
           <a href="#sg-description-link" class="sg-scroll-link-wrapper w-inline-block">
             <div class="sg-scroll-link-title">{{ block.settings.description_link_title }}</div>
           </a>
@@ -17,7 +17,7 @@
         {% endif %}
       {% endif %}
       {% if block.type == "specifications" %}
-        {% if product.metafields.product_information.product_specifications != blank %}
+        {% if product.metafields.custom.product_specification != blank %}
           <a href="#sg-specifications-link" class="sg-scroll-link-wrapper w-inline-block">
             <div class="sg-scroll-link-title">{{ block.settings.specifications_link_title }}</div>
           </a>
@@ -47,12 +47,12 @@
   </div>
     {% for block in section.blocks %}
     {% if block.type == 'description' %}
-      {% if product.metafields.product_information.product_description != blank %}
+      {% if product.metafields.custom.product_description != blank %}
       <div id="sg-description-link" class="sg-section sg-description">
         <div class="sg-container">
           <div class="sg-product-description max-width-67">
             <h2 class="sg-h2-title">{{ product.title }}</h2>
-              {{ product.metafields.product_information.product_description }}
+              {{ product.metafields.custom.product_description | metafield_tag }}
           </div>
         </div>
       </div>
@@ -71,12 +71,12 @@
         {% endif %}
       {% endif %}
       {% if block.type == 'specifications' %}
-        {% if product.metafields.product_information.product_specifications != blank and block.settings.specifications_link_title != blank %}
+        {% if product.metafields.custom.product_specification != blank and block.settings.specifications_link_title != blank %}
           <div id="sg-specifications-link" class="sg-section sg-description">
           <div class="sg-container">
             <div class="sg-product-description max-width-67">
               <h2 class="sg-h2-title">{{ block.settings.specifications_link_title }}</h2>
-                {{ product.metafields.product_information.product_specifications }}
+                {{ product.metafields.custom.product_specification | metafield_tag }}
             </div>
           </div>
         </div>
