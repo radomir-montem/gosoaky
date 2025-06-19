@@ -12,6 +12,22 @@
     "hero_slideshow_q67epj": {
       "type": "hero-slideshow",
       "blocks": {
+        "slide_KjanyX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DSC_2696.jpg",
+            "mobile_image": "shopify://shop_images/DSC_2696.jpg",
+            "header_text": "SALE AT 30% OFF",
+            "header_subtitle": "",
+            "button_1_text": "SHOP NOW",
+            "url_1": "shopify://collections/spring-summer-2025",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT | WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT"
+          }
+        },
         "slide_BxGHr8": {
           "type": "slide",
           "settings": {
@@ -26,22 +42,6 @@
             "url_2": "",
             "button_2_style": "go-light",
             "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
-          }
-        },
-        "slide_KjanyX": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/website_banner_SS25_GS_EOS_30__1.jpg",
-            "mobile_image": "shopify://shop_images/website_banner_MOVILE_SS25_GS_EOS_30__1.jpg",
-            "header_text": "SALE AT 30% OFF",
-            "header_subtitle": "",
-            "button_1_text": "SHOP NOW",
-            "url_1": "shopify://collections/spring-summer-2025",
-            "button_1_style": "go-light",
-            "button_2_text": "Button 2",
-            "url_2": "",
-            "button_2_style": "go-light",
-            "usps": "WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT | WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT"
           }
         },
         "slide_TbYLVm": {
@@ -80,8 +80,8 @@
         }
       },
       "block_order": [
-        "slide_BxGHr8",
         "slide_KjanyX",
+        "slide_BxGHr8",
         "slide_TbYLVm",
         "slide_a9HwnF"
       ],
