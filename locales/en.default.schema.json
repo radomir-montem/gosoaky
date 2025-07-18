@@ -569,6 +569,16 @@
         "name": "Custom Liquid"
       }
     },
+    "recently-products":{
+      "settings": {
+        "recently_products_heading": {
+          "label": "Section Heading"
+        },
+        "related_count": {
+          "label": "Related Count"
+        }
+      }
+    },
     "featured-blog": {
       "name": "Blog posts",
       "settings": {

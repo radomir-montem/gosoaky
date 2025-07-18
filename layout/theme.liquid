@@ -35,12 +35,12 @@
 
     {% render 'meta-tags' %}
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
 
@@ -48,8 +48,8 @@
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
-    %}
-
+      %}
+      
     {% style %}
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
@@ -221,14 +221,14 @@
     }
     </script>
 
-    {{ "go-wf.css" | asset_url | stylesheet_tag }}
-    {{ "go-vector.css" | asset_url | stylesheet_tag }}
-    <script src="{{ "go-jquery.js" | asset_url }}" defer></script>
-    <script src="{{ "go-wf.js" | asset_url }}" defer></script>
+{{ "go-wf.css" | asset_url | stylesheet_tag }}
+{{ "go-vector.css" | asset_url | stylesheet_tag }}
+<script src="{{ "go-jquery.js" | asset_url }}" defer></script>
+<script src="{{ "go-wf.js" | asset_url }}" defer></script>
 
 
-        <!-- Meta Pixel Code -->
-  <script>
+<!-- Meta Pixel Code -->
+<script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -242,9 +242,11 @@
   </script>
   <noscript><img height=“1” width=“1" style=“display:none” src=“https://www.facebook.com/tr?id=1738803513007077&ev=PageView&noscript=1”/> </noscript>
   <!-- End Meta Pixel Code -->
-    
+  
+  <script src="{{ 'recently-viewed-manage.js' | asset_url }}" defer="defer"></script>
+  {% render 'recently-viewed-managers' %}
   {% render 'weglot_hreftags' %}
-{% render 'weglot_switcher' %}
+  {% render 'weglot_switcher' %}
 
     
 <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>

@@ -1,0 +1,59 @@
+.reviewed-products--section .page-width {
+    max-width: 100%;
+    padding: 60px;
+}
+
+.reviewed-products--section .section-header {
+    margin: 0;
+}
+
+.reviewed-products--section .section-header__title {
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 48px;
+    line-height: 56px;
+    position: static;
+}
+
+.reviewed-products--section .reviewed-products--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+}
+
+@media screen and (max-width:991px) {
+    .reviewed-products--section .page-width {
+        padding: 60px 30px;
+    }
+
+    .reviewed-products--section .section-header__title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .reviewed-products--section .page-width {
+        padding: 16px;
+    }
+
+    .reviewed-products--section .section-header__title {
+        margin-bottom: 16px;
+    }
+
+    .reviewed-products--section .reviewed-products--container {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 16px;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .reviewed-products--section .section-header__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}

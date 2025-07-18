@@ -1,0 +1,64 @@
+{{ 'recently-products.css' |  asset_url |  stylesheet_tag }}
+
+{%- liquid
+  assign number_of_products = section.settings.related_count
+-%}
+
+{% if cart.attributes._viewed_product_handles %}
+<div
+    data-subsection
+    data-section-type="collection-template"
+    class="index-section reviewed-products--section">
+    <div class="page-width">
+      <header class="section-header">
+        <h3 class="section-header__title">
+          {{ section.settings.recently_products_heading }}
+        </h3>
+      </header>
+      <div class="reviewed-products--container">
+        {% for handle in cart.attributes._viewed_product_handles limit: number_of_products %}
+            {% liquid
+              if handle == product.handle
+                  continue
+              endif
+              assign history_product = all_products[handle]
+              if history_product.metafields.seo.hidden == 1 or history_product.id == blank
+                  continue
+              endif
+              assign count = count | plus: 1
+              assign has_view_history = true
+              render 'go-card-product', card_product: history_product,
+            %}
+        {% endfor %}
+      </div>  
+    </div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Recently viewed",
+  "settings": [
+    {
+      "type": "text",
+      "id": "recently_products_heading",
+      "label": "t:sections.recently-products.settings.recently_products_heading.label",
+      "default": "Recently viewed"
+    },
+    {
+      "type": "range",
+      "id": "related_count",
+      "label": "t:sections.recently-products.settings.related_count.label",
+      "default": 6,
+      "min": 2,
+      "max": 6,
+      "step": 1
+    }
+  ],
+  "presets": [
+    {
+        "name": "Recently viewed"
+    }
+  ]
+}
+{% endschema %}
