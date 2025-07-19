@@ -16,6 +16,7 @@
   {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
   <div class="sg-section sg-product-hero">
     <div class="sg-container">
+      {%- render 'go-breadcrumbs' -%}
       <div class="sg-product-page-hero">
         <div class="sg-product-page-image-block">
           <a id="sg-product-page-arrow-left" href="#" class="sg-product-page-arrow-left w-inline-block"
@@ -71,6 +72,13 @@
           {% endfor %}
       </div>
     </div>
+    {%- render 'product-act-bar',
+        product: product,
+        form_id: form_id,
+        section_id: section_id,
+        option: option,
+        forloop: forloop,
+        variant_labels: block.settings.variant_labels-%}
   </div>
   {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">

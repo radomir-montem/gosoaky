@@ -1,0 +1,236 @@
+.sg-container .breadcrumbs {
+    padding: 0;
+    padding-bottom: 25px;
+    margin-top: -40px;
+}
+
+.sticky-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #ddd;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+    transition: transform 0.55s ease-in-out;
+}
+
+.product-section .add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b2831;
+    color: white;
+    gap: 0.8rem;
+}
+
+.product-section .add-to-cart .icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.product-section .add-to-cart.btn:not(.btn--no-animate):not(.btn--tertiary):not(.btn--static) {
+    padding: 14px 24px;
+}
+
+.product-section .add-to-cart.btn:not(.btn--no-animate):not(.btn--tertiary):not(.btn--static):hover:not([disabled]) {
+    background-position: unset;
+    padding: 14px 24px;
+}
+
+.sticky-bottom h2 {
+    margin: 0;
+}
+
+.sticky-bottom .full-width.container {
+    width: 100%;
+    padding: 1.2rem 5rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sticky-bottom .sticky-stc-button--container,
+.sticky-bottom .sticky-stc-button--container .sticky-qualities {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+}
+
+.sticky-bottom .sticky-stc-button--container .sticky-stc__title span {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: proxima-nova, sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -1px;
+}
+
+.sticky-bottom .sticky-stc-button--container .size-selector {
+    width: 15rem;
+    height: 36px;
+    outline: unset;
+    outline-offset: unset;
+    box-shadow: none;
+}
+
+.sticky-bottom .container .sticky_post {
+    display: flex;
+    align-items: center;
+}
+
+.sticky-bottom .container .sticky_post .sticky__button {
+    display: flex;
+    gap: 0.5rem;
+    background-color: #1b2831;
+    color: white;
+}
+
+.sticky-bottom .container .sticky_post .sticky__button .icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.sticky-bottom .container .sticky_post .sticky__button .icon svg {
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.sticky-bottom .container .sticky__button.btn:not(.btn--no-animate):not(.btn--tertiary):not(.btn--static) {
+    padding: 11px 20px;
+}
+
+.sticky-bottom .container .sticky__button.btn:not(.btn--no-animate):not(.btn--tertiary):not(.btn--static):hover:not([disabled]) {
+    background-position: unset;
+    padding: 11px 20px;
+}
+
+.sticky-bottom.show {
+    transform: translateY(0);
+    transition: 0.55s ease-in-out;
+}
+
+.sticky-bottom.hidden {
+    transform: translateY(100%);
+    transition: 0.55s ease-in-out;
+}
+
+.sticky-bottom .sg-colour-block.sg-selected,
+.sticky-bottom .sg-colour-block.sg-unselected {
+    width: 54px;
+    height: 60px;
+}
+
+.go-anatomy-track,
+.go-anatomy-camera {
+    width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+    .sticky-bottom .full-width.container {
+        padding: 1rem 2rem;
+    }
+
+    .sticky-bottom .sticky-stc-button--container,
+    .sticky-bottom .sticky-stc-button--container .sticky-qualities {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .sticky-bottom .sticky-stc-button--container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .sticky-bottom .sticky-stc-button--container .size-selector {
+        width: 22rem;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .sticky-bottom .sticky-stc-button--container, 
+    .sticky-bottom .sticky-stc-button--container .sticky-qualities {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sg-container .breadcrumbs {
+        margin: 0;
+        padding-top: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (max-width:586px) {
+    .sticky-bottom .full-width.container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .sticky-bottom .container .sticky_post .sticky__button {
+        gap: 0.8rem;
+        width: 24rem;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .sticky-bottom .container .sticky_post .sticky__button span {
+        font-size: 1.5rem;
+    }
+
+    .sticky-bottom .container .sticky_post .sticky__button .icon {
+        width: 2.4rem;
+        height: 1.8rem;
+    }
+
+    .sticky-bottom .container .sticky_post .sticky__button .icon svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .sticky-bottom .full-width.container {
+        padding: 1rem;
+    }
+
+    .sticky-bottom .container .sticky_post .sticky__button {
+        gap: 0.4rem;
+        width: 24.5rem;
+    }
+
+    .sticky-bottom .container .sticky_post .btn-full {
+        padding: 7px 14px;
+    }
+
+    .sticky-bottom .container .sticky_post .sticky__button span {
+        font-size: 1.3rem;
+    }
+
+    .sticky-bottom .container .sticky-qualities {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .sticky-bottom .container .sticky-qualities .size-selector {
+        width: 92%;
+        margin: auto;
+    }
+
+    .sticky-bottom .sticky-stc-button--container .sticky-stc__title span {
+        font-size: 1.4rem;
+    }
+}

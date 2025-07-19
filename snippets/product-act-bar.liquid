@@ -1,0 +1,74 @@
+{{ 'product-atcbar.css' | asset_url |  stylesheet_tag }}
+        
+<sticky-atc-button data-sticky-type="on-scroll-up" id="sticky-bottom-bar" class="sticky-bottom">
+    {%- liquid
+      assign current_variant = product.selected_or_first_available_variant
+    -%}
+    <div class="full-width container">
+      <div class="sticky-stc-button--container">
+        <div class="sticky-product__title">
+          <h2 class="sticky-stc__title">
+            <span>{{ product.title | upcase }} | </span>
+            <span class="sticky-stc-price">{{ current_variant.price | money }}</span>
+          </h2>
+        </div>
+        <div class="sticky-qualities">
+          <div class="sg-color-swatches">
+            {% for color_product in product.metafields.product_information.product_color_collection.value.products %}
+              {% if color_product == product %}
+                <div class="sg-colour-block sg-selected">
+                  {{
+                    color_product.featured_media
+                    | image_url: width: 1500
+                    | image_tag:
+                      loading: 'lazy',
+                      class: 'sg-colour-block-image',
+                      sizes: '(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw',
+                      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                      alt: prdct.title
+                  }}
+                </div>
+              {% else %}
+                <a href="{{ color_product.url }}" class="sg-colour-block sg-unselected w-inline-block">
+                  {{
+                    color_product.featured_media
+                    | image_url: width: 1500
+                    | image_tag:
+                      loading: 'lazy',
+                      class: 'sg-colour-block-image',
+                      sizes: '(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw',
+                      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                      alt: prdct.title
+                  }}
+                </a>
+              {% endif %}
+            {% endfor %}
+          </div>    
+          {% if product.has_only_default_variant %}
+            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+          {% else %}
+            <select name="id" class="size-selector">
+              {% for variant in product.variants %}
+              <option value="{{ variant.id }}" data-price="{{ variant.price | money }}" {% unless variant.available %}disabled{% endunless %} {% if variant == product.selected_or_first_available_variant %}selected{% endif %}>
+                {{ variant.title | split: ' / ' | last }}
+              </option>
+              {% endfor %}
+            </select>
+          {% endif %}
+        </div>
+      </div>
+      <div class="sticky_post">
+        <div class="sticky-product__button">
+          <button
+            class="btn btn--full sticky__button"
+          >
+            <span style="text-transform:uppercase">
+              {{ 'products.product.add_to_cart' | t }}
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+</sticky-atc-button>
+
+<script src="{{ 'sticky-atcbar.js' | asset_url }}" defer="defer"></script>
