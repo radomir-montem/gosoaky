@@ -2,6 +2,7 @@
 {{ 'component-totals.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+{{ 'gift-discount.css' |  asset_url |  stylesheet_tag }}
 
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>
@@ -12,6 +13,11 @@
           <textarea class="text-area field__input" name="note" form="cart" id="Cart-note" placeholder="{{ 'sections.cart.note' | t }}">{{ cart.note }}</textarea>
         </cart-note>
       {%- endif -%}
+      
+      <div class="cart__discount">
+        <input type="text" class="discount_input" id="discount-code">
+        <button class="apply_btn" id="apply-discount-btn">{{ 'products.facets.apply' | t }}</button>
+      </div>
 
       <div class="cart__blocks">
         {% for block in section.blocks %}
@@ -77,8 +83,8 @@
     </div>
   </div>
 </div>
-
-{% javascript %}
+  
+  {% javascript %}
   class CartNote extends HTMLElement {
     constructor() {
       super();
@@ -89,11 +95,11 @@
       }, 300))
     }
   }
-
+  
   customElements.define('cart-note', CartNote);
-{% endjavascript %}
-
-<script>
+  {% endjavascript %}
+  
+  <script>
   document.addEventListener('DOMContentLoaded', function() {
     function isIE() {
       const ua = window.navigator.userAgent;
@@ -113,6 +119,8 @@
     });
   });
 </script>
+
+<script src="{{ 'cart-function.js' |  asset_url }}" defer="defer"></script>
 
 {% schema %}
 {
