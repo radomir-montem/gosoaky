@@ -612,6 +612,18 @@
         "name": "Blog posts"
       }
     },
+    "go-main-product": {
+      "name": "Go Main Product",
+      "settings": {
+        "stock_limit": {
+          "label": "Limit"
+        },
+        "stock_low_text": {
+          "label": "Text",
+          "default": "Left In Stock"
+        }
+      }
+    },
     "featured-collection": {
       "name": "Featured collection",
       "settings": {

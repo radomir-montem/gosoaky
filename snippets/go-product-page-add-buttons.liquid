@@ -63,6 +63,7 @@
         >
           <span>
             {%- if product.selected_or_first_available_variant.available -%}
+              <span class="icon">{%- render 'icon-cart-white' -%}</span>
               {{ 'products.product.add_to_cart' | t }}
             {%- else -%}
               {{ 'products.product.sold_out' | t }}
@@ -81,6 +82,7 @@
             </svg>
           </div>
         </button>
+        <a class="klaviyo-bis-trigger shopify-payment-button__button" href="#" >{{ settings.klaviyo_text }}</a>
       </div>
     {%- endform -%}
   {% endif %}

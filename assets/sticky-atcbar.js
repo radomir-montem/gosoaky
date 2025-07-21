@@ -1,7 +1,7 @@
 class stickyAtc extends HTMLElement {
     constructor() {
         super();
-        this.productForm = document.querySelector('.sg-product-page-purchase-block .product-form__buttons');
+        this.productForm = document.querySelector('.sg-product-hero .sg-product-page-hero');
         this.atcButton = document.querySelector('.sg-product-page-button');
         this.stickyButton = this.querySelector('.sticky__button');
         this.stickySelect = this.querySelector('[name="id"]');

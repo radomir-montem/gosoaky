@@ -459,7 +459,22 @@ a.product__text {
   border-radius: calc(var(--media-radius) - var(--media-border-width));
 }
 
+.sg-product-hero .urgency-trigger h4 {
+  font-size: 24px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.sg-product-page-purchase-title .price__sale {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 749px) {
+  .sg-product-hero .urgency-trigger h4 {
+    font-size: 20px;
+  }
+  
   .product__media-list {
     margin-left: -2.5rem;
     padding-bottom: 2rem;

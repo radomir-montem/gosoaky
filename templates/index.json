@@ -216,6 +216,14 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "recently_products_QxK44i": {
+      "type": "recently-products",
+      "name": "Recently viewed",
+      "settings": {
+        "recently_products_heading": "Recently viewed",
+        "related_count": 6
+      }
     }
   },
   "order": [
@@ -228,6 +236,7 @@
     "1660651534eb59d086",
     "1660651647f0d46794",
     "go_collection_promotion_TYJF8B",
-    "172856617126700031"
+    "172856617126700031",
+    "recently_products_QxK44i"
   ]
 }

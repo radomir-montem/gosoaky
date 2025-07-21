@@ -3,6 +3,7 @@
   <media-gallery id="MediaGallery-{{ section.id }}"> </media-gallery>
   <style> @supports (scroll-snap-type: x mandatory) and (scroll-snap-align: start) { .sg-product-page-image-grid{ overflow-x: auto; scroll-snap-type: x mandatory; } .sg-product-page-image { scroll-snap-align: start; } } </style>
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+  {{ 'klaviyo-button.css' |  asset_url |  stylesheet_tag }}
   {% assign n = product.title | split: ' | ' %}
   {% if n.first != blank %}
     {% assign first_name = n.first %}
@@ -52,10 +53,6 @@
           </div>
         </div>
         <div id="w-node-a95a11dc-0588-69d3-c78e-57fe78be433d-1658e309" class="sg-product-page-purchase-block">
-      
-            
-            
-
           {% for block in section.blocks %}
             {% case block.type %}
               {% when '@app' %}
@@ -64,6 +61,8 @@
                 {% render 'go-product-page-title', product: product, first_name: first_name %}
               {% when 'variant-selectors' %}
                 {% render 'go-product-page-variant-selectors', product: product, product_form_id: product_form_id , section_id: section.id, product_color: product_color, sizing_link_title: block.settings.sizing_section_link_title %}
+              {% when 'urgency-trigger'%}
+                {%- render 'urgency-trigger' product: product, stock_limit: block.settings.stock_limit stock_text: block.settings.stock_low_text -%}  
               {% when 'add-buttons' %}
                 {% render 'go-product-page-add-buttons', product: product, product_form_id: product_form_id , section_id: section.id, coming_soon: block.settings.coming_soon, coming_soon_text: block.settings.coming_soon_text %}
               {% when 'usp-content' %}
@@ -336,6 +335,28 @@
           "id": "usp3",
           "label": "USP 3",
           "default": "USP 3"
+        }
+      ]
+    },
+    {
+      "type": "urgency-trigger",
+      "name": "Urgency-trigger",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "stock_limit",
+          "min": 0,
+          "max": 50,
+          "step": 1,
+          "label": "t:sections.go-main-product.settings.stock_limit.label",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "stock_low_text",
+          "label": "t:sections.go-main-product.settings.stock_low_text.label",
+          "default": "t:sections.go-main-product.settings.stock_low_text.default"
         }
       ]
     }

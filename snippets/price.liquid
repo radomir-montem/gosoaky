@@ -65,6 +65,15 @@
       <span class="price-item price-item--sale price-item--last">
         {{ money_price }}
       </span>
+      {%- if product.compare_at_price and product.compare_at_price > product.price and template.name == 'product' -%}
+          {% assign original_price = product.compare_at_price |  divided_by: 1.0 %}
+          {% assign discounted_price = product.price |  divided_by: 1.0 %} 
+          {% assign discount_percentage = original_price | minus: discounted_price | times: 100 | divided_by: original_price %}
+
+        <span class="badge save_price-badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+          {{ discount_percentage | round  }}% Save
+        </span>
+      {%- endif -%}
     </div>
     <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
       <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>

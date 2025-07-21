@@ -39,6 +39,13 @@
             "coming_soon_text": "Coming soon"
           }
         },
+        "urgency_trigger_HtVnzU": {
+          "type": "urgency-trigger",
+          "settings": {
+            "stock_limit": 10,
+            "stock_low_text": "Left  in Stock"
+          }
+        },
         "b52f5f81-5c4b-4969-a1f3-4dce082a3b25": {
           "type": "usp-content",
           "settings": {
@@ -53,10 +60,26 @@
         "9f3629bc-fafb-4231-b3bc-dbdc418fee05",
         "bafbc6a6-4003-41e4-8a8f-4f354e32312c",
         "a61eb5f3-07d2-4a0e-8141-b257cf7947b7",
+        "urgency_trigger_HtVnzU",
         "b52f5f81-5c4b-4969-a1f3-4dce082a3b25"
       ],
       "custom_css": [],
       "settings": {}
+    },
+    "1748608099975707c2": {
+      "type": "apps",
+      "blocks": {
+        "selleasy_lb_upsell_widget_bl_CdcLgf": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "selleasy_lb_upsell_widget_bl_CdcLgf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     },
     "1748609244e1fc3911": {
       "type": "apps",
@@ -112,21 +135,6 @@
       ],
       "settings": {
         "product": ""
-      }
-    },
-    "1748608099975707c2": {
-      "type": "apps",
-      "blocks": {
-        "selleasy_lb_upsell_widget_bl_CdcLgf": {
-          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "selleasy_lb_upsell_widget_bl_CdcLgf"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "1658149516ba83ec13": {
