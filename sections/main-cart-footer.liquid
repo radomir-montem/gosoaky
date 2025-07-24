@@ -15,8 +15,8 @@
       {%- endif -%}
       
       <div class="cart__discount">
-        <input type="text" class="discount_input" id="discount-code">
-        <button class="apply_btn" id="apply-discount-btn">{{ 'products.facets.apply' | t }}</button>
+        <input type="text" class="discount_input" id="discount-code" placeholder="{{ section.settings.discount_input_placeholder }}">
+        <button class="button button--primary apply_btn" id="apply-discount-btn">{{ 'products.facets.apply' | t }}</button>
       </div>
 
       <div class="cart__blocks">
@@ -132,6 +132,11 @@
       "id": "show_cart_note",
       "default": false,
       "label": "t:sections.main-cart-footer.settings.show_cart_note.label"
+    },
+    {
+      "type": "text",
+      "id": "discount_input_placeholder",
+      "label": "t:sections.main-cart-footer.settings.placeholder.label"
     }
   ],
   "blocks": [

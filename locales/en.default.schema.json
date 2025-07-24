@@ -1403,6 +1403,9 @@
       "settings": {
         "show_cart_note": {
           "label": "Enable cart note"
+        },
+        "placeholder": {
+          "label": "Placeholder"
         }
       },
       "blocks": {

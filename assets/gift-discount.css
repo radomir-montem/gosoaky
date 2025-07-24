@@ -11,15 +11,15 @@
 }
 
 .cart__footer .cart__discount .discount_input {
-    width: 77.5%;
+    width: 70%;
     padding: 1rem;
     outline: none;
     outline-offset: unset;
     box-shadow: none;
 }
 
-.cart__footer .cart__discount .apply_btn {
-    width: 20%;
+.cart__footer .cart__discount .button.button--primary.apply_btn {
+    min-width: 27.5%;
     padding: 0.6rem;
     background-color: black;
     color: white;

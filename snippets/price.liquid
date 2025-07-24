@@ -71,7 +71,7 @@
           {% assign discount_percentage = original_price | minus: discounted_price | times: 100 | divided_by: original_price %}
 
         <span class="badge save_price-badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-          {{ discount_percentage | round  }}% Save
+          Save {{ discount_percentage | round  }}%
         </span>
       {%- endif -%}
     </div>

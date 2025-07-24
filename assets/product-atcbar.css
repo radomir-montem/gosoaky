@@ -25,7 +25,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1b2831;
     color: white;
     gap: 0.8rem;
 }
@@ -40,6 +39,10 @@
 .product-form.go-product-page-form-wrapper-copy .product-form__submit .icon svg {
     width: 20px;
     height: 20px;
+}
+
+.go-product-page-form-wrapper-copy .product-form__submit .icon {
+    margin-bottom: 2px;
 }
 
 .product-form.go-product-page-form-wrapper-copy .product-form__submit.btn:not(.btn--no-animate):not(.btn--tertiary):not(.btn--static) {
@@ -76,7 +79,7 @@
     margin-top: 0;
     margin-bottom: 0;
     font-family: proxima-nova, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 120%;
     letter-spacing: -1px;
 }
@@ -97,8 +100,12 @@
 .sticky-bottom .container .sticky_post .sticky__button {
     display: flex;
     gap: 0.5rem;
-    background-color: #1b2831;
+    background-color: #000000;
     color: white;
+}
+
+.sticky-bottom .container .sticky_post .sticky__button > span:last-child {
+    line-height: 23px;
 }
 
 .sticky-bottom .container .sticky_post .sticky__button .icon {
