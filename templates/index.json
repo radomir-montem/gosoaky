@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify://shop_images/DSC_2696.jpg",
             "mobile_image": "shopify://shop_images/DSC_2696.jpg",
-            "header_text": "SALE AT 30% OFF",
+            "header_text": "SALE UP TO 50% OFF",
             "header_subtitle": "",
             "button_1_text": "SHOP NOW",
             "url_1": "shopify://collections/spring-summer-2025",
@@ -30,6 +30,7 @@
         },
         "slide_BxGHr8": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_3.png",
             "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_8.png",
