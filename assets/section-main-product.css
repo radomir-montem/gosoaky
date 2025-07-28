@@ -459,7 +459,7 @@ a.product__text {
   border-radius: calc(var(--media-radius) - var(--media-border-width));
 }
 
-.sg-product-hero .urgency-trigger h4 {
+.sg-product-hero .customer-view h4 {
   font-size: 24px;
   margin: 0;
   text-transform: uppercase;
@@ -471,7 +471,7 @@ a.product__text {
 }
 
 @media screen and (max-width: 749px) {
-  .sg-product-hero .urgency-trigger h4 {
+  .sg-product-hero .customer-view h4 {
     font-size: 20px;
   }
   

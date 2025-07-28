@@ -61,8 +61,8 @@
                 {% render 'go-product-page-title', product: product, first_name: first_name %}
               {% when 'variant-selectors' %}
                 {% render 'go-product-page-variant-selectors', product: product, product_form_id: product_form_id , section_id: section.id, product_color: product_color, sizing_link_title: block.settings.sizing_section_link_title %}
-              {% when 'urgency-trigger'%}
-                {%- render 'urgency-trigger' product: product, stock_limit: block.settings.stock_limit stock_text: block.settings.stock_low_text -%}  
+              {% when 'customer_view' %}
+                {%- render 'customer-view' stock_text: block.settings.customer_view_text -%}  
               {% when 'add-buttons' %}
                 {% render 'go-product-page-add-buttons', product: product, product_form_id: product_form_id , section_id: section.id, coming_soon: block.settings.coming_soon, coming_soon_text: block.settings.coming_soon_text %}
               {% when 'usp-content' %}
@@ -339,22 +339,13 @@
       ]
     },
     {
-      "type": "urgency-trigger",
-      "name": "Urgency-trigger",
+      "type": "customer_view",
+      "name": "Customer Viewing",
       "limit": 1,
       "settings": [
         {
-          "type": "range",
-          "id": "stock_limit",
-          "min": 0,
-          "max": 50,
-          "step": 1,
-          "label": "t:sections.go-main-product.settings.stock_limit.label",
-          "default": 5
-        },
-        {
           "type": "text",
-          "id": "stock_low_text",
+          "id": "customer_view_text",
           "label": "t:sections.go-main-product.settings.stock_low_text.label",
           "default": "t:sections.go-main-product.settings.stock_low_text.default"
         }

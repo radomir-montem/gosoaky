@@ -1,8 +1,0 @@
-{% if product.selected_or_first_available_variant.inventory_management and product.selected_or_first_available_variant.inventory_quantity > 0 %}
-  {% assign qty = product.selected_or_first_available_variant.inventory_quantity %}
-  {% if qty <= stock_limit %}
-    <div class="urgency-trigger">
-      <h4>{{ qty }}&nbsp;{{ stock_text }}</h4>
-    </div>
-  {% endif %}
-{% endif %}

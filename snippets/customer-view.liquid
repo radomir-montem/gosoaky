@@ -1,0 +1,4 @@
+{%- assign qty = "now" | date: "%N" | modulo: 4 | plus: 1 -%}
+<div class="customer-view sg-model-size-information">
+  {{ qty }}&nbsp;{{ stock_text }}
+</div>
