@@ -130,3 +130,18 @@
         padding: 0 5rem;
     }
 }
+
+body:not(.device-type--ios) shopify-apple-pay-button,
+shop-pay-wallet-button {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    body:not(.device-type--android) shopify-google-pay-button {
+        display: none !important;
+    }
+}
+
+.dynamic-checkout__content {
+    margin-top: -72px;
+}
