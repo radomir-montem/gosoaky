@@ -95,7 +95,7 @@
 }
 
 .page-width {
-    padding: 0 1.5rem;
+    padding: 0 5rem;
 }
 
 .jdgm-carousel--aligned-theme .jdgm-carousel-item__review {
@@ -127,7 +127,7 @@
     }
 
     .page-width {
-        padding: 0 5rem;
+        padding: 0 15px;
     }
 }
 
@@ -144,4 +144,8 @@ shop-pay-wallet-button {
 
 .dynamic-checkout__content {
     margin-top: -72px;
+}
+
+shopify-accelerated-checkout more-payment-options-link {
+    display: none !important;
 }
