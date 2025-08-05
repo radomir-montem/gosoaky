@@ -42,9 +42,9 @@
         "b52f5f81-5c4b-4969-a1f3-4dce082a3b25": {
           "type": "usp-content",
           "settings": {
-            "usp1": "Free Shipping above €150",
+            "usp1": "Free Shipping in NL, BE, DE, LU",
             "usp2": "Sustainable Outerproofs™",
-            "usp3": "Order before 15:00, shipped out today"
+            "usp3": "Designed in Amsterdam"
           }
         }
       },
@@ -57,6 +57,21 @@
       ],
       "custom_css": [],
       "settings": {}
+    },
+    "1748608099975707c2": {
+      "type": "apps",
+      "blocks": {
+        "selleasy_lb_upsell_widget_bl_CdcLgf": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "selleasy_lb_upsell_widget_bl_CdcLgf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     },
     "1748609244e1fc3911": {
       "type": "apps",
@@ -112,21 +127,6 @@
       ],
       "settings": {
         "product": ""
-      }
-    },
-    "1748608099975707c2": {
-      "type": "apps",
-      "blocks": {
-        "selleasy_lb_upsell_widget_bl_CdcLgf": {
-          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "selleasy_lb_upsell_widget_bl_CdcLgf"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "1658149516ba83ec13": {
