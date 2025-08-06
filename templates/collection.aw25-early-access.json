@@ -9,6 +9,23 @@
  */
 {
   "sections": {
+    "image_banner_UR4JyG": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/GOSOAKY_AW25_TIGERFEET_BRONZEGREEN_8.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "banner": {
       "type": "go-collection-banner",
       "settings": {}
@@ -51,6 +68,7 @@
     }
   },
   "order": [
+    "image_banner_UR4JyG",
     "banner",
     "product-grid",
     "173097376181e32688"
