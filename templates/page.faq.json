@@ -39,7 +39,7 @@
           "type": "question",
           "settings": {
             "question": "How can I track my order?",
-            "answer": "<p>When your order is shipped, you receive an email with the shipping details and a track and trace code. You can use this code to keep an eye on the status of your parcel, the best way is to copy the code (remove the brackets) and fill it in on the DHL website. If you can’t see any information after a day of receiving the link, please reach out to us or DHL.</p>"
+            "answer": "<p>When your order is shipped, you receive an email with the shipping details and a track and trace code. You can use this code to keep an eye on the status of your parcel. If you're experiencing trouble with viewing your shipment, please reach out to us.</p>"
           }
         },
         "question_U8PfKw": {
