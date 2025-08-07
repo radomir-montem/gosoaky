@@ -53,7 +53,7 @@
           "type": "question",
           "settings": {
             "question": "I can't track my order. What now?",
-            "answer": "<p>It can take up to a day for the track and trace code to work, so the best thing to do is wait and try later. If the track and trace code still doesn’t work after a day, please contact us or DHL about the status of your parcel.</p>"
+            "answer": "<p>It can take up to a day for the track and trace code to work, so the best thing to do is wait and try later. If the track and trace code still doesn’t work after a day, please contact us or the carrier about the status of your parcel.</p>"
           }
         },
         "question_fJtXWE": {
