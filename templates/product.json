@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "17486092370af125d0": {
@@ -37,6 +46,33 @@
             "usp2": "Sustainable Outerproofs™",
             "usp3": "Designed in Amsterdam"
           }
+        },
+        "collapsible_tab_TqcMUy": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_3wnUdz": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specifications",
+            "icon": "none",
+            "content": "{{ product.metafields.custom.product_specification | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_4Ynqx6": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Sizing Information",
+            "icon": "none",
+            "content": "<p>All garments are based on EU standard sizing. As age and size can differ across countries, we advise you to measure the height your kid to find out the correct size. For instance, if your child is 114 cm tall, choose size 110/116. In cases where your child falls between two sizes, consider selecting the larger size to ensure a comfortable fit as they continue to grow.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -44,7 +80,10 @@
         "9f3629bc-fafb-4231-b3bc-dbdc418fee05",
         "bafbc6a6-4003-41e4-8a8f-4f354e32312c",
         "a61eb5f3-07d2-4a0e-8141-b257cf7947b7",
-        "b52f5f81-5c4b-4969-a1f3-4dce082a3b25"
+        "b52f5f81-5c4b-4969-a1f3-4dce082a3b25",
+        "collapsible_tab_TqcMUy",
+        "collapsible_tab_3wnUdz",
+        "collapsible_tab_4Ynqx6"
       ],
       "custom_css": [],
       "settings": {}
@@ -116,6 +155,7 @@
         "template--16135476740283__52e14f4e-bd0f-43c3-9c95-7fda897d6f54-shipping-1",
         "cde45a5b-444d-4c85-a181-c4fc9cd92c76"
       ],
+      "disabled": true,
       "settings": {
         "product": ""
       }

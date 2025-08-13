@@ -32,6 +32,7 @@
   min-height: 1.6rem;
   margin: 0;
   word-break: break-word;
+  font-weight: bold;
 }
 
 .accordion .icon-accordion {
@@ -51,6 +52,10 @@
   word-break: break-word;
   overflow-x: auto;
   padding: 0 0.6rem;
+}
+
+.accordion__content * {
+  font-size: 16px;
 }
 
 .accordion__content img {
