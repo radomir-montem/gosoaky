@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify://shop_images/DSC_2696.jpg",
             "mobile_image": "shopify://shop_images/DSC_2696.jpg",
-            "header_text": "SALE AT 30% OFF",
+            "header_text": "SALE UP TO 30% OFF",
             "header_subtitle": "",
             "button_1_text": "SHOP NOW",
             "url_1": "shopify://collections/spring-summer-2025",
@@ -30,6 +30,7 @@
         },
         "slide_BxGHr8": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_3.png",
             "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_8.png",
@@ -173,6 +174,22 @@
         "image_3": "shopify://shop_images/DSC_0961_d4b0ff33-554d-4b7b-b033-a5268bfcde54.jpg"
       }
     },
+    "175500460708f23d0e": {
+      "type": "apps",
+      "blocks": {
+        "socialwidget_instafeed_base_widget_Ajq6Kb": {
+          "type": "shopify://apps/socialwidget-instafeed/blocks/base-widget/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "socialwidget_instafeed_base_widget_Ajq6Kb"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "1660651647f0d46794": {
       "type": "go-waterproof-explanation",
       "settings": {
@@ -241,6 +258,7 @@
     "166065142438dc25e1",
     "16606515163a80a91e",
     "1660651534eb59d086",
+    "175500460708f23d0e",
     "1660651647f0d46794",
     "go_collection_promotion_TYJF8B",
     "172856617126700031",

@@ -33,9 +33,9 @@
         "b52f5f81-5c4b-4969-a1f3-4dce082a3b25": {
           "type": "usp-content",
           "settings": {
-            "usp1": "Free Shipping above €150",
+            "usp1": "Free Shipping in NL, BE, DE & LU",
             "usp2": "Sustainable Outerproofs™",
-            "usp3": "Order before 15:00, shipped out today"
+            "usp3": "Designed in Amsterdam"
           }
         }
       },
@@ -135,10 +135,18 @@
         "5cfb12c2-e473-4121-9734-971f5abcd596": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
+        },
+        "judge_me_reviews_featured_carousel_eGGwNG": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+            "maxwidth": 1080
+          }
         }
       },
       "block_order": [
-        "5cfb12c2-e473-4121-9734-971f5abcd596"
+        "5cfb12c2-e473-4121-9734-971f5abcd596",
+        "judge_me_reviews_featured_carousel_eGGwNG"
       ],
       "settings": {
         "include_margins": true
