@@ -19,7 +19,7 @@ class stickyAtc extends HTMLElement {
             });
         }
 
-        new IntersectionObserver(handleIntersection.bind(this.productForm), { rootMargin: `0px 0px -100px 0px` }).observe(this.productForm);
+        new IntersectionObserver(handleIntersection.bind(this.productForm), { rootMargin: `-500px 0px 0px 0px` }).observe(this.productForm);
         this.stickyButton.addEventListener('click', this.onClickAtcButton.bind(this));
         this.stickySelect.addEventListener('change', this.onChangeStickySelect.bind(this));
         this.variantSelect.addEventListener('change', this.onChangeVariantSelect.bind(this));
