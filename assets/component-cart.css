@@ -221,3 +221,9 @@ cart-items {
     gap: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .cart__ctas .cart__checkout-button {
+    height: 5.5rem;
+  }
+}

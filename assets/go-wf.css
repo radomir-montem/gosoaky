@@ -4115,6 +4115,10 @@ li {
   display: flex;
 }
 
+.product-form__buttons .sg-product-page-wrapper {
+  margin-top: 2.5rem;
+}
+
 .sg-size-fit-guide-menu-tab {
   flex-flow: row;
   justify-content: flex-start;
@@ -6236,7 +6240,7 @@ li {
   }
 
   .sg-product-page-button {
-    height: 50px;
+    height: 47px;
     font-size: 16px;
   }
 

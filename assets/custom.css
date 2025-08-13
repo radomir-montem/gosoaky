@@ -142,8 +142,10 @@ shop-pay-wallet-button {
     }
 }
 
-.dynamic-checkout__content {
-    margin-top: -72px;
+@media (max-width: 768px) {
+    .dynamic-checkout__content {
+        margin-top: -72px;
+    }
 }
 
 shopify-accelerated-checkout more-payment-options-link {
