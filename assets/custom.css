@@ -149,3 +149,8 @@ shop-pay-wallet-button {
 shopify-accelerated-checkout more-payment-options-link {
     display: none !important;
 }
+
+.template--product #shopify-section-contact-widget,
+.template--collection #shopify-section-contact-widget {
+    display: none !important;
+}

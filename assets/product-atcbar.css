@@ -268,3 +268,18 @@
         font-size: 1.3rem;
     }
 }
+
+@media (max-width: 768px) {
+    .sticky-bottom {
+        width: auto;
+        border: none;
+    }
+
+    .sticky-bottom .full-width.container {
+        padding: 0;
+    }
+
+    .sticky-stc-button--container {
+        display: none !important;
+    }
+}
