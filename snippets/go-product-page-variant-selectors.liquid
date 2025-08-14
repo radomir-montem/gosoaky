@@ -24,10 +24,11 @@
     </div>
     <div class="sg-color-swatches">
       {% for color_product in product.metafields.product_information.product_color_collection.value.products %}
+        {% assign color_image = color_product.metafields.custom.color_swatch_image | default: color_product.featured_media %}
         {% if color_product == product %}
           <div class="sg-colour-block sg-selected">
             {{
-              color_product.featured_media
+              color_image
               | image_url: width: 1500
               | image_tag:
                 loading: 'lazy',
@@ -40,7 +41,7 @@
         {% else %}
           <a href="{{ color_product.url }}" class="sg-colour-block sg-unselected w-inline-block">
             {{
-              color_product.featured_media
+              color_image
               | image_url: width: 1500
               | image_tag:
                 loading: 'lazy',
