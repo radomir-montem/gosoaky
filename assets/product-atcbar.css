@@ -7,7 +7,7 @@
 .sticky-bottom {
     position: fixed;
     bottom: 1rem;
-    left: 1rem;
+    left: 50%;
     background: white;
     border-top: 1px solid #ddd;
     display: flex;
@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.05);
-    transform: translateY(100%);
+    transform: translate(-50%, 100%);
     z-index: 999;
     transition: transform 0.55s ease-in-out;
     max-width: 400px;
@@ -137,12 +137,12 @@
 }
 
 .sticky-bottom.show {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
     transition: 0.55s ease-in-out;
 }
 
 .sticky-bottom.hidden {
-    transform: translateY(100%);
+    transform: translateY(-50%, 100%);
     transition: 0.55s ease-in-out;
 }
 

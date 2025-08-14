@@ -26,7 +26,7 @@ class stickyAtc extends HTMLElement {
     }
 
     onClickAtcButton() {
-        this.atcButton.click();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     onChangeStickySelect() {
