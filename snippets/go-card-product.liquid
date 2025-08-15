@@ -117,7 +117,15 @@
     </div>
     <div class="go-product-card-price">{% render 'price', product: card_product, price_class: '' %}</div>
     {%- if card_product.available == false -%}
-      <div class="go-product-card-soldout">sold out</div>
+      {% assign coming_soon = card_product.metafields.custom.coming_soon | default: false %}
+      <div class="go-product-card-soldout">
+        {% if coming_soon %}
+          Coming soon
+        {% else %}
+          sold out
+        {% endif %}
+      </div>
+    {% endif %}
     {% endif %}
   </div>
 </a>
