@@ -113,7 +113,7 @@
                   </summary>
                   <div id="Facet-{{ forloop.index }}-{{ section.id }}" class="facets__display">
                     <div class="facets__header">
-                      {%- assign max_price_amount = filter.range_max | money | strip_html | escape -%}
+                      {%- assign max_price_amount = filter.range_max | money -%}
                       <span class="facets__selected">{{ "products.facets.max_price" | t: price: max_price_amount }}</span>
                       <facet-remove>
                         <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link" >
