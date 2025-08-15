@@ -189,3 +189,28 @@ shopify-accelerated-checkout more-payment-options-link {
         line-height: 40px;
     }
 }
+
+.sg-product-page-button--coming_soon {
+    opacity: 1 !important;
+}
+
+.go-product-card-style-title {
+  color: #0009;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1em;
+}
+
+@media (max-width: 991px) {
+    .go-product-card-style-title {
+        font-size: 14px;
+        line-height: 1em;
+    }
+}
+
+@media (max-width: 479px) {
+    .go-product-card-style-title {
+        font-size: 12px;
+    }
+}

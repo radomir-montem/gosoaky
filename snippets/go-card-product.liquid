@@ -115,6 +115,7 @@
       {{ first_name | escape }}
       <span class="go-collection-subtitle">| {{ second_name | escape }}</span>
     </div>
+    <div class="go-product-card-style-title">{{ card_product.metafields.product_information.product_number }}</div>
     <div class="go-product-card-price">{% render 'price', product: card_product, price_class: '' %}</div>
     {%- if card_product.available == false -%}
       {% assign coming_soon = card_product.metafields.custom.coming_soon | default: false %}
