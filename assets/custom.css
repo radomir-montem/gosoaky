@@ -153,7 +153,9 @@ shopify-accelerated-checkout more-payment-options-link {
 }
 
 .template--product #shopify-section-contact-widget,
-.template--collection #shopify-section-contact-widget {
+.template--collection #shopify-section-contact-widget,
+.template--search #shopify-section-contact-widget,
+.template--cart #shopify-section-contact-widget {
     display: none !important;
 }
 
