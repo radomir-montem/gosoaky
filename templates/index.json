@@ -15,12 +15,12 @@
         "slide_KjanyX": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/DSC_2696.jpg",
-            "mobile_image": "shopify://shop_images/DSC_2696.jpg",
-            "header_text": "SALE UP TO 30% OFF",
+            "image": "shopify://shop_images/DESKTOP_VERSION_GO_SOAKY_AW250853.jpg",
+            "mobile_image": "shopify://shop_images/PHONE_VERSION_GO_SOAKY_AW250853.jpg",
+            "header_text": "NEW COLLECTION",
             "header_subtitle": "",
-            "button_1_text": "SHOP NOW",
-            "url_1": "shopify://collections/spring-summer-2025",
+            "button_1_text": "SHOP AW25",
+            "url_1": "shopify://collections/kids-autumn-winter-2025",
             "button_1_style": "go-light",
             "button_2_text": "Button 2",
             "url_2": "",
@@ -30,14 +30,13 @@
         },
         "slide_BxGHr8": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_3.png",
-            "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_8.png",
-            "header_text": "#GOSOAKYINTHECITY",
+            "image": "shopify://shop_images/GO_SOAKY_AW250853.jpg",
+            "mobile_image": "shopify://shop_images/GO_SOAKY_AW250834.jpg",
+            "header_text": "OUTERPROOFS™",
             "header_subtitle": "",
-            "button_1_text": "SHOP NOW",
-            "url_1": "shopify://collections/spring-summer-2025-outerwear",
+            "button_1_text": "LEARN MORE",
+            "url_1": "shopify://pages/this-is-gosoaky",
             "button_1_style": "go-light",
             "button_2_text": "Button 2",
             "url_2": "",
@@ -47,14 +46,13 @@
         },
         "slide_TbYLVm": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_01615b82-4bef-4e10-a5bf-395c47f80eec.png",
-            "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_01615b82-4bef-4e10-a5bf-395c47f80eec.png",
-            "header_text": "#GOSOAKYINTHECITY",
+            "image": "shopify://shop_images/DSC_1749_copy_f4a67584-3f7c-486d-b056-93c66c0278d5.jpg",
+            "mobile_image": "shopify://shop_images/DSC_1749_copy_f4a67584-3f7c-486d-b056-93c66c0278d5.jpg",
+            "header_text": "SALE AT 30% OFF",
             "header_subtitle": "",
-            "button_1_text": "SHOP OUTERWEAR",
-            "url_1": "shopify://collections/spring-summer-2025-outerwear",
+            "button_1_text": "SHOP NOW",
+            "url_1": "shopify://collections/archive-sale",
             "button_1_style": "go-light",
             "button_2_text": "Button 2",
             "url_2": "",
@@ -110,32 +108,34 @@
     },
     "16606506679e84436b": {
       "type": "go-double-image",
-      "settings": {
-        "image_1": "shopify://shop_images/GOSOAKY_SS25_KANGAROO_DAISY_SILT_GREEN_1_6cd236c7-3ca1-4faf-95a5-0b0ea5dc779c.jpg",
-        "header_1_text": "Outerwear",
-        "button_1_text": "View all",
-        "url_1": "shopify://collections/spring-summer-2025-outerwear",
-        "image_2": "shopify://shop_images/GOSOAKY_SS25_ELEPHANT_MAN_ICE_BERG_GREEN_2_ebbb9319-7859-47b6-b522-df0826dd66db.jpg",
-        "header_2_text": "Rainwear",
-        "button_2_text": "view all",
-        "url_2": "shopify://collections/spring-summer-2025-rainwear"
-      }
-    },
-    "go_double_image_CtHtLG": {
-      "type": "go-double-image",
-      "disabled": true,
       "custom_css": [
         ".go-section-two-images {padding-top: 0px;}"
       ],
       "settings": {
-        "image_1": "shopify://shop_images/GOSOAKY_AW24_CURIOUS_CAT_GREEN_MULTI_5_d1fa5696-e35e-4288-bd89-e0797c646fe7.jpg",
+        "image_1": "shopify://shop_images/GOSOAKY_AW25_TIGER_EYE_DAZZLING_BLUE_3_9e3e7c90-57a0-4d54-9435-1b8b555c82f7.jpg",
+        "header_1_text": "OUTERWEAR",
+        "button_1_text": "View all",
+        "url_1": "shopify://collections/autumn-winter-2025-outerwear",
+        "image_2": "shopify://shop_images/GOSOAKY_AW25_SNAKE_PIT_SKY_CAPTAIN_MULTI_6_3ee5db9d-cb25-4577-a846-cc7f80e17ed8.jpg",
+        "header_2_text": "RAINWEAR",
+        "button_2_text": "View all",
+        "url_2": "shopify://collections/autumn-winter-2025-rainwear"
+      }
+    },
+    "go_double_image_CMb7n3": {
+      "type": "go-double-image",
+      "custom_css": [
+        ".go-section-two-images {padding-top: 0px;}"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/GOSOAKY_AW25_BIG_BAD_WOLF_SKY_CAPTAIN_BLUE__4_6eaa4b45-8530-4972-8213-9b7aec26f900.jpg",
         "header_1_text": "SNOWWEAR",
         "button_1_text": "VIEW ALL",
-        "url_1": "shopify://collections/snowwear",
-        "image_2": "shopify://shop_images/GOSOAKY_AW24_QUIRKY_SNAIL_COTTON_CANDY_MULTI_2_8d533f89-5aae-4c9e-8b21-e227f7fa48e6.jpg",
+        "url_1": "shopify://collections/autumn-winter-2025-snowwear",
+        "image_2": "shopify://shop_images/GOSOAKY_AW25_CHICKEN_RUN_MARINA_BLUE_-_LINEN_WHITE_3_c5ad475b-06fe-4018-bd02-d87ee1f9bd1a.jpg",
         "header_2_text": "ACCESSORIES",
         "button_2_text": "VIEW ALL",
-        "url_2": "shopify://collections/accessories"
+        "url_2": "shopify://collections/autumn-winter-2025-accessories"
       }
     },
     "166065142438dc25e1": {
@@ -143,10 +143,10 @@
       "settings": {
         "header": "Our wardrobe heroes",
         "image_aspect_ratio": 75,
-        "product_1": "blue-bird-snapdragon-yellow",
-        "product_2": "kangaroo-daisy-azure-blue",
-        "product_3": "pig-out-white-gap-grey",
-        "product_4": "the-seagull-cool-blue-true-blue",
+        "product_1": "rock-lobster-marina-blue-multi-marina-blue-multi",
+        "product_2": "dragon-eye-marina-blue-multi-print-marina-blue-multi-print",
+        "product_3": "smiling-dove-denim-multi-denim-multi",
+        "product_4": "tiger-eye-dazzling-blue-dazzling-blue",
         "button_1_text": "See full collection",
         "url_1": "shopify://collections/kids-winter-clothes"
       }
@@ -169,9 +169,9 @@
         "url_1": "shopify://pages/gosoaky-tv",
         "button_2_text": "This is gosoaky",
         "url_2": "shopify://pages/this-is-gosoaky",
-        "image_1": "shopify://shop_images/DSC_1129_382e49f9-cca9-4c16-8d4f-7ece0bd1a2c9.jpg",
-        "image_2": "shopify://shop_images/DSC_1152_e204a5f8-ffdf-43f5-9819-52dd05ebc1cb.jpg",
-        "image_3": "shopify://shop_images/DSC_0961_d4b0ff33-554d-4b7b-b033-a5268bfcde54.jpg"
+        "image_1": "shopify://shop_images/GO_SOAKY_AW251244.jpg",
+        "image_2": "shopify://shop_images/GO_SOAKY_AW251219.jpg",
+        "image_3": "shopify://shop_images/GO_SOAKY_AW251236.jpg"
       }
     },
     "175500460708f23d0e": {
@@ -204,7 +204,7 @@
         "twentyk_text": "20K | 20.000 MM",
         "twentyk_paragraph": "Rainproof and waterproof under medium-high pressure. Ideal for heavy rain, wet snow, medium-high pressure.",
         "photo_header": "",
-        "image_1": "shopify://shop_images/GOSOAKY_SS25_KANGAROO_DAISY_SILT_GREEN_5_2af0b7f1-2f00-45f5-837b-b9a9f0da3787.jpg"
+        "image_1": "shopify://shop_images/GS2411227361.jpg"
       }
     },
     "go_collection_promotion_TYJF8B": {
@@ -220,12 +220,6 @@
     "172856617126700031": {
       "type": "apps",
       "blocks": {
-        "klaviyo_email_marketing_sms_form_embed_block_m4nM3X": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "settings": {
-            "formId": "SUWVQ7"
-          }
-        },
         "judge_me_reviews_featured_carousel_J9PGf3": {
           "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
@@ -234,7 +228,6 @@
         }
       },
       "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_m4nM3X",
         "judge_me_reviews_featured_carousel_J9PGf3"
       ],
       "settings": {
@@ -248,13 +241,30 @@
         "recently_products_heading": "Recently viewed",
         "related_count": 6
       }
+    },
+    "17561255548f9bffbc": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_UWwQcY": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "Y5bivx"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_UWwQcY"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "hero_slideshow_q67epj",
     "16606505673e469e8c",
     "16606506679e84436b",
-    "go_double_image_CtHtLG",
+    "go_double_image_CMb7n3",
     "166065142438dc25e1",
     "16606515163a80a91e",
     "1660651534eb59d086",
@@ -262,6 +272,7 @@
     "1660651647f0d46794",
     "go_collection_promotion_TYJF8B",
     "172856617126700031",
-    "recently_products_QxK44i"
+    "recently_products_QxK44i",
+    "17561255548f9bffbc"
   ]
 }
