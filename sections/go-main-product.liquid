@@ -59,7 +59,7 @@
               {% when '@app' %}
                 {% render block %}
               {% when 'product-title' %}
-                {% render 'go-product-page-title', product: product, first_name: first_name %}
+                {% render 'go-product-page-title', product: product, first_name: first_name, enable_save_badge: section.settings.enable_save_badge %}
               {% when 'variant-selectors' %}
                 {% render 'go-product-page-variant-selectors', product: product, product_form_id: product_form_id , section_id: section.id, product_color: product_color, sizing_link_title: block.settings.sizing_section_link_title %}
               {% when 'customer_view' %}
@@ -287,7 +287,12 @@
   "tag": "section",
   "class": "section",
   "settings": [
-
+    {
+      "type": "checkbox",
+      "id": "enable_save_badge",
+      "label": "Enable save badge",
+      "default": false
+    }
   ],
   "blocks": [
     {

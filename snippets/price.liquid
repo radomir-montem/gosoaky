@@ -28,6 +28,8 @@
   if target == product and product.price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
+
+  assign enable_save_badge = enable_save_badge | default: false
 -%}
 
 <div class="price
@@ -65,7 +67,7 @@
       <span class="price-item price-item--sale price-item--last">
         {{ money_price }}
       </span>
-      {%- if product.compare_at_price and product.compare_at_price > product.price and template.name == 'product' -%}
+      {%- if product.compare_at_price and product.compare_at_price > product.price and template.name == 'product' and enable_save_badge -%}
           {% assign original_price = product.compare_at_price |  divided_by: 1.0 %}
           {% assign discounted_price = product.price |  divided_by: 1.0 %} 
           {% assign discount_percentage = original_price | minus: discounted_price | times: 100 | divided_by: original_price %}
