@@ -466,7 +466,6 @@ a.product__text {
 }
 
 .sg-product-page-purchase-title .price__sale {
-  display: flex;
   align-items: center;
 }
 
