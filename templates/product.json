@@ -73,6 +73,10 @@
             "content": "<p>All garments are based on EU standard sizing. As age and size can differ across countries, we advise you to measure the height your kid to find out the correct size. For instance, if your child is 114 cm tall, choose size 110/116. In cases where your child falls between two sizes, consider selecting the larger size to ensure a comfortable fit as they continue to grow.</p>",
             "page": ""
           }
+        },
+        "selleasy_lb_upsell_widget_bl_nTmee7": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
         }
       },
       "block_order": [
@@ -83,16 +87,20 @@
         "b52f5f81-5c4b-4969-a1f3-4dce082a3b25",
         "collapsible_tab_TqcMUy",
         "collapsible_tab_3wnUdz",
-        "collapsible_tab_4Ynqx6"
+        "collapsible_tab_4Ynqx6",
+        "selleasy_lb_upsell_widget_bl_nTmee7"
       ],
       "custom_css": [],
-      "settings": {}
+      "settings": {
+        "enable_save_badge": false
+      }
     },
     "1748608099975707c2": {
       "type": "apps",
       "blocks": {
         "selleasy_lb_upsell_widget_bl_CdcLgf": {
           "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "disabled": true,
           "settings": {}
         }
       },
@@ -174,7 +182,10 @@
       "blocks": {
         "5cfb12c2-e473-4121-9734-971f5abcd596": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
         },
         "judge_me_reviews_featured_carousel_eGGwNG": {
           "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
