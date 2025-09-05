@@ -49,7 +49,8 @@
         "buttons"
       ],
       "settings": {
-        "show_cart_note": false
+        "show_cart_note": false,
+        "discount_input_placeholder": "Discount code"
       }
     },
     "166124263991b826e2": {
@@ -59,7 +60,7 @@
         "image_aspect_ratio": 75,
         "product_1": "jungle-cat-white-gap-grey-brown-rice",
         "product_2": "roaring-cat-first-blush-pink",
-        "product_3": "striped-fox-greener-pastures",
+        "product_3": "big-bad-wolf-crocus-petal-purple-crocus-petal-purple",
         "product_4": "jungle-cat-iceberg-green-white-gap-grey",
         "button_1_text": "View entire collection",
         "url_1": "shopify://collections/kids-winter-clothes-1"
