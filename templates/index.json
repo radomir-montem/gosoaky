@@ -108,9 +108,7 @@
     },
     "16606506679e84436b": {
       "type": "go-double-image",
-      "custom_css": [
-        ".go-section-two-images {padding-top: 0px;}"
-      ],
+      "custom_css": [],
       "settings": {
         "image_1": "shopify://shop_images/GOSOAKY_AW25_TIGER_EYE_DAZZLING_BLUE_3_9e3e7c90-57a0-4d54-9435-1b8b555c82f7.jpg",
         "header_1_text": "OUTERWEAR",
