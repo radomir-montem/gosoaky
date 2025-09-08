@@ -50,7 +50,7 @@
         "collapsible_tab_TqcMUy": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Description",
+            "heading": "DESCRIPTION",
             "icon": "none",
             "content": "{{ product.metafields.custom.product_description | metafield_tag }}",
             "page": ""
@@ -59,7 +59,7 @@
         "collapsible_tab_3wnUdz": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Specifications",
+            "heading": "SPECIFICATIONS",
             "icon": "none",
             "content": "{{ product.metafields.custom.product_specification | metafield_tag }}",
             "page": ""
@@ -68,7 +68,7 @@
         "collapsible_tab_4Ynqx6": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Sizing Information",
+            "heading": "SIZING INFORMATION",
             "icon": "none",
             "content": "<p>All garments are based on EU standard sizing. As age and size can differ across countries, we advise you to measure the height your kid to find out the correct size. For instance, if your child is 114 cm tall, choose size 110/116. In cases where your child falls between two sizes, consider selecting the larger size to ensure a comfortable fit as they continue to grow.</p>",
             "page": ""
