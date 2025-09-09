@@ -4096,6 +4096,9 @@ li {
   position: absolute;
   inset: auto 16px auto auto;
   box-shadow: 0 6px 16px #05060f0f;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
 }
 
 .sg-product-page-arrow-right:hover {
@@ -4434,6 +4437,9 @@ li {
   position: absolute;
   inset: auto auto auto 16px;
   box-shadow: 0 6px 16px #05060f0f;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
 }
 
 .sg-product-page-arrow-left:hover {
