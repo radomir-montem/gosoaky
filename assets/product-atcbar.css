@@ -9,7 +9,6 @@
     bottom: 1rem;
     left: 50%;
     background: white;
-    border-top: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,6 +17,8 @@
     z-index: 999;
     transition: transform 0.55s ease-in-out;
     border-radius: 1rem;
+    width: 100%;
+    max-width: 450px;
 }
 
 .product-form.go-product-page-form-wrapper-copy .product-form__submit {
