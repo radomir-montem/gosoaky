@@ -214,10 +214,6 @@
 }
 
 @media screen and (max-width:586px) {
-    .sticky-bottom .container .sticky_post .sticky__button span {
-        font-size: 1.5rem;
-    }
-
     .sticky-bottom .container .sticky_post .sticky__button .icon {
         width: 2.4rem;
         height: 1.8rem;
