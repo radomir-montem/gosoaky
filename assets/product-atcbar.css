@@ -219,7 +219,7 @@
 
     .sticky-bottom .container .sticky_post .sticky__button {
         gap: 0.4rem;
-        width: 27.5rem;
+        width: 100%;
     }
 }
 
