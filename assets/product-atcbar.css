@@ -111,6 +111,10 @@
     width: 100%;
 }
 
+.sticky-product__button {
+    width: 100%;
+}
+
 .sticky-bottom .container .sticky_post .sticky__button > span:last-child {
     line-height: 23px;
 }
