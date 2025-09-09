@@ -209,18 +209,6 @@
         flex-direction: column;
         gap: 0.5rem;
     }
-
-    .sticky-bottom .container .sticky_post .sticky__button {
-        gap: 0.8rem;
-        width: 20rem;
-        margin: auto;
-        justify-content: center;
-    }
-
-    .sticky-bottom .container .sticky_post .sticky__button {
-        gap: 0.4rem;
-        width: 100%;
-    }
 }
 
 @media screen and (max-width:586px) {
@@ -251,11 +239,6 @@
     
     .sticky-bottom .sticky-stc-button--container .sticky-stc__title span {
         font-size: 1.4rem;
-    }
-
-    .sticky-bottom .container .sticky_post .sticky__button {
-        gap: 0.4rem;
-        width: 27.5rem;
     }
 }
 
