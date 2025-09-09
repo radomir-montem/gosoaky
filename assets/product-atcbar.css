@@ -245,10 +245,6 @@
     .sticky-bottom .container .sticky_post .btn-full {
         padding: 7px 14px;
     }
-
-    .sticky-bottom .container .sticky_post .sticky__button span {
-        font-size: 1.3rem;
-    }
 }
 
 @media (max-width: 768px) {
