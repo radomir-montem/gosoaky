@@ -4101,10 +4101,6 @@ li {
   right: 10px;
 }
 
-.sg-product-page-arrow-right:hover {
-  transform: scale(.9);
-}
-
 .sg-size-fit-wrapper {
   grid-column-gap: 6px;
   align-items: center;
@@ -4440,10 +4436,6 @@ li {
   top: 50%;
   transform: translateY(-50%);
   left: 10px;
-}
-
-.sg-product-page-arrow-left:hover {
-  transform: scale(.9);
 }
 
 .go-product-page-size-text-2 {
