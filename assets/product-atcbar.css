@@ -110,6 +110,8 @@
     font-weight: 700;
     width: 100%;
     height: 54px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 17px;
 }
 
 .sticky-product__button {
