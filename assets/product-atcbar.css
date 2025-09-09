@@ -276,7 +276,7 @@
 
 @media (max-width: 768px) {
     .sticky-bottom {
-        width: auto;
+        width: calc(100% - 3rem);
         border: none;
     }
 
