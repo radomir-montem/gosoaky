@@ -117,10 +117,6 @@
     flex-wrap: unset;
 }
 
-.header__menu-item span {
-    font-size: 12.5px;
-}
-
 @media screen and (max-width: 991px) {
     .shopify-app-block .jdgm-carousel-wrapper {
         width: 100%;
