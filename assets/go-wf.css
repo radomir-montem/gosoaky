@@ -4237,7 +4237,6 @@ li {
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   align-items: flex-start;
-  height: 100%;
   display: flex;
   overflow: hidden;
 }
