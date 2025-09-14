@@ -82,9 +82,10 @@
             </svg>
           </div>
         </button>
-        {{ form | payment_button }}
-      {%- endform -%}
-    {% endif %}
+      </div>
+      {{ form | payment_button }}
+    {%- endform -%}
+  {% endif %}
 </product-form>
 
 {% comment %} <form action="{{ routes.cart_url }}" method="post" id="product-checkout-form">
