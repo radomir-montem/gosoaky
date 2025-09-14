@@ -61,3 +61,18 @@
 .accordion__content img {
   max-width: 100%;
 }
+
+.product__accordion {
+  width: 100%;
+  margin-top: 0;
+}
+
+.product__accordion + .product__accordion {
+  margin-top: -32px;
+}
+
+@media (max-width: 479px) {
+  .product__accordion + .product__accordion {
+    margin-top: -24px;
+  }
+}
