@@ -60,7 +60,8 @@
 {% comment %} SIZE SELECTOR {% endcomment %}
 {% if product.variants.size > 1 %}
 <div class="sg-product-page-wrapper">
-  <variant-radios class="no-js-hidden" data-section="{{ section_id }}" data-url="{{ product.url }}">
+  {% assign coming_soon = product.metafields.custom.coming_soon | default: false %}
+  <variant-radios class="no-js-hidden" data-section="{{ section_id }}" data-url="{{ product.url }}" data-cooming-soon="{{ coming_soon }}">
     {%- for option in product.options_with_values -%}
       {% if option.name != 'Color' %}
         <div class="sg-size-title-wrapper">
