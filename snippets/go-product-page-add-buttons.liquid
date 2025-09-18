@@ -53,18 +53,20 @@
     -%}
       <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
       <div class="product-form__buttons">
+        {% assign coming_soon = product.metafields.custom.coming_soon | default: false %}
         <button
           type="submit"
           name="add"
-          class="sg-product-page-button product-form__submit button button--full-width button--primary"
-          {% if product.selected_or_first_available_variant.available == false %}
+          class="sg-product-page-button product-form__submit button button--full-width button--primary {% if coming_soon %}sg-product-page-button--coming_soon{% endif %}"
+          {% if product.selected_or_first_available_variant.available == false or coming_soon %}
             disabled
           {% endif %}
         >
           <span>
-            {%- if product.selected_or_first_available_variant.available -%}
-              <span class="icon">{%- render 'icon-cart-white' -%}</span>
-              <span>{{ 'products.product.add_to_cart' | t }}</span>
+            {%- if coming_soon -%}
+              {{ 'products.product.coming_soon' | t }}
+            {%- elsif product.selected_or_first_available_variant.available -%}
+              {{ 'products.product.add_to_cart' | t }}
             {%- else -%}
               {{ 'products.product.sold_out' | t }}
             {%- endif -%}
