@@ -43,8 +43,13 @@
     />
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
-    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+
+    {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
+    {{ 'component-cart.css' | asset_url | stylesheet_tag }}
+    {{ 'component-totals.css' | asset_url | stylesheet_tag }}
+    {{ 'component-price.css' | asset_url | stylesheet_tag }}
+    {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+    {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
     {{ content_for_header }}
 
     {%- liquid
@@ -286,6 +291,8 @@
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
+    {%- render 'cart-drawer' -%}
+
     {% section 'announcement-bar' %}
     {% section 'header' %}
     {% comment %}{% section 'contact-widget' %}{% endcomment %}
@@ -333,6 +340,11 @@
     {%- endif -%}
   {% render 'preorder-now' %}
   </body>
+
+  <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'cart-upsell-form.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'cart-function.js' |  asset_url }}" defer="defer"></script>
 
   <script>
     function getMobileOperatingSystem() {

@@ -212,3 +212,156 @@ shopify-accelerated-checkout more-payment-options-link {
         font-size: 12px;
     }
 }
+
+/* Cart upsell */
+
+.cart-upsell-header {
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+  font-weight: 400;
+}
+
+.cart-upsell-products {
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cart-upsell-product__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-upsell-product__img {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.cart-upsell-product__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cart-upsell-product__info {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 120px);
+}
+
+.cart-upsell-product__title a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.cart-upsell-product__title {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.cart-upsell-product__price {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+cart-upsell-form,
+cart-upsell-form form {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.cart-upsell-product__select {
+  width: 40%;
+}
+
+.cart-upsell-product__button {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 2px 16px;
+  border-radius: 0;
+  transition: 0.3s;
+  font-size: 12px;
+  border: 1px solid #000;
+}
+
+.cart-upsell-product__button:hover {
+  opacity: 0.7;
+}
+
+.cart-upsell-product__button.loading {
+  color: transparent;
+  position: relative;
+}
+
+.cart-upsell-product__button.loading > .loading-overlay__spinner {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cart-upsell-product__button.loading > .loading-overlay__spinner .spinner {
+  width: fit-content;
+}
+
+.cart-upsell-product__button.loading > .loading-overlay__spinner .path {
+  stroke: rgb(var(--color-button-text));
+}
+
+@media (max-width: 768px) {
+  .cart-upsell-product__img {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+
+  .cart-upsell-product__info {
+    width: calc(100% - 80px);
+  }
+}
+
+.cart-drawer__footer .cart__discount {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cart-drawer__footer .cart__discount .discount_input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  outline: none;
+  outline-offset: unset;
+  box-shadow: none;
+  border: 1px solid;
+  border-radius: 0;
+  font-size: 1.2rem;
+}
+
+.cart-drawer__footer .cart__discount .button.button--primary.apply_btn {
+  min-width: 0;
+  min-height: 0;
+  padding: .7rem 2rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}

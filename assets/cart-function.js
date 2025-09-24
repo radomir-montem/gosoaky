@@ -11,5 +11,6 @@ discountCodeInput.addEventListener('keyup', function (e) {
 });
 
 function applyDiscount(code) {
-    window.location.href = `/discount/${code}?redirect=/cart`;
+    const path = window.location.pathname;
+    window.location.href = `/discount/${code}?redirect=${encodeURIComponent(path)}`;
 }
