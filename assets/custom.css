@@ -376,5 +376,5 @@ cart-upsell-form form {
 }
 
 .cart-item cart-remove-button {
-  margin: 0;
+  margin: 0 !important;
 }
