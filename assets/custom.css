@@ -365,3 +365,16 @@ cart-upsell-form form {
   text-transform: uppercase;
   font-size: 1.2rem;
 }
+
+.cart-item__quantity-wrapper .quantity {
+  width: calc(10rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+  min-height: calc((var(--inputs-border-width) * 2) + 2.5rem);
+}
+
+.cart-item__quantity-wrapper .quantity__button {
+  width: calc(2.5rem / var(--font-body-scale));
+}
+
+.cart-item cart-remove-button {
+  margin: 0;
+}
