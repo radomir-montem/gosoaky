@@ -378,3 +378,11 @@ cart-upsell-form form {
 .cart-item cart-remove-button {
   margin: 0 !important;
 }
+
+.go-featured-collection-container .go-h2-title {
+  margin-bottom: 0 !important;
+}
+
+.go-section-featured-collection {
+  padding-top: 36px !important;
+}
