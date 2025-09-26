@@ -243,8 +243,14 @@ cart-drawer-items {
 }
 
 .cart-drawer .cart-items thead tr {
-  display: flex;
+  display: table-row;
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .cart-drawer .cart-items thead tr {
+    display: flex;
+  }
 }
 
 .cart-drawer .cart-items th {
