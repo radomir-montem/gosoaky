@@ -387,7 +387,10 @@ cart-upsell-form form {
   padding-top: 36px !important;
 }
 
-.go-featured-collection-container .go-paragraph,
 .go-featured-collection-container .go-paragraph p {
   margin-bottom: 0 !important;
+}
+
+.go-featured-collection-container .go-paragraph {
+  margin-bottom: 20px !important;
 }
