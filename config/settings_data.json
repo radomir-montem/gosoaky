@@ -112,6 +112,7 @@
         "blocks": {
           "announcement_zzjiiP": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Worldwide Free Shipping Weekend",
               "color_scheme": "accent-1",
