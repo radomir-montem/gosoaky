@@ -407,3 +407,7 @@ cart-upsell-form form {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
+
+.sg-lb-widget-bl .lb-bundle-cont {
+  border-radius: 0 !important;
+}
