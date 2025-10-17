@@ -394,3 +394,15 @@ cart-upsell-form form {
 .go-featured-collection-container .go-paragraph {
   margin-bottom: 20px !important;
 }
+
+.sg-product-page-image-block-wrapper {
+  width: 100%;
+}
+
+.sg-product-page-image-block-wrapper .sg-lb-widget-bl {
+  padding-right: 40px;
+}
+
+.sg-lb-widget-bl .lb-bundle-cta-cont {
+  margin-bottom: 0 !important;
+}
