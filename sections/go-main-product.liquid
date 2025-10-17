@@ -20,38 +20,41 @@
     <div class="sg-container">
       {%- render 'go-breadcrumbs' -%}
       <div class="sg-product-page-hero">
-        <div class="sg-product-page-image-block">
-          <a id="sg-product-page-arrow-left" href="#" class="sg-product-page-arrow-left w-inline-block"
-            ><img
-              src="https://uploads-ssl.webflow.com/62c6d941799ed7d263b0fd58/64f6ce82fcde0908ec98d035_ArrowLeft.svg"
-              loading="lazy"
-              width="24"
-              height="24"
-              alt=""></a
-          ><a id="sg-product-page-arrow-right" href="#" class="sg-product-page-arrow-right w-inline-block"
-            ><img
-              src="https://uploads-ssl.webflow.com/62c6d941799ed7d263b0fd58/64f6ce82da20efb55e1a7c8c_ArrowRight.svg"
-              loading="lazy"
-              width="24"
-              height="24"
-              alt=""
-          ></a>
-          <div class="sg-product-page-image-gradient"></div>
-          <div class="sg-product-page-image-grid">
-            {% comment %} loop over the product images and load the images {% endcomment %}
+        <div  class="sg-product-page-image-block-wrapper">
+          <div class="sg-product-page-image-block">
+            <a id="sg-product-page-arrow-left" href="#" class="sg-product-page-arrow-left w-inline-block"
+              ><img
+                src="https://uploads-ssl.webflow.com/62c6d941799ed7d263b0fd58/64f6ce82fcde0908ec98d035_ArrowLeft.svg"
+                loading="lazy"
+                width="24"
+                height="24"
+                alt=""></a
+            ><a id="sg-product-page-arrow-right" href="#" class="sg-product-page-arrow-right w-inline-block"
+              ><img
+                src="https://uploads-ssl.webflow.com/62c6d941799ed7d263b0fd58/64f6ce82da20efb55e1a7c8c_ArrowRight.svg"
+                loading="lazy"
+                width="24"
+                height="24"
+                alt=""
+            ></a>
+            <div class="sg-product-page-image-gradient"></div>
+            <div class="sg-product-page-image-grid">
+              {% comment %} loop over the product images and load the images {% endcomment %}
 
-            {% for media in product.media %}
-              {% liquid
-                assign media_position = media_position | default: 0 | plus: 1
-                assign lazy_load = false
-                if media_position > 1
-                  assign lazy_load = true
-                endif
-                assign product_number = product.metafields.product_information.product_number
-                render 'go-product-thumbnail', media: media, position: media_position, modal_id: section.id, xr_button: true, lazy_load: lazy_load, first_name: first_name, product_number: product_number
-              %}
-            {% endfor %}
+              {% for media in product.media %}
+                {% liquid
+                  assign media_position = media_position | default: 0 | plus: 1
+                  assign lazy_load = false
+                  if media_position > 1
+                    assign lazy_load = true
+                  endif
+                  assign product_number = product.metafields.product_information.product_number
+                  render 'go-product-thumbnail', media: media, position: media_position, modal_id: section.id, xr_button: true, lazy_load: lazy_load, first_name: first_name, product_number: product_number
+                %}
+              {% endfor %}
+            </div>
           </div>
+          <div class="sg-lb-widget-bl"></div>
         </div>
         <div id="w-node-a95a11dc-0588-69d3-c78e-57fe78be433d-1658e309" class="sg-product-page-purchase-block">
           {% for block in section.blocks %}
@@ -277,6 +280,23 @@
         }
     
     }
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const checkLbWidget = setInterval(() => {
+        const widget = document.querySelector('.lb-widget-bl');
+        if(widget) {
+          clearInterval(checkLbWidget);
+          if(window.innerWidth > 767) {
+              document.querySelector('.sg-lb-widget-bl').appendChild(widget);
+          }
+        }
+      }, 500);
+      setTimeout(() => {
+        clearInterval(checkLbWidget);
+      }, 10000);
+    });
   </script>
 </div>
 </section>
