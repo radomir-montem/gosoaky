@@ -4250,6 +4250,7 @@ li {
   display: flex;
   position: relative;
   box-shadow: 0 6px 24px #05060f1f;
+  height: 100%;
 }
 
 .sg-size-chart-wrapper {
