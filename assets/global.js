@@ -891,8 +891,8 @@ class VariantRadios extends VariantSelects {
   updateOptions() {
     const fieldsets = Array.from(this.querySelectorAll('fieldset'));
     fieldsets.forEach(fieldset => {
-      fieldset.querySelectorAll('input').forEach(input => {
-        console.log(input);
+      fieldset.querySelectorAll('input[type="radio"]').forEach(input => {
+        console.log(input.disabled);
       });
     });
     this.options = fieldsets.map((fieldset) => {
