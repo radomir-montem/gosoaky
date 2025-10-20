@@ -890,6 +890,7 @@ class VariantRadios extends VariantSelects {
       fieldsets.forEach(fieldset => {
         fieldset.querySelectorAll('input[type="radio"]').forEach(input => {
           input.classList.toggle('disabled', input.disabled);
+          input.disabled = false;
         });
       });
     }, 1000);
