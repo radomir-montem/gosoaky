@@ -331,8 +331,6 @@
                                 value="{{ value | escape }}"
                                 form="{{ product_form_id }}"
                                 {% if option.selected_value == value %}checked{% endif %}
-                                {% unless value.available %}class="disabled"{% endunless %}
-                                data-available={{ value.available | json }}
                           >
                           <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                             {{ value }}
