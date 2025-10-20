@@ -759,7 +759,7 @@ class VariantSelects extends HTMLElement {
       this.updateShareUrl();
     }
 
-    console.log(this.options);
+    console.log(this.options, options);
   }
 
   updateOptions() {
