@@ -1,0 +1,278 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_slideshow_q67epj": {
+      "type": "hero-slideshow",
+      "blocks": {
+        "slide_KjanyX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DESKTOP_VERSION_GO_SOAKY_AW250853.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/PHONE_VERSION_GO_SOAKY_AW250853.jpg",
+            "header_text": "NEW COLLECTION",
+            "header_subtitle": "",
+            "button_1_text": "SHOP AW25",
+            "url_1": "shopify:\/\/collections\/kids-autumn-winter-2025",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT | WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT"
+          }
+        },
+        "slide_BxGHr8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GO_SOAKY_AW250853.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/GO_SOAKY_AW250834.jpg",
+            "header_text": "OUTERPROOFS™",
+            "header_subtitle": "",
+            "button_1_text": "LEARN MORE",
+            "url_1": "shopify:\/\/pages\/this-is-gosoaky",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
+          }
+        },
+        "slide_TbYLVm": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC_1749_copy_f4a67584-3f7c-486d-b056-93c66c0278d5.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/DSC_1749_copy_f4a67584-3f7c-486d-b056-93c66c0278d5.jpg",
+            "header_text": "SALE AT 30% OFF",
+            "header_subtitle": "",
+            "button_1_text": "SHOP NOW",
+            "url_1": "shopify:\/\/collections\/archive-sale",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
+          }
+        },
+        "slide_a9HwnF": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SS25_WESBITE_GOSOAKY_IN_THE_CITY_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/SS25_WESBITE_GOSOAKY_IN_THE_CITY_6.png",
+            "header_text": "#GOSOAKYINTHECITY",
+            "header_subtitle": "",
+            "button_1_text": "",
+            "url_1": "",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
+          }
+        }
+      },
+      "block_order": [
+        "slide_KjanyX",
+        "slide_BxGHr8",
+        "slide_TbYLVm",
+        "slide_a9HwnF"
+      ],
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "enable_arrow": true
+      }
+    },
+    "16606505673e469e8c": {
+      "type": "go-hero",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/SS25_GS_EOS_30__131.jpg",
+        "header_text": "SS25 SALE",
+        "header_subtitle": "",
+        "button_1_text": "NEW COLLECTION",
+        "url_1": "shopify:\/\/collections\/spring-summer-2025",
+        "button_1_style": "go-light",
+        "button_2_text": "",
+        "url_2": "",
+        "button_2_style": "go-light",
+        "usps": "WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT | WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT"
+      }
+    },
+    "16606506679e84436b": {
+      "type": "go-double-image",
+      "custom_css": [],
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/GOSOAKY_AW25_TIGER_EYE_DAZZLING_BLUE_3_9e3e7c90-57a0-4d54-9435-1b8b555c82f7.jpg",
+        "header_1_text": "OUTERWEAR",
+        "button_1_text": "View all",
+        "url_1": "shopify:\/\/collections\/autumn-winter-2025-outerwear",
+        "image_2": "shopify:\/\/shop_images\/GOSOAKY_AW25_SNAKE_PIT_SKY_CAPTAIN_MULTI_6_3ee5db9d-cb25-4577-a846-cc7f80e17ed8.jpg",
+        "header_2_text": "RAINWEAR",
+        "button_2_text": "View all",
+        "url_2": "shopify:\/\/collections\/autumn-winter-2025-rainwear"
+      }
+    },
+    "go_double_image_CMb7n3": {
+      "type": "go-double-image",
+      "custom_css": [
+        ".go-section-two-images {padding-top: 0px;}"
+      ],
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/GOSOAKY_AW25_BIG_BAD_WOLF_SKY_CAPTAIN_BLUE__4_6eaa4b45-8530-4972-8213-9b7aec26f900.jpg",
+        "header_1_text": "SNOWWEAR",
+        "button_1_text": "VIEW ALL",
+        "url_1": "shopify:\/\/collections\/autumn-winter-2025-snowwear",
+        "image_2": "shopify:\/\/shop_images\/GOSOAKY_AW25_CHICKEN_RUN_MARINA_BLUE_-_LINEN_WHITE_3_c5ad475b-06fe-4018-bd02-d87ee1f9bd1a.jpg",
+        "header_2_text": "ACCESSORIES",
+        "button_2_text": "VIEW ALL",
+        "url_2": "shopify:\/\/collections\/autumn-winter-2025-accessories"
+      }
+    },
+    "166065142438dc25e1": {
+      "type": "go-featured-products",
+      "settings": {
+        "header": "Our wardrobe heroes",
+        "image_aspect_ratio": 75,
+        "product_1": "rock-lobster-marina-blue-multi-marina-blue-multi",
+        "product_2": "dragon-eye-marina-blue-multi-print-marina-blue-multi-print",
+        "product_3": "smiling-dove-denim-multi-denim-multi",
+        "product_4": "tiger-eye-dazzling-blue-dazzling-blue",
+        "button_1_text": "See full collection",
+        "url_1": "shopify:\/\/collections\/kids-winter-clothes"
+      }
+    },
+    "16606515163a80a91e": {
+      "type": "go-anatomy-home-page",
+      "settings": {
+        "header": "The anatomy of the",
+        "show_name": true,
+        "product": "friendly-whale-brown-rice-white-gap-grey",
+        "icon_guide_url": "shopify:\/\/pages\/icon-guide"
+      }
+    },
+    "1660651534eb59d086": {
+      "type": "go-text-with-three-detail",
+      "settings": {
+        "header_text": "OUTERPROOFS™",
+        "paragraph_text": "Kids should play outside and explore the world, no matter the forecast! This is why we at GOSOAKY started making fresh and technical OUTERPROOFS™, so every kid could be comfortable and dry on their adventure, without compromising style!",
+        "button_1_text": "Gosoaky tv",
+        "url_1": "shopify:\/\/pages\/gosoaky-tv",
+        "button_2_text": "This is gosoaky",
+        "url_2": "shopify:\/\/pages\/this-is-gosoaky",
+        "image_1": "shopify:\/\/shop_images\/GO_SOAKY_AW251244.jpg",
+        "image_2": "shopify:\/\/shop_images\/GO_SOAKY_AW251219.jpg",
+        "image_3": "shopify:\/\/shop_images\/GO_SOAKY_AW251236.jpg"
+      }
+    },
+    "175500460708f23d0e": {
+      "type": "apps",
+      "blocks": {
+        "socialwidget_instafeed_base_widget_Ajq6Kb": {
+          "type": "shopify:\/\/apps\/socialwidget-instafeed\/blocks\/base-widget\/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "socialwidget_instafeed_base_widget_Ajq6Kb"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1660651647f0d46794": {
+      "type": "go-waterproof-explanation",
+      "settings": {
+        "header": "How waterproof is a GOSOAKY?",
+        "paragraph_text": "Imagine a square tube of 30 mm x 30 mm that is placed on top of the fabric and is filled with water while measuring the height of the water. The height of the water says something about the amount of pressure the fabric can withstand before the water will penetrate the fabric. That is how Water Column Pressure is measured. So, a Water Column Pressure of 8K means that the fabric can withstand 8.000 mm of water pressure.\nThe SS25 collection has a range from 5000mm to 8000mm column pressure.",
+        "button_text": "Shop now",
+        "url_1": "shopify:\/\/collections\/spring-summer-2025",
+        "eightk_text": "8K | 8.000 MM",
+        "eightk_paragraph": "No resistance to some resistance to moisture. Ideal for light rain, dry snow, no pressure.",
+        "tenk_text": "10K | 10.000 MM",
+        "tenk_paragraph": "Rainproof and waterproof except under high pressure. Ideal for moderate rain, average snow, light pressure.",
+        "twentyk_text": "20K | 20.000 MM",
+        "twentyk_paragraph": "Rainproof and waterproof under medium-high pressure. Ideal for heavy rain, wet snow, medium-high pressure.",
+        "photo_header": "",
+        "image_1": "shopify:\/\/shop_images\/GS2411227361.jpg"
+      }
+    },
+    "go_collection_promotion_TYJF8B": {
+      "type": "go-collection-promotion",
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/DSC6506_aae526d6-d4b8-406a-a666-276d83dc4894.jpg",
+        "header_text": "last chance",
+        "button_1_text": "view all",
+        "url_1": "shopify:\/\/collections\/archive"
+      }
+    },
+    "172856617126700031": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_J9PGf3": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+            "maxwidth": 1400
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_J9PGf3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "recently_products_QxK44i": {
+      "type": "recently-products",
+      "name": "Recently viewed",
+      "settings": {
+        "recently_products_heading": "Recently viewed",
+        "related_count": 4
+      }
+    },
+    "17561255548f9bffbc": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_UWwQcY": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "Y5bivx"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_UWwQcY"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "hero_slideshow_q67epj",
+    "16606505673e469e8c",
+    "16606506679e84436b",
+    "go_double_image_CMb7n3",
+    "166065142438dc25e1",
+    "16606515163a80a91e",
+    "1660651534eb59d086",
+    "175500460708f23d0e",
+    "1660651647f0d46794",
+    "go_collection_promotion_TYJF8B",
+    "172856617126700031",
+    "recently_products_QxK44i",
+    "17561255548f9bffbc"
+  ]
+}
