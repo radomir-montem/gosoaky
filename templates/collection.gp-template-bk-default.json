@@ -8,51 +8,51 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "banner": {
-      "type": "go-collection-banner",
-      "settings": {}
-    },
-    "product-grid": {
-      "type": "go-main-collection-product-grid",
-      "settings": {
-        "products_per_page": 48,
-        "columns_desktop": 4,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "enable_filtering": true,
-        "filter_type": "horizontal",
-        "enable_sorting": true,
-        "columns_mobile": "2",
-        "padding_top": 0,
-        "padding_bottom": 36,
-        "image_aspect_ratio": 75
-      }
-    },
-    "173097376181e32688": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_email_marketing_sms_form_embed_block_dW9EYg": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "settings": {
-            "formId": "SUWVQ7"
-          }
-        }
-      },
-      "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_dW9EYg"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    }
-  },
   "order": [
     "banner",
     "product-grid",
     "173097376181e32688"
-  ]
+  ],
+  "sections": {
+    "173097376181e32688": {
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_dW9EYg"
+      ],
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_dW9EYg": {
+          "settings": {
+            "formId": "SUWVQ7"
+          },
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507"
+        }
+      },
+      "settings": {
+        "include_margins": true
+      },
+      "type": "apps"
+    },
+    "banner": {
+      "settings": {},
+      "type": "go-collection-banner"
+    },
+    "product-grid": {
+      "settings": {
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "enable_filtering": true,
+        "enable_quick_add": false,
+        "enable_sorting": true,
+        "filter_type": "horizontal",
+        "image_aspect_ratio": 75,
+        "image_ratio": "adapt",
+        "padding_bottom": 36,
+        "padding_top": 0,
+        "products_per_page": 48,
+        "show_rating": false,
+        "show_secondary_image": false,
+        "show_vendor": false
+      },
+      "type": "go-main-collection-product-grid"
+    }
+  }
 }
