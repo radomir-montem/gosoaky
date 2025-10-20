@@ -758,8 +758,6 @@ class VariantSelects extends HTMLElement {
       this.renderProductInfo();
       this.updateShareUrl();
     }
-
-    console.log(this.options, 'options');
   }
 
   updateOptions() {
@@ -886,7 +884,6 @@ customElements.define('variant-selects', VariantSelects);
 class VariantRadios extends VariantSelects {
   constructor() {
     super();
-    console.log('variatn-radio');
   }
 
   updateOptions() {
