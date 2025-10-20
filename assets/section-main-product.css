@@ -1169,3 +1169,16 @@ a.product__text {
   display: block;
   padding-bottom: 100%;
 }
+
+.klaviyo-bis-trigger {
+  font-size: 17px;
+  font-weight: 700;
+  height: 54px;
+}
+
+@media (max-width: 767px) {
+  .klaviyo-bis-trigger {
+    font-size: 16px;
+    height: 47px;
+  }
+}
