@@ -838,7 +838,6 @@ class VariantSelects extends HTMLElement {
         const price = document.getElementById(`price-${this.dataset.section}`);
 
         if (price) price.classList.remove('visibility-hidden');
-        console.log(this.currentVariant);
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
       });
   }
