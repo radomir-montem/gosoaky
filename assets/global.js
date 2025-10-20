@@ -850,6 +850,7 @@ class VariantSelects extends HTMLElement {
     const addButton = productForm.querySelector('[name="add"]');
     const addButtonText = productForm.querySelector('[name="add"] > span');
 
+    console.log('here 1');
     if (!addButton) return;
 
     if(this.dataset.coomingSoon) return;
@@ -861,7 +862,7 @@ class VariantSelects extends HTMLElement {
       addButton.removeAttribute('disabled');
       addButtonText.textContent = window.variantStrings.addToCart;
     }
-    console.log('here');
+    console.log('here 2');
 
     if (!modifyClass) return;
   }
