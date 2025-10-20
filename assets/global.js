@@ -884,10 +884,17 @@ customElements.define('variant-selects', VariantSelects);
 class VariantRadios extends VariantSelects {
   constructor() {
     super();
+
+    this.updateOptions();
   }
 
   updateOptions() {
     const fieldsets = Array.from(this.querySelectorAll('fieldset'));
+    fieldsets.forEach(fieldset => {
+      fieldset.querySelectorAll('input').forEach(input => {
+        console.log(input);
+      });
+    });
     this.options = fieldsets.map((fieldset) => {
       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
     });
