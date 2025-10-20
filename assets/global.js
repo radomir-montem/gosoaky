@@ -886,17 +886,16 @@ class VariantRadios extends VariantSelects {
     super();
 
     setTimeout(() => {
-      this.updateOptions();
+      const fieldsets = Array.from(this.querySelectorAll('fieldset'));
+      fieldsets.forEach(fieldset => {
+        fieldset.querySelectorAll('input[type="radio"]').forEach(input => {
+          input.classList.toggle('disabled', input.disabled);
+        });
+      });
     }, 1000);
   }
 
   updateOptions() {
-    const fieldsets = Array.from(this.querySelectorAll('fieldset'));
-    fieldsets.forEach(fieldset => {
-      fieldset.querySelectorAll('input[type="radio"]').forEach(input => {
-        input.classList.toggle('disabled', input.disabled);
-      });
-    });
     this.options = fieldsets.map((fieldset) => {
       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
     });
