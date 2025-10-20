@@ -885,7 +885,9 @@ class VariantRadios extends VariantSelects {
   constructor() {
     super();
 
-    this.updateOptions();
+    setTimeout(() => {
+      this.updateOptions();
+    }, 1000);
   }
 
   updateOptions() {
