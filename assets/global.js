@@ -886,6 +886,7 @@ customElements.define('variant-selects', VariantSelects);
 class VariantRadios extends VariantSelects {
   constructor() {
     super();
+    console.log('variatn-radio');
   }
 
   updateOptions() {
