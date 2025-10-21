@@ -1182,3 +1182,7 @@ a.product__text {
     height: 47px;
   }
 }
+
+.sg-product-page-button[disabled] {
+  display: none !important;
+}
