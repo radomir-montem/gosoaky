@@ -86,6 +86,25 @@
       {% assign discount = card_product.price | times: 1.0 | divided_by: card_product.compare_at_price | times: 100 | round %}
       <span class="go-product-card-badge">-{{ 100 | minus: discount }}%</span>
     {% endif %}
+
+    {% assign size_option = card_product.options_by_name.Size %}
+    {% if size_option.values.size > 0 %}
+      <div class="go-product-card-atc__overlap"></div>
+      <button class="go-product-card-atc__open medium-hide large-up-hide">{% render 'icon-cart' %}</button>
+      <quick-add-card class="go-product-card-atc">
+        {% for value in size_option.values %}
+          {% assign variant = card_product.variants[forloop.index0] %}
+          <button class="go-product-card-atc__button" data-id="{{ variant.id }}" {% unless variant.available %}disabled{% endunless %}>
+            <span>{{ value }}</span>
+            <div class="loading-overlay__spinner hidden">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </button>
+        {% endfor %}
+      </quick-add-card>
+    {% endif %}
   </div>
   <div class="go-product-card-text-wrapper">
     <div class="go-product-card-title">
@@ -106,12 +125,3 @@
     {% endif %}
   </div>
 </a>
-
-{% if reload_js == true %}
-  <script>
-    (function() {
-      console.log("run");
-      
-   })();
-  </script>
-{% endif %} 

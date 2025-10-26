@@ -411,3 +411,102 @@ cart-upsell-form form {
 .sg-lb-widget-bl .lb-bundle-cont {
   border-radius: 0 !important;
 }
+
+.go-product-card-atc {
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-out;
+}
+
+@media (min-width: 768px) {
+  .go-product-card-block:hover .go-product-card-atc {
+    transform: translate(0);
+  }
+}
+
+.go-product-card-atc__button {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 450;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: transparent;
+  transition: 0.3s;
+  position: relative;
+}
+
+.go-product-card-atc__button:disabled {
+  text-decoration: line-through;
+}
+
+.go-product-card-atc__button:hover {
+  background-color: rgb(246 246 246);
+}
+
+.go-product-card-atc__button .loading-overlay__spinner {
+  position: absolute;
+}
+
+.go-product-card-atc__open {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  right: 10px;
+  bottom: 10px;
+  padding: 0;
+  color: #000;
+  background-color: #fff;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.go-product-card-atc__open svg {
+  width: 44px;
+}
+
+@media (max-width: 768px) {
+  .go-product-card-atc {
+    position: fixed;
+    grid-template-columns: 1fr;
+    z-index: 10;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .go-product-card-atc__overlap {
+    position: fixed;
+    width: 100vw;
+    height: 100svh;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    z-index: 2;
+  }
+
+  .go-product-card-atc.active {
+    display: grid;
+    transform: translate(0);
+  }
+
+  .go-product-card-atc__overlap.active {
+    display: block;
+  }
+}
