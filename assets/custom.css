@@ -512,3 +512,7 @@ cart-upsell-form form {
     display: block;
   }
 }
+
+.banner__box:empty {
+  display: none;
+}
