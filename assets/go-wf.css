@@ -2522,6 +2522,7 @@ li {
   top: 0%;
   bottom: 0%;
   opacity: 0 !important;
+  transition: opacity 0.3s;
 }
 
 @media (min-width: 768px) {
