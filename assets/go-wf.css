@@ -2524,6 +2524,12 @@ li {
   opacity: 0 !important;
 }
 
+@media (min-width: 768px) {
+  .go-product-card-image-block:hover .go-product-card-second-image {
+    opacity: 1 !important;
+  }
+}
+
 .go-product-card-text-block {
   z-index: 2;
   flex: 1;
