@@ -2502,17 +2502,6 @@ li {
 }
 
 .go-product-card-first-image {
-  z-index: 1;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  overflow: visible;
-}
-
-.go-product-card-second-image {
   z-index: 0;
   object-fit: cover;
   width: 100%;
@@ -2520,6 +2509,19 @@ li {
   position: absolute;
   top: 0%;
   bottom: 0%;
+  overflow: visible;
+  opacity: 1 !important;
+}
+
+.go-product-card-second-image {
+  z-index: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  opacity: 0 !important;
 }
 
 .go-product-card-text-block {
