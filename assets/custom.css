@@ -516,3 +516,11 @@ cart-upsell-form form {
 .banner__box:empty {
   display: none;
 }
+
+.product__text p {
+  margin: 0;
+}
+
+.product__text * {
+  font-size: 16px;
+}
