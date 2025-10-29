@@ -117,10 +117,20 @@
               "color_scheme": "accent-1",
               "link": "https://www.gosoaky.com/collections/autumn-winter-2025-outerwear"
             }
+          },
+          "announcement_tgj8cQ": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Get a beanie of your choice with every AW25 jacket",
+              "color_scheme": "accent-1",
+              "link": "https://www.gosoaky.com/collections/autumn-winter-2025-outerwear"
+            }
           }
         },
         "block_order": [
-          "announcement_zzjiiP"
+          "announcement_zzjiiP",
+          "announcement_tgj8cQ"
         ],
         "settings": {}
       },
