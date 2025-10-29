@@ -32,6 +32,12 @@
             "sizing_section_link_title": "Sizing"
           }
         },
+        "text_mjT9L4": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.note | metafield_tag }}"
+          }
+        },
         "a61eb5f3-07d2-4a0e-8141-b257cf7947b7": {
           "type": "add-buttons",
           "settings": {
@@ -83,6 +89,7 @@
         "2624cab2-33dd-40d5-8218-dde183dbadbc",
         "9f3629bc-fafb-4231-b3bc-dbdc418fee05",
         "bafbc6a6-4003-41e4-8a8f-4f354e32312c",
+        "text_mjT9L4",
         "a61eb5f3-07d2-4a0e-8141-b257cf7947b7",
         "b52f5f81-5c4b-4969-a1f3-4dce082a3b25",
         "collapsible_tab_TqcMUy",
@@ -183,9 +190,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "real_data",
+            "max_width": 1200,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget",
-            "max_width": 1200
+            "empty_state": "empty_widget"
           }
         }
       },
