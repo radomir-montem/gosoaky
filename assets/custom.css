@@ -470,7 +470,7 @@ cart-upsell-form form {
   align-items: center;
   background-color: transparent;
   border: none;
-  right: 10px;
+  left: 10px;
   bottom: 10px;
   padding: 0;
   color: #000;
