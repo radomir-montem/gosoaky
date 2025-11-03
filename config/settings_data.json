@@ -112,25 +112,15 @@
         "blocks": {
           "announcement_zzjiiP": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "FREE SHIPPING IN NL, BE, DE, LU",
-              "color_scheme": "accent-1",
-              "link": "https://www.gosoaky.com/collections/autumn-winter-2025-outerwear"
-            }
-          },
-          "announcement_tgj8cQ": {
-            "type": "announcement",
-            "settings": {
-              "text": "FREE BEANIE WITH ANY AW25 JACKET",
               "color_scheme": "accent-1",
               "link": "https://www.gosoaky.com/collections/autumn-winter-2025-outerwear"
             }
           }
         },
         "block_order": [
-          "announcement_zzjiiP",
-          "announcement_tgj8cQ"
+          "announcement_zzjiiP"
         ],
         "settings": {}
       },
