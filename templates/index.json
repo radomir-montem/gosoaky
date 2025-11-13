@@ -34,9 +34,9 @@
           "settings": {
             "image": "shopify://shop_images/1080X1350.jpg",
             "mobile_image": "shopify://shop_images/1080X1350.jpg",
-            "header_text": "UP TO 50% OFF",
+            "header_text": "",
             "header_subtitle": "",
-            "button_1_text": "SALE WEEK",
+            "button_1_text": "SALE WEEK AT 50% OFF",
             "url_1": "shopify://pages/this-is-gosoaky",
             "button_1_style": "go-light",
             "button_2_text": "Button 2",
@@ -88,7 +88,7 @@
       ],
       "settings": {
         "autoplay": true,
-        "autoplay_speed": 5,
+        "autoplay_speed": 2,
         "enable_arrow": true
       }
     },
