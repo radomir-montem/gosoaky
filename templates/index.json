@@ -31,11 +31,11 @@
         "slide_BxGHr8": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/GO_SOAKY_AW250853.jpg",
-            "mobile_image": "shopify://shop_images/GO_SOAKY_AW250834.jpg",
-            "header_text": "OUTERPROOFS™",
+            "image": "shopify://shop_images/1080X1350.jpg",
+            "mobile_image": "shopify://shop_images/1080X1350.jpg",
+            "header_text": "",
             "header_subtitle": "",
-            "button_1_text": "LEARN MORE",
+            "button_1_text": "SALE WEEK",
             "url_1": "shopify://pages/this-is-gosoaky",
             "button_1_style": "go-light",
             "button_2_text": "Button 2",
