@@ -31,9 +31,10 @@
         "slide_hbLrNR": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/5_AW25_SNOWWEAR.jpg",
             "mobile_image": "shopify://shop_images/5_AW25_SNOWWEAR.jpg",
-            "header_text": "Enter your title here",
-            "header_subtitle": "Enter your subtitle here",
+            "header_text": "",
+            "header_subtitle": "",
             "button_1_text": "SHOP SNOWWEAR",
             "url_1": "",
             "button_1_style": "go-light",
