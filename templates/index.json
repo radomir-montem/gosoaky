@@ -30,6 +30,7 @@
         },
         "slide_hbLrNR": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/5_AW25_SNOWWEAR.jpg",
             "mobile_image": "shopify://shop_images/5_AW25_SNOWWEAR.jpg",
