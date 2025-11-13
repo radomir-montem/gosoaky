@@ -28,6 +28,21 @@
             "usps": "WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT | WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT"
           }
         },
+        "slide_hbLrNR": {
+          "type": "slide",
+          "settings": {
+            "mobile_image": "shopify://shop_images/5_AW25_SNOWWEAR.jpg",
+            "header_text": "Enter your title here",
+            "header_subtitle": "Enter your subtitle here",
+            "button_1_text": "SHOP SNOWWEAR",
+            "url_1": "",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
+          }
+        },
         "slide_BxGHr8": {
           "type": "slide",
           "disabled": true,
@@ -82,6 +97,7 @@
       },
       "block_order": [
         "slide_KjanyX",
+        "slide_hbLrNR",
         "slide_BxGHr8",
         "slide_TbYLVm",
         "slide_a9HwnF"
