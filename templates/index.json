@@ -33,10 +33,10 @@
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1080X1350.jpg",
-            "mobile_image": "shopify://shop_images/1080X1350.jpg",
+            "mobile_image": "shopify://shop_images/1080X13503.jpg",
             "header_text": "",
             "header_subtitle": "",
-            "button_1_text": "SALE WEEK AT 50% OFF",
+            "button_1_text": "SHOP SALE",
             "url_1": "shopify://pages/this-is-gosoaky",
             "button_1_style": "go-light",
             "button_2_text": "Button 2",
