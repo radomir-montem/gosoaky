@@ -30,11 +30,10 @@
         },
         "slide_BxGHr8": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1080X1350.jpg",
             "mobile_image": "shopify://shop_images/1080X1350.jpg",
-            "header_text": "",
+            "header_text": "UP TO 50% OFF",
             "header_subtitle": "",
             "button_1_text": "SALE WEEK",
             "url_1": "shopify://pages/this-is-gosoaky",
