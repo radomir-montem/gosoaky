@@ -30,6 +30,7 @@
         },
         "slide_BxGHr8": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1080X1350.jpg",
             "mobile_image": "shopify://shop_images/1080X1350.jpg",
