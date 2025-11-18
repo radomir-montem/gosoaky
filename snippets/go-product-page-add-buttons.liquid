@@ -63,7 +63,7 @@
           {% endif %}
         >
           <span class="icon">{%- render 'icon-cart-white' -%}</span>
-          <span>
+          <span class="text">
             {%- if coming_soon -%}
               {{ 'products.product.coming_soon' | t }}
             {%- elsif product.selected_or_first_available_variant.available -%}
