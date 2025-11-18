@@ -562,3 +562,15 @@ cart-upsell-form form {
 .inventory--low .icon--inventory:after,.inventory--low .icon--inventory:before{
   background:#f4af29;
 }
+
+.sg-inventory-status__item {
+  display: flex;
+  align-items: center;
+}
+
+.sg-inventory-status__item .icon {
+  height: 25px;
+  margin-right: 10px;
+  position: relative;
+  width: 25px;
+}
