@@ -45,6 +45,12 @@
             "coming_soon_text": "Coming soon"
           }
         },
+        "inventory_status_npdECb": {
+          "type": "inventory_status",
+          "settings": {
+            "threshold": 8
+          }
+        },
         "b52f5f81-5c4b-4969-a1f3-4dce082a3b25": {
           "type": "usp-content",
           "settings": {
@@ -91,6 +97,7 @@
         "bafbc6a6-4003-41e4-8a8f-4f354e32312c",
         "text_mjT9L4",
         "a61eb5f3-07d2-4a0e-8141-b257cf7947b7",
+        "inventory_status_npdECb",
         "b52f5f81-5c4b-4969-a1f3-4dce082a3b25",
         "collapsible_tab_TqcMUy",
         "collapsible_tab_3wnUdz",
