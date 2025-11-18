@@ -100,8 +100,10 @@
               {% when 'inventory_status' %}
                 <div class="sg-inventory-status" {{ block.shopify_attributes }}>
                   {% for variant in product.variants %}
-                    <p class="sg-inventory-status__item{% unless variant.id == product.selected_or_first_available_variant.id %} hidden{% endunless %}">
+                    <p class="sg-inventory-status__item{% if variant.inventory_quantity <= block.settings.threshold %} inventory--low{% endif %}{% unless variant.id == product.selected_or_first_available_variant.id %} hidden{% endunless %}">
+                      
                       {% if variant.inventory_quantity > block.settings.threshold %}
+                        <span class="icon icon--inventory"></span>
                         {{ 'products.product.inventory_status.sale' | t }}
                       {% else %}
                         {{ 'products.product.inventory_status.low' | t: quantity: variant.inventory_quantity }}
