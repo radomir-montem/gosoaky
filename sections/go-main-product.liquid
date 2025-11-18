@@ -100,14 +100,46 @@
               {% when 'inventory_status' %}
                 <div class="sg-inventory-status" {{ block.shopify_attributes }}>
                   {% for variant in product.variants %}
-                    <p class="sg-inventory-status__item{% if variant.inventory_quantity <= block.settings.threshold %} inventory--low{% endif %}{% unless variant.id == product.selected_or_first_available_variant.id %} hidden{% endunless %}">
-                      
-                      {% if variant.inventory_quantity > block.settings.threshold %}
-                        <span class="icon icon--inventory"></span>
-                        {{ 'products.product.inventory_status.sale' | t }}
-                      {% else %}
-                        {{ 'products.product.inventory_status.low' | t: quantity: variant.inventory_quantity }}
-                      {% endif %}
+                    {%- liquid
+                      assign show_low_inventory_message = false
+                      if current_variant.inventory_management == 'shopify'
+                        if current_variant.inventory_quantity <= block.settings.threshold and current_variant.inventory_quantity > 0
+                          # If inventory is low, show the low inventory message
+                          assign show_low_inventory_message = true
+                        endif
+                      endif
+
+                      # Incoming inventory is only displayed if the following conditions are met:
+                      ## Inventory transfer notice is enabled
+                      ## If the product is not in stock
+                      ## If the product does not have low inventory
+                      ## If the product has incoming inventory
+                      ## If product inventory is less than or equal to zero and inventory policy is continue
+                      # In other words, if the product has low inventory or in stock, don't show the incoming inventory message
+
+                      assign oos_and_continue_selling = false
+                      if current_variant.inventory_quantity <= 0 and current_variant.inventory_policy == 'continue'
+                        assign oos_and_continue_selling = true
+                      elsif current_variant.inventory_quantity <= 0 and current_variant.inventory_policy == 'deny'
+                        assign oos_and_continue_selling = false
+                      endif
+
+                      assign show_incoming_inventory_message = false
+
+                      if block.settings.inventory_transfers_enable and current_variant.incoming and show_low_inventory_message == false and current_variant.available == false and oos_and_continue_selling
+                        assign show_incoming_inventory_message = true
+                      endif
+
+                    -%}
+                    <p class="sg-inventory-status__item{% if show_incoming_inventory_message == true %} inventory--low{% endif %}{% unless variant.id == product.selected_or_first_available_variant.id %} hidden{% endunless %}">
+                      <span class="icon icon--inventory"></span>
+                      <span>
+                        {% if show_incoming_inventory_message %}
+                          {{ 'products.product.inventory_status.low' | t: quantity: variant.inventory_quantity }}
+                        {% else %}
+                          {{ 'products.product.inventory_status.sale' | t }}
+                        {% endif %}
+                      </span>
                     </p>
                   {% endfor %}
                 </div>
