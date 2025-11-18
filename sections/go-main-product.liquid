@@ -131,7 +131,7 @@
                       endif
 
                     -%}
-                    <p class="sg-inventory-status__item{% if show_incoming_inventory_message == true %} inventory--low{% endif %}{% unless variant.id == product.selected_or_first_available_variant.id %} hidden{% endunless %}">
+                    {% comment %} <p class="sg-inventory-status__item{% if show_incoming_inventory_message == true %} inventory--low{% endif %}{% unless variant.id == product.selected_or_first_available_variant.id %} hidden{% endunless %}">
                       <span class="icon icon--inventory"></span>
                       <span>
                         {% if show_incoming_inventory_message %}
@@ -140,7 +140,7 @@
                           {{ 'products.product.inventory_status.sale' | t }}
                         {% endif %}
                       </span>
-                    </p>
+                    </p> {% endcomment %}
                   {% endfor %}
                 </div>
             {% endcase %}
