@@ -102,8 +102,8 @@
                   {% for variant in product.variants %}
                     {%- liquid
                       assign show_low_inventory_message = false
-                      if current_variant.inventory_management == 'shopify'
-                        if current_variant.inventory_quantity <= block.settings.threshold and current_variant.inventory_quantity > 0
+                      if variant.inventory_management == 'shopify'
+                        if variant.inventory_quantity <= block.settings.threshold and variant.inventory_quantity > 0
                           # If inventory is low, show the low inventory message
                           assign show_low_inventory_message = true
                         endif
@@ -118,20 +118,20 @@
                       # In other words, if the product has low inventory or in stock, don't show the incoming inventory message
 
                       assign oos_and_continue_selling = false
-                      if current_variant.inventory_quantity <= 0 and current_variant.inventory_policy == 'continue'
+                      if variant.inventory_quantity <= 0 and variant.inventory_policy == 'continue'
                         assign oos_and_continue_selling = true
-                      elsif current_variant.inventory_quantity <= 0 and current_variant.inventory_policy == 'deny'
+                      elsif variant.inventory_quantity <= 0 and variant.inventory_policy == 'deny'
                         assign oos_and_continue_selling = false
                       endif
 
                       assign show_incoming_inventory_message = false
 
-                      if block.settings.inventory_transfers_enable and current_variant.incoming and show_low_inventory_message == false and current_variant.available == false and oos_and_continue_selling
+                      if block.settings.inventory_transfers_enable and variant.incoming and show_low_inventory_message == false and variant.available == false and oos_and_continue_selling
                         assign show_incoming_inventory_message = true
                       endif
 
                     -%}
-                    <p class="sg-inventory-status__item{% if show_incoming_inventory_message == true %} inventory--low{% endif %}{% unless variant.id == product.selected_or_first_available_variant.id %} hidden{% endunless %}">
+                    <p class="sg-inventory-status__item{% if show_incoming_inventory_message == true %} inventory--low{% endif %}{% unless variant.id == product.selected_or_first_available_variant.id %} hidden{% endunless %}" data-id="{{ variant.id }}">
                       <span class="icon icon--inventory"></span>
                       <span>
                         {% if show_incoming_inventory_message %}
