@@ -287,7 +287,11 @@
       "xr_button": "View in your space",
       "xr_button_label": "View in your space, loads item in augmented reality window",
       "include_taxes": "Tax included.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "inventory_status": {
+        "low": "Los stock - {{ quantity }} items left",
+        "sale": "In stock, ready to ship"
+      }
     },
     "modal": {
       "label": "Media gallery"
