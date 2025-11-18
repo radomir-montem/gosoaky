@@ -758,6 +758,14 @@ class VariantSelects extends HTMLElement {
       this.renderProductInfo();
       this.updateShareUrl();
     }
+
+    this.updateInventoryStatus();
+  }
+
+  updateInventoryStatus() {
+    document.querySelectorAll('.sg-inventory-status__item').forEach(item => {
+      item.classList.toggle('hidden', this.currentVariant.id != item.dataset.id);
+    })
   }
 
   updateOptions() {
