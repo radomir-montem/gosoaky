@@ -47,7 +47,6 @@
         },
         "inventory_status_npdECb": {
           "type": "inventory_status",
-          "disabled": true,
           "settings": {
             "threshold": 5
           }
