@@ -574,3 +574,7 @@ cart-upsell-form form {
   position: relative;
   width: 25px;
 }
+
+.sg-product-page-wrapper .go-product-card-style-title {
+  margin-bottom: 1rem;
+}
