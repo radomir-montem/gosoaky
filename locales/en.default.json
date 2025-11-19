@@ -289,7 +289,7 @@
       "include_taxes": "Tax included.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
       "inventory_status": {
-        "low": "Los stock - {{ quantity }} items left",
+        "low": "Low stock - {{ quantity }} items left",
         "sale": "In stock, ready to ship"
       }
     },
