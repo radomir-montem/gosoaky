@@ -277,6 +277,11 @@
         "type": "shopify://apps/essential-countdown-timer/blocks/app_embed/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
         "disabled": false,
         "settings": {}
+      },
+      "16216491870256628967": {
+        "type": "shopify://apps/ta-labels-badges/blocks/bss-pl-config-data/91bfe765-b604-49a1-805e-3599fa600b24",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
