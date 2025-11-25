@@ -104,7 +104,7 @@
       ],
       "settings": {
         "autoplay": true,
-        "autoplay_speed": 2,
+        "autoplay_speed": 5,
         "enable_arrow": true
       }
     },
