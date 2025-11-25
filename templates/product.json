@@ -112,12 +112,17 @@
     "1748608099975707c2": {
       "type": "apps",
       "blocks": {
+        "selleasy_lb_upsell_widget_pac_cFCpmg": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-pac/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
+        },
         "selleasy_lb_upsell_widget_bl_CdcLgf": {
           "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
           "settings": {}
         }
       },
       "block_order": [
+        "selleasy_lb_upsell_widget_pac_cFCpmg",
         "selleasy_lb_upsell_widget_bl_CdcLgf"
       ],
       "settings": {
