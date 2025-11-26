@@ -307,10 +307,12 @@
     document.addEventListener('DOMContentLoaded', function () {
       const checkLbWidget = setInterval(() => {
         const widget = document.querySelector('.lb-widget-bl');
+        const secondwidget = document.querySelector('.lb-widget-pac');
         if(widget) {
           clearInterval(checkLbWidget);
           if(window.innerWidth > 767) {
               document.querySelector('.sg-lb-widget-bl').appendChild(widget);
+              document.querySelector('.sg-lb-widget-bl').appendChild(secondwidget);
           }
         }
       }, 500);
