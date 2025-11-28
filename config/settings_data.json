@@ -112,7 +112,6 @@
         "blocks": {
           "announcement_WqkBY9": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "SALE WEEK IS LIVE - UP TO 50% OFF",
               "color_scheme": "accent-1",
