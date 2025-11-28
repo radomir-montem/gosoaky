@@ -2863,7 +2863,8 @@ details-disclosure > details {
   }
 }
 
-
+/*Essential Apps Changes*/
 .essential_countdown_annoucement_bar_wrapper {
 column-gap: 10px !important;
 }
+/*Essential Apps Changes End*/
