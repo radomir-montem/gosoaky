@@ -2862,3 +2862,8 @@ details-disclosure > details {
     }
   }
 }
+
+
+.essential_countdown_annoucement_bar_wrapper {
+column-gap: 10px !important;
+}
