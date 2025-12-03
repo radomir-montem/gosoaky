@@ -585,3 +585,7 @@ cart-upsell-form form {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.page--gift-guide .content-for-layout .gradient {
+  background: transparent;
+}
