@@ -48,26 +48,47 @@
         }
       </script>
     </div>
-    <div class="go-featured-collection-grid">
-      {%
-        render 'go-card-product',
-        card_product: section.settings.product_1
-      %}
+    {% assign product_count = 0 %}
+    {% if section.settings.product_1 != blank %}
+      {% assign product_count = product_count | plus: 1 %}
+    {% endif %}
+    {% if section.settings.product_2 != blank %}
+      {% assign product_count = product_count | plus: 1 %}
+    {% endif %}
+    {% if section.settings.product_3 != blank %}
+      {% assign product_count = product_count | plus: 1 %}
+    {% endif %}
+    {% if section.settings.product_4 != blank %}
+      {% assign product_count = product_count | plus: 1 %}
+    {% endif %}
+    <div class="go-featured-collection-grid" data-grid-columns="{{ product_count }}">
+      {% if section.settings.product_1 != blank %}
+        {%
+          render 'go-card-product',
+          card_product: section.settings.product_1
+        %}
+      {% endif %}
 
-      {%
-        render 'go-card-product',
-        card_product: section.settings.product_2
-      %}
+      {% if section.settings.product_2 != blank %}
+        {%
+          render 'go-card-product',
+          card_product: section.settings.product_2
+        %}
+      {% endif %}
 
-      {%
-        render 'go-card-product',
-        card_product: section.settings.product_3
-      %}
+      {% if section.settings.product_3 != blank %}
+        {%
+          render 'go-card-product',
+          card_product: section.settings.product_3
+        %}
+      {% endif %}
 
-      {%
-        render 'go-card-product',
-        card_product: section.settings.product_4
-      %}
+      {% if section.settings.product_4 != blank %}
+        {%
+          render 'go-card-product',
+          card_product: section.settings.product_4
+        %}
+      {% endif %}
     </div>
     <div class="go-featured-collection-button-block">
       <div class="go-hero-div-height">
