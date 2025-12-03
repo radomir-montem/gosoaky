@@ -69,13 +69,58 @@
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 40
+      }
+    },
+    "go_featured_products_7U48YD": {
+      "type": "go-featured-products",
+      "name": "go featured products",
+      "settings": {
+        "header": "Bundle deals",
+        "image_aspect_ratio": 75,
+        "product_1": "big-bad-wolf-bright-green-bright-green",
+        "product_2": "big-bad-wolf-crocus-petal-purple-crocus-petal-purple",
+        "product_3": "big-bad-wolf-dazzling-blue-dazzling-blue",
+        "product_4": "",
+        "button_1_text": "",
+        "url_1": ""
+      }
+    },
+    "go_featured_products_qNUigg": {
+      "type": "go-featured-products",
+      "name": "go featured products",
+      "settings": {
+        "header": "Best sellers",
+        "image_aspect_ratio": 75,
+        "product_1": "rock-lobster-marina-blue-multi-marina-blue-multi",
+        "product_2": "dragon-eye-marina-blue-multi-print-marina-blue-multi-print",
+        "product_3": "smiling-dove-denim-multi-denim-multi",
+        "product_4": "tiger-eye-dazzling-blue-dazzling-blue",
+        "button_1_text": "",
+        "url_1": ""
+      }
+    },
+    "go_double_image_NecTUe": {
+      "type": "go-double-image",
+      "name": "go double image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/GOSOAKY_AW24_SNAKEKISS_CARAMELMULTI_1copy.jpg",
+        "header_1_text": "Scarfs",
+        "button_1_text": "",
+        "url_1": "#",
+        "image_2": "shopify://shop_images/GOSOAKY_AW25_BABYDRAGON_BRIGHTMARINA_2.jpg",
+        "header_2_text": "Beanies",
+        "button_2_text": "",
+        "url_2": "#"
       }
     }
   },
   "order": [
     "main",
     "hero_slideshow_tLUx9f",
-    "rich_text_UEQBYC"
+    "rich_text_UEQBYC",
+    "go_featured_products_7U48YD",
+    "go_featured_products_qNUigg",
+    "go_double_image_NecTUe"
   ]
 }
