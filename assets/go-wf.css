@@ -2429,7 +2429,7 @@ li {
 }
 
 .go-featured-collection-grid[data-grid-columns="3"] {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr !important;
 }
 
 .go-featured-collection-button-block {
@@ -5354,7 +5354,7 @@ li {
   }
 
   .go-featured-collection-grid[data-grid-columns="3"] {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr !important;
   }
 
   .go-featured-collection-button-block {
