@@ -90,7 +90,7 @@
           "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
           "settings": {}
         },
-        "wishlist_plus_wishlist_pdp_button_Ni9iVQ": {
+        "wishlist_plus_wishlist_pdp_button_mKm4NG": {
           "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
           "settings": {
             "swym_atw_button_icon": "heart",
@@ -129,7 +129,7 @@
         "collapsible_tab_3wnUdz",
         "collapsible_tab_4Ynqx6",
         "selleasy_lb_upsell_widget_bl_nTmee7",
-        "wishlist_plus_wishlist_pdp_button_Ni9iVQ"
+        "wishlist_plus_wishlist_pdp_button_mKm4NG"
       ],
       "custom_css": [],
       "settings": {
