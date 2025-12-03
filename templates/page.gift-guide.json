@@ -68,12 +68,15 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "go_featured_products_7U48YD": {
       "type": "go-featured-products",
+      "custom_css": [
+        ".go-section-featured-collection {padding-top: 0;}"
+      ],
       "name": "go featured products",
       "settings": {
         "header": "Bundle deals",
@@ -88,6 +91,9 @@
     },
     "go_featured_products_qNUigg": {
       "type": "go-featured-products",
+      "custom_css": [
+        ".go-section-featured-collection {padding-top: 0;}"
+      ],
       "name": "go featured products",
       "settings": {
         "header": "Best sellers",
@@ -102,6 +108,9 @@
     },
     "go_double_image_NecTUe": {
       "type": "go-double-image",
+      "custom_css": [
+        ".go-section-two-images {padding-top: 0px;}"
+      ],
       "name": "go double image banner",
       "settings": {
         "image_1": "shopify://shop_images/GOSOAKY_AW24_SNAKEKISS_CARAMELMULTI_1copy.jpg",
