@@ -62,8 +62,9 @@
         "text_pMcNNn"
       ],
       "custom_css": [
-        ".rich-text__blocks {max-width: 100%;}",
-        "p {text-align: left; margin: 0;}"
+        ".rich-text__blocks {max-width: 100%; width: 100%; padding: 0 60px;}",
+        "p {text-align: left; margin: 0;}",
+        "@media (max-width: 767px) {.rich-text__blocks {padding: 0 16px; }}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
