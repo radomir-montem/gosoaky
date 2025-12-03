@@ -9,55 +9,73 @@
  */
 {
   "sections": {
-    "contact_form_njHW7T": {
-      "type": "contact-form",
-      "settings": {
-        "heading": "Contact Us",
-        "heading_size": "h0",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28,
         "center_header": false
       }
     },
-    "172121212892250054": {
-      "type": "apps",
+    "hero_slideshow_tLUx9f": {
+      "type": "hero-slideshow",
       "blocks": {
-        "collabs_application_page_BqHcKb": {
-          "type": "shopify:\/\/apps\/collabs\/blocks\/application-page\/54758706-9f25-4fa9-a553-64720a4c998b",
-          "disabled": true,
+        "slide_nkdiFb": {
+          "type": "slide",
           "settings": {
-            "heading": "Affiliate programme",
-            "show_square_logo": true,
-            "show_partnership_info": true,
-            "button_text": "Apply now",
-            "number_of_images": "4",
-            "logo_position": "above",
-            "corner_style": "square",
-            "button_background_color": "#000000",
-            "button_label_color": "#ffffff",
-            "link_color": "#2c6ecb"
+            "image": "shopify://shop_images/2_AW25_SNOWWEAR.jpg",
+            "mobile_image": "shopify://shop_images/5_AW25_SNOWWEAR.jpg",
+            "header_text": "Holiday gift guide",
+            "header_subtitle": "",
+            "button_1_text": "",
+            "url_1": "",
+            "button_1_style": "go-light",
+            "button_2_text": "",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": ""
           }
         }
       },
       "block_order": [
-        "collabs_application_page_BqHcKb"
+        "slide_nkdiFb"
       ],
+      "name": "Hero Slideshow",
       "settings": {
-        "include_margins": true
+        "autoplay": false,
+        "autoplay_speed": 3,
+        "enable_arrow": false
+      }
+    },
+    "rich_text_UEQBYC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_pMcNNn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Finding the right gift should feel just as warm as wearing it.</p><p>Explore out gift guide and discover thoughtful gifts designed to wwithstand wind, rain and snow, made to be loved and worn for years to come.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_pMcNNn"
+      ],
+      "custom_css": [
+        "p {text-align: left; margin: 0;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "contact_form_njHW7T",
     "main",
-    "172121212892250054"
+    "hero_slideshow_tLUx9f",
+    "rich_text_UEQBYC"
   ]
 }
