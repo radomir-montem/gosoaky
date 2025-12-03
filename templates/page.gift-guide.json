@@ -114,7 +114,8 @@
     "go_double_image_NecTUe": {
       "type": "go-double-image",
       "custom_css": [
-        ".go-section-two-images {padding-top: 0px;}"
+        ".go-section-two-images {padding-top: 0px;}",
+        "@media (max-width: 750px) {.go-image-heading2 {transform: rotate(0); left: 20px; }}"
       ],
       "name": "go double image banner",
       "settings": {
