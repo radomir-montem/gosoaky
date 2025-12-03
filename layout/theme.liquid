@@ -287,7 +287,7 @@
 </head>
 
 
-  <body class="gradient template--{{ template.name }}">
+  <body class="gradient template--{{ template.name }}{% if template.name == 'page' %} page--{{ page.handle }}{% endif %}">
         {% render 'elevar-body-end' %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
