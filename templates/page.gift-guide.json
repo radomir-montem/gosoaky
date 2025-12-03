@@ -75,7 +75,7 @@
     "go_featured_products_7U48YD": {
       "type": "go-featured-products",
       "custom_css": [
-        ".go-section-featured-collection {padding-top: 0;}"
+        ".go-section-featured-collection {padding-top: 0px;}"
       ],
       "name": "go featured products",
       "settings": {
@@ -92,7 +92,7 @@
     "go_featured_products_qNUigg": {
       "type": "go-featured-products",
       "custom_css": [
-        ".go-section-featured-collection {padding-top: 0;}"
+        ".go-section-featured-collection {padding-top: 0px;}"
       ],
       "name": "go featured products",
       "settings": {
