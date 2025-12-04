@@ -115,7 +115,7 @@
       "type": "go-double-image",
       "custom_css": [
         ".go-section-two-images {padding-top: 0px !important;}",
-        "@media (max-width: 750px) {.go-image-heading2 {font-size: 28px; }}"
+        "@media (max-width: 750px) {.go-two-images-container {flex-direction: row; } .go-image-heading2 {font-size: 28px; } .go-image-block-aligned-left {height: 250px; }}"
       ],
       "name": "go double image banner",
       "settings": {
