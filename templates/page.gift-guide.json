@@ -84,7 +84,7 @@
       ],
       "name": "go featured products",
       "settings": {
-        "header": "Bundle deals",
+        "header": "Jacket + accessory bundles",
         "image_aspect_ratio": 75,
         "product_1": "big-bad-wolf-bright-green-bright-green",
         "product_2": "big-bad-wolf-crocus-petal-purple-crocus-petal-purple",
@@ -111,8 +111,23 @@
         "url_1": ""
       }
     },
+    "go_featured_products_GE7pUr": {
+      "type": "go-featured-products",
+      "name": "go featured products",
+      "settings": {
+        "header": "Accessory bundles",
+        "image_aspect_ratio": 75,
+        "product_1": "bull-parade-deep-dark-blue-multi-deep-dark-blue-multi",
+        "product_2": "dragon-eye-marina-blue-multi-print-marina-blue-multi-print",
+        "product_3": "smiling-dove-denim-multi-denim-multi",
+        "product_4": "tiger-eye-dazzling-blue-dazzling-blue",
+        "button_1_text": "",
+        "url_1": ""
+      }
+    },
     "go_double_image_NecTUe": {
       "type": "go-double-image",
+      "disabled": true,
       "custom_css": [
         ".go-section-two-images {padding-top: 0px !important;}",
         "@media (max-width: 750px) {.go-two-images-container {flex-direction: row; } .go-image-heading2 {font-size: 28px; } .go-image-block-aligned-left {height: 250px; }}"
@@ -136,6 +151,7 @@
     "rich_text_UEQBYC",
     "go_featured_products_7U48YD",
     "go_featured_products_qNUigg",
+    "go_featured_products_GE7pUr",
     "go_double_image_NecTUe"
   ]
 }
