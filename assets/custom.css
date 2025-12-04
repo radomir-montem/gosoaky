@@ -580,11 +580,7 @@ cart-upsell-form form {
 }
 
 .page--gift-guide {
-  background-image: url('https://cdn.shopify.com/s/files/1/1012/6158/files/GS_BACKGROUND.png?v=1764777680');
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat;
-  background-color: #f5f5f5;
+  background: #f5f5f5 url('https://cdn.shopify.com/s/files/1/1012/6158/files/GS_BACKGROUND.png?v=1764777680') center/contain repeat;
 }
 
 .page--gift-guide .content-for-layout .gradient {
