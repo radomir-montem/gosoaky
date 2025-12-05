@@ -42,7 +42,8 @@
         "slide_nkdiFb"
       ],
       "custom_css": [
-        ".go-section-hero {height: 60vh;}"
+        ".go-section-hero {height: 60vh;}",
+        "@media (max-width: 749px) {.go-hero-container {margin: 0; }}"
       ],
       "name": "Hero Slideshow",
       "settings": {
