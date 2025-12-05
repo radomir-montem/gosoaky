@@ -4,6 +4,14 @@
   <script src="{{ "go-wf.js" | asset_url }}" defer></script>
 {% endcomment %}
  {% assign first_block = section.blocks | first %}
+ {% if section.settings.adapt_image and section.blocks.size == 1 %}
+  <style>
+    .go-section-hero {
+      height: auto !important;
+      min-height: auto !important;
+    }
+  </style>
+ {% endif %}
 <div class="hero-slideshow swiper">
     <div class="swiper-wrapper">
         {% for block in section.blocks %}
