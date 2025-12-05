@@ -48,7 +48,8 @@
       "settings": {
         "autoplay": false,
         "autoplay_speed": 3,
-        "enable_arrow": false
+        "enable_arrow": false,
+        "adapt_image": true
       }
     },
     "rich_text_UEQBYC": {
