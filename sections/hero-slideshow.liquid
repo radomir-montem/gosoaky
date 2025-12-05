@@ -4,14 +4,21 @@
   <script src="{{ "go-wf.js" | asset_url }}" defer></script>
 {% endcomment %}
  {% assign first_block = section.blocks | first %}
- {% if section.settings.adapt_image and section.blocks.size == 1 %}
-  <style>
+
+<style>
+  {% if section.settings.adapt_image and section.blocks.size == 1 %}
     .go-section-hero {
       height: auto !important;
       min-height: auto !important;
     }
-  </style>
- {% endif %}
+  {% endif %}
+  {% if section.settings.overlay_background %}
+    .go-section-hero-overlay {
+      display: none !important;
+    }
+  {% endif %}
+</style>
+ 
 <div class="hero-slideshow swiper">
     <div class="swiper-wrapper">
         {% for block in section.blocks %}
@@ -204,6 +211,12 @@
           "id": "adapt_image",
           "label": "Adapt height",
           "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "overlay_background",
+          "label": "Overlay background",
+          "default": true
         }
     ],
     "blocks": [
