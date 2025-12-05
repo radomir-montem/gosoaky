@@ -43,7 +43,7 @@
       ],
       "custom_css": [
         ".go-section-hero {height: 60vh;}",
-        "@media (max-width: 749px) {.go-hero-container {margin: 0; }}"
+        "@media (max-width: 749px) {.go-hero-container {margin-bottom: 0; }}"
       ],
       "name": "Hero Slideshow",
       "settings": {
