@@ -94,7 +94,8 @@
         "product_3": "dragon-eye-marina-blue-marina-blue",
         "product_4": "tiger-eye-bronze-green-bronze-green",
         "button_1_text": "SHOW MORE",
-        "url_1": "shopify://collections/autumn-winter-2025-outerwear"
+        "url_1": "shopify://collections/autumn-winter-2025-outerwear",
+        "enalbe_slider": false
       }
     },
     "go_featured_products_qNUigg": {
@@ -111,7 +112,8 @@
         "product_3": "smiling-dove-denim-multi-denim-multi",
         "product_4": "tiger-eye-dazzling-blue-dazzling-blue",
         "button_1_text": "",
-        "url_1": ""
+        "url_1": "",
+        "enalbe_slider": false
       }
     },
     "go_featured_products_GE7pUr": {
@@ -125,7 +127,8 @@
         "product_3": "red-dragon-linen-white-linen-white",
         "product_4": "busy-bug-orchid-lilac-multi-orchid-lilac-multi",
         "button_1_text": "SHOW MORE",
-        "url_1": "https://www.gosoaky.com/collections/autumn-winter-2025-accessories"
+        "url_1": "https://www.gosoaky.com/collections/autumn-winter-2025-accessories",
+        "enalbe_slider": true
       }
     },
     "go_double_image_NecTUe": {
