@@ -602,4 +602,6 @@ cart-upsell-form form {
 
 .go-featured-collection-slider .go-product-card-atc {
   position: absolute;
+  max-height: 100%;
+  overflow-y: auto;
 }
