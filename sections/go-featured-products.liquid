@@ -71,7 +71,7 @@
       {% endif %}
     {% endif %}
     {% if section.settings.enalbe_slider %}
-      <div class="go-featured-collection-slider swiper">
+      <div class="go-featured-collection-slider swiper" data-section-id="{{ section.id }}">
         <div class="swiper-wrapper">
           {% if section.blocks.size > 0 %}
             {% for block in section.blocks %}
@@ -184,16 +184,12 @@
   </div>
 </div>
 <script>
-    {% if section.settings.enalbe_slider_mobile %}
-        if(window.innerWidth < 750) {
-          document.querySelectorAll('.go-featured-collection-slider').forEach(slider => {
-            const swiper = new Swiper(slider, {
-              loop: false,
-              slidesPerView: 2.3,
-              spaceBetween: 10,
-            });
-          });
-        }
+    {% if section.settings.enalbe_slider %}
+      const swiper = new Swiper('.go-featured-collection-slider[data-section-id="{{ section.id }}"]', {
+        loop: false,
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+      });
     {% endif %}
 </script>
 
