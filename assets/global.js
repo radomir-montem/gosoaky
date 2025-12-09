@@ -923,4 +923,19 @@ window.addEventListener("load", (event) => {
     accordion.querySelector('details').setAttribute('open', '');
     accordion.scrollIntoView({ behavior: "smooth", block: "end" });
   });
+
+  document.body.addEventListener('click', (e) => {
+    const target = e.target;
+    const imageBlock = target.closest('.go-product-card-image-block');
+    console.log(target, imageBlock);
+  //   if(imageBlock == null) {
+  //       this.classList.remove('active');
+  //       this.overlap.classList.remove('active');
+  //   } else {
+  //       const quickCard = imageBlock.querySelector('quick-add-card');
+  //       if(quickCard == this) return;
+  //       this.classList.remove('active');
+  //       this.overlap.classList.remove('active');
+  //   }
+  // });
 });
