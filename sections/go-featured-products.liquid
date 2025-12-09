@@ -53,87 +53,116 @@
         }
       </script>
     </div>
-    {% assign product_count = 0 %}
-    {% if section.settings.product_1 != blank %}
-      {% assign product_count = product_count | plus: 1 %}
-    {% endif %}
-    {% if section.settings.product_2 != blank %}
-      {% assign product_count = product_count | plus: 1 %}
-    {% endif %}
-    {% if section.settings.product_3 != blank %}
-      {% assign product_count = product_count | plus: 1 %}
-    {% endif %}
-    {% if section.settings.product_4 != blank %}
-      {% assign product_count = product_count | plus: 1 %}
-    {% endif %}
-    <div class="go-featured-collection-grid{% if section.settings.enalbe_slider_mobile %} small-hide{% endif %}" data-grid-columns="{{ product_count }}">
+    {% if section.blocks.size > 0 %}
+      {% assign product_count = section.blocks.size %}
+    {% else %}
+      {% assign product_count = 0 %}
       {% if section.settings.product_1 != blank %}
-        {%
-          render 'go-card-product',
-          card_product: section.settings.product_1
-        %}
+        {% assign product_count = product_count | plus: 1 %}
       {% endif %}
-
       {% if section.settings.product_2 != blank %}
-        {%
-          render 'go-card-product',
-          card_product: section.settings.product_2
-        %}
+        {% assign product_count = product_count | plus: 1 %}
       {% endif %}
-
       {% if section.settings.product_3 != blank %}
-        {%
-          render 'go-card-product',
-          card_product: section.settings.product_3
-        %}
+        {% assign product_count = product_count | plus: 1 %}
       {% endif %}
-
       {% if section.settings.product_4 != blank %}
-        {%
-          render 'go-card-product',
-          card_product: section.settings.product_4
-        %}
+        {% assign product_count = product_count | plus: 1 %}
       {% endif %}
-    </div>
-    {% if section.settings.enalbe_slider_mobile %}
-      <div class="go-featured-collection-slider swiper medium-hide large-up-hide">
+    {% endif %}
+    {% if section.settings.enalbe_slider %}
+      <div class="go-featured-collection-slider swiper">
         <div class="swiper-wrapper">
-          {% if section.settings.product_1 != blank %}
-            <div class="swiper-slide">
+          {% if section.blocks.size > 0 %}
+            {% for block in section.blocks %}
+              {% if block.settings.product != blank %}
+                <div class="swiper-slide">
+                  {%
+                    render 'go-card-product',
+                    card_product: block.settings.product
+                  %}
+                </div>
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            {% if section.settings.product_1 != blank %}
+              <div class="swiper-slide">
+                {%
+                  render 'go-card-product',
+                  card_product: section.settings.product_1
+                %}
+              </div>
+            {% endif %}
+
+            {% if section.settings.product_2 != blank %}
+              <div class="swiper-slide">
+                {%
+                  render 'go-card-product',
+                  card_product: section.settings.product_2
+                %}
+              </div>
+            {% endif %}
+
+            {% if section.settings.product_3 != blank %}
+              <div class="swiper-slide">
+                {%
+                  render 'go-card-product',
+                  card_product: section.settings.product_3
+                %}
+              </div>
+            {% endif %}
+
+            {% if section.settings.product_4 != blank %}
+              <div class="swiper-slide">
+                {%
+                  render 'go-card-product',
+                  card_product: section.settings.product_4
+                %}
+              </div>
+            {% endif %}
+          {% endif %}
+        </div>
+      </div>
+    {% else %}
+      <div class="go-featured-collection-grid" data-grid-columns="{{ product_count }}">
+        {% if section.blocks.size > 0 %}
+          {% for block in section.blocks %}
+            {% if block.settings.product != blank %}
               {%
                 render 'go-card-product',
-                card_product: section.settings.product_1
+                card_product: block.settings.product
               %}
-            </div>
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          {% if section.settings.product_1 != blank %}
+            {%
+              render 'go-card-product',
+              card_product: section.settings.product_1
+            %}
           {% endif %}
 
           {% if section.settings.product_2 != blank %}
-            <div class="swiper-slide">
-              {%
-                render 'go-card-product',
-                card_product: section.settings.product_2
-              %}
-            </div>
+            {%
+              render 'go-card-product',
+              card_product: section.settings.product_2
+            %}
           {% endif %}
 
           {% if section.settings.product_3 != blank %}
-            <div class="swiper-slide">
-              {%
-                render 'go-card-product',
-                card_product: section.settings.product_3
-              %}
-            </div>
+            {%
+              render 'go-card-product',
+              card_product: section.settings.product_3
+            %}
           {% endif %}
 
           {% if section.settings.product_4 != blank %}
-            <div class="swiper-slide">
-              {%
-                render 'go-card-product',
-                card_product: section.settings.product_4
-              %}
-            </div>
+            {%
+              render 'go-card-product',
+              card_product: section.settings.product_4
+            %}
           {% endif %}
-        </div>
+        {% endif %}
       </div>
     {% endif %}
     {% if section.settings.button_1_text != blank %}
@@ -229,14 +258,21 @@
     {
       "type": "checkbox",
       "id": "enalbe_slider",
-      "label": "Enable slider on desktop",
+      "label": "Enable slider",
       "default": false
-    },
+    }
+  ],
+  "blocks": [
     {
-      "type": "checkbox",
-      "id": "enalbe_slider_mobile",
-      "label": "Enable slider on mobile",
-      "default": false
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
     }
   ],
   "presets": [
