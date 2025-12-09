@@ -191,7 +191,7 @@
         spaceBetween: 10,
         breakpoints: {
           768: {
-            slidesPerView: 4,
+            slidesPerView: {% if section.blocks.size < 4 %}{{ section.blocks.size }}{% else %}4{% endif %},
             spaceBetween: 20,
           },
         },
