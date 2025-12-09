@@ -915,15 +915,6 @@ class VariantRadios extends VariantSelects {
 customElements.define('variant-radios', VariantRadios);
 
 window.addEventListener("load", (event) => {
-  document.querySelector('a.sg-product-page-label').addEventListener('click', function(e){
-    e.preventDefault();
-    const accordion = document.querySelector('.product__accordion[data-handle="sizing-information"]');
-    if(!accordion) return;
-    accordion.querySelector('summary').setAttribute('aria-expanded', true);
-    accordion.querySelector('details').setAttribute('open', '');
-    accordion.scrollIntoView({ behavior: "smooth", block: "end" });
-  });
-
   document.body.addEventListener('click', (e) => {
     const target = e.target;
     const imageBlock = target.closest('.go-product-card-image-block');
@@ -937,5 +928,14 @@ window.addEventListener("load", (event) => {
   //       this.classList.remove('active');
   //       this.overlap.classList.remove('active');
   //   }
+  });
+  
+  document.querySelector('a.sg-product-page-label').addEventListener('click', function(e){
+    e.preventDefault();
+    const accordion = document.querySelector('.product__accordion[data-handle="sizing-information"]');
+    if(!accordion) return;
+    accordion.querySelector('summary').setAttribute('aria-expanded', true);
+    accordion.querySelector('details').setAttribute('open', '');
+    accordion.scrollIntoView({ behavior: "smooth", block: "end" });
   });
 });
