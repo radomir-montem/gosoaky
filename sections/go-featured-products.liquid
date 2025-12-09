@@ -185,7 +185,7 @@
 </div>
 <script>
     {% if section.settings.enalbe_slider %}
-      const swiper = new Swiper('.go-featured-collection-slider[data-section-id="{{ section.id }}"]', {
+      new Swiper('.go-featured-collection-slider[data-section-id="{{ section.id }}"]', {
         loop: false,
         slidesPerView: 2.3,
         spaceBetween: 10,
@@ -195,7 +195,7 @@
             spaceBetween: 20,
           },
         },
-      });
+      })
     {% endif %}
 </script>
 
