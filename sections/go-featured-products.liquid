@@ -6,6 +6,11 @@
 <div class="go-section-featured-collection">
   <div class="go-featured-collection-container">
     <h2 class="go-h2-title">{{section.settings.header | escape}}</h2>
+    {% if section.settings.text != blank %}
+      <div class="rich-text__text rte">
+        {{ section.settings.text }}
+      </div>
+    {% endif %}
     <div id="w-node-_2b6bbb20-4399-9bfe-c426-be0e63bde3ae-1658e309" class="w-embed w-script">
       <style>
         @supports ( aspect-ratio:0.75) {
@@ -174,6 +179,11 @@
       "id": "header",
       "label": "Header text",
       "default": "Our new releases"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
     },
     {
       "type": "range",
