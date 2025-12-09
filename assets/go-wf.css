@@ -2385,6 +2385,7 @@ li {
   align-items: flex-start;
   display: flex;
   position: relative;
+  max-width: 100%;
 }
 
 .go-h2-title {
