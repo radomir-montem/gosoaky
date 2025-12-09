@@ -134,6 +134,14 @@
         "enalbe_slider": true
       }
     },
+    "17652947337b3a77ca": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "176529462829b3388a": {
+      "type": "_blocks",
+      "settings": {}
+    },
     "go_double_image_NecTUe": {
       "type": "go-double-image",
       "disabled": true,
@@ -161,6 +169,8 @@
     "go_featured_products_7U48YD",
     "go_featured_products_qNUigg",
     "go_featured_products_GE7pUr",
+    "17652947337b3a77ca",
+    "176529462829b3388a",
     "go_double_image_NecTUe"
   ]
 }
