@@ -60,7 +60,7 @@
         "text_pMcNNn": {
           "type": "text",
           "settings": {
-            "text": "<p>The season of giving is here, and we’ve got something special just for you.</p><p>Bundle up with a jacket and an accessory to enjoy 15% off at checkout. Discover the perfect holiday gifts below!</p>"
+            "text": "<p>The season of giving is here, and we have something special just for you.<br/><br/>Bundle up with a jacket and an accessory to enjoy 15% off at checkout. Discover the perfect holiday gifts below!<br/><br/>Discover the perfect holiday gifts below!</p>"
           }
         }
       },
@@ -88,6 +88,7 @@
       "name": "go featured products",
       "settings": {
         "header": "Jacket + accessory bundles",
+        "text": "",
         "image_aspect_ratio": 75,
         "product_1": "desert-fox-spice-route-rust-spice-route-rust",
         "product_2": "desert-fox-sky-captain-blue-sky-captain-blue",
@@ -106,6 +107,7 @@
       "name": "go featured products",
       "settings": {
         "header": "Best sellers",
+        "text": "",
         "image_aspect_ratio": 75,
         "product_1": "desert-fox-sky-captain-blue-sky-captain-blue",
         "product_2": "dragon-eye-marina-blue-multi-print-marina-blue-multi-print",
@@ -121,6 +123,7 @@
       "name": "go featured products",
       "settings": {
         "header": "Accessory bundles",
+        "text": "",
         "image_aspect_ratio": 75,
         "product_1": "bull-parade-deep-dark-blue-multi-deep-dark-blue-multi",
         "product_2": "bull-parade-orchid-lilac-multi-orchid-lilac-multi",
