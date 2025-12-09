@@ -937,5 +937,5 @@ window.addEventListener("load", (event) => {
   //       this.classList.remove('active');
   //       this.overlap.classList.remove('active');
   //   }
-  // });
+  });
 });
