@@ -82,6 +82,38 @@
     },
     "go_featured_products_7U48YD": {
       "type": "go-featured-products",
+      "blocks": {
+        "product_gWPfQH": {
+          "type": "product",
+          "settings": {
+            "product": "desert-fox-spice-route-rust-spice-route-rust"
+          }
+        },
+        "product_Ez6YbC": {
+          "type": "product",
+          "settings": {
+            "product": "desert-fox-sky-captain-blue-sky-captain-blue"
+          }
+        },
+        "product_x7infk": {
+          "type": "product",
+          "settings": {
+            "product": "dragon-eye-marina-blue-marina-blue"
+          }
+        },
+        "product_w8hbLN": {
+          "type": "product",
+          "settings": {
+            "product": "tiger-eye-bronze-green-bronze-green"
+          }
+        }
+      },
+      "block_order": [
+        "product_gWPfQH",
+        "product_Ez6YbC",
+        "product_x7infk",
+        "product_w8hbLN"
+      ],
       "custom_css": [
         ".go-section-featured-collection {padding-top: 0px !important;}"
       ],
