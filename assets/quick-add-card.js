@@ -21,13 +21,14 @@ if (!customElements.get('quick-add-card')) {
             });
             document.body.addEventListener('click', (e) => {
                 const target = e.target;
-                const quickCard = target.closest('quick-add-card');
-                console.log(target, quickCard);
-                if(quickCard == null) {
+                const imageBlock = target.closest('.go-product-card-image-block');
+                console.log(target, imageBlock);
+                if(imageBlock == null) {
                     this.classList.remove('active');
                     this.overlap.classList.remove('active');
-                } else if (quickCard == this) return;
-                else {
+                } else {
+                    const quickCard = imageBlock.querySelector('quick-add-card');
+                    if(quickCard == this) return;
                     this.classList.remove('active');
                     this.overlap.classList.remove('active');
                 }
