@@ -149,6 +149,15 @@
     {% endif %}
   </div>
 </div>
+<script>
+    {% if section.settings.enalbe_slider %}
+        if(window.innerWidth < 750) {
+          const swiper = new Swiper('.hero-slideshow', {
+            loop: false,
+        });
+        }
+    {% endif %}
+</script>
 
 {% schema %}
 {
