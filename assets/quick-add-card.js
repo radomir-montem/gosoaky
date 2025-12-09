@@ -19,6 +19,13 @@ if (!customElements.get('quick-add-card')) {
                 this.classList.remove('active');
                 this.overlap.classList.remove('active');
             });
+            document.body.addEventListener('click', (e) => {
+                const target = e.target;
+                const quickCard = target.closest('quick-add-card')
+                if(quickCard == this) return;
+                this.classList.remove('active');
+                this.overlap.classList.remove('active');
+            });
         }
 
         onSubmitHandler(evt) {
