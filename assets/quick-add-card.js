@@ -22,10 +22,15 @@ if (!customElements.get('quick-add-card')) {
             document.body.addEventListener('click', (e) => {
                 const target = e.target;
                 const quickCard = target.closest('quick-add-card');
-                console.log(quickCard);
-                if(quickCard == this) return;
-                this.classList.remove('active');
-                this.overlap.classList.remove('active');
+                if(quickCard == null) {
+                    this.classList.remove('active');
+                    this.overlap.classList.remove('active');
+                } else if (quickCard == this) return;
+                else {
+                    this.classList.remove('active');
+                    this.overlap.classList.remove('active');
+                }
+                
             });
         }
 
