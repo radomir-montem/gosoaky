@@ -114,7 +114,7 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "SALE WEEK IS LIVE - UP TO 50% OFF",
+              "text": "HOLIDAY GIFTS - JACKET + ACCESSORY WITH 15% OFF",
               "color_scheme": "accent-1",
               "link": "shopify://collections/sale-week"
             }
@@ -293,13 +293,6 @@
         "type": "shopify://apps/ta-labels-badges/blocks/bss-pl-config-data/91bfe765-b604-49a1-805e-3599fa600b24",
         "disabled": false,
         "settings": {}
-      },
-      "15796953133730294439": {
-        "type": "shopify://apps/growave-loyalty-wishlist/blocks/block.embed.socialshopwave-helper/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
-        "disabled": false,
-        "settings": {
-          "disable_shadow_root_globally": false
-        }
       }
     }
   },
