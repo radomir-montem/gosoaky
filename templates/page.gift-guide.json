@@ -83,6 +83,12 @@
     "go_featured_products_7U48YD": {
       "type": "go-featured-products",
       "blocks": {
+        "product_ptgqBN": {
+          "type": "product",
+          "settings": {
+            "product": "baby-dragon-bright-marina-bright-marina"
+          }
+        },
         "product_gWPfQH": {
           "type": "product",
           "settings": {
@@ -109,6 +115,7 @@
         }
       },
       "block_order": [
+        "product_ptgqBN",
         "product_gWPfQH",
         "product_Ez6YbC",
         "product_x7infk",
