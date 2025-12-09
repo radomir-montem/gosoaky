@@ -91,7 +91,7 @@
       {% endif %}
     </div>
     {% if section.settings.enalbe_slider %}
-      <div class="go-featured-collection-grid swiper medium-hide large-up-hide">
+      <div class="go-featured-collection-slider swiper medium-hide large-up-hide">
         <div class="swiper-wrapper">
           {% if section.settings.product_1 != blank %}
             <div class="swiper-slide">
@@ -152,9 +152,11 @@
 <script>
     {% if section.settings.enalbe_slider %}
         if(window.innerWidth < 750) {
-          const swiper = new Swiper('.hero-slideshow', {
-            loop: false,
-        });
+          document.querySelectorAll('.go-featured-collection-slider').forEach(slider => {
+            const swiper = new Swiper(slider, {
+              loop: false,
+            });
+          });
         }
     {% endif %}
 </script>
