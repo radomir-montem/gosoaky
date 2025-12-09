@@ -21,7 +21,8 @@ if (!customElements.get('quick-add-card')) {
             });
             document.body.addEventListener('click', (e) => {
                 const target = e.target;
-                const quickCard = target.closest('quick-add-card')
+                const quickCard = target.closest('quick-add-card');
+                console.log(quickCard);
                 if(quickCard == this) return;
                 this.classList.remove('active');
                 this.overlap.classList.remove('active');
