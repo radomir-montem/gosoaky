@@ -918,18 +918,14 @@ window.addEventListener("load", (event) => {
   document.body.addEventListener('click', (e) => {
     const target = e.target;
     const imageBlock = target.closest('.go-product-card-image-block');
-    console.log(target, imageBlock);
-  //   if(imageBlock == null) {
-  //       this.classList.remove('active');
-  //       this.overlap.classList.remove('active');
-  //   } else {
-  //       const quickCard = imageBlock.querySelector('quick-add-card');
-  //       if(quickCard == this) return;
-  //       this.classList.remove('active');
-  //       this.overlap.classList.remove('active');
-  //   }
+    document.querySelectorAll('.go-product-card-image-block').forEach(block => {
+      if(block != imageBlock) {
+        block.querySelector('.go-product-card-atc').classList.remove('active');
+        block.querySelector('.go-product-card-atc__overlap').classList.remove('active');
+      }
+    });
   });
-  
+
   document.querySelector('a.sg-product-page-label').addEventListener('click', function(e){
     e.preventDefault();
     const accordion = document.querySelector('.product__accordion[data-handle="sizing-information"]');
