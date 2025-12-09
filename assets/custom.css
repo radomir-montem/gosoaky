@@ -587,3 +587,7 @@ cart-upsell-form form {
 .page--gift-guide .content-for-layout .gradient {
   background: transparent;
 }
+
+.go-featured-collection-slider {
+  max-width: 100%;
+}
