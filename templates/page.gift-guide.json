@@ -159,6 +159,31 @@
     },
     "go_featured_products_GE7pUr": {
       "type": "go-featured-products",
+      "blocks": {
+        "product_gaAznV": {
+          "type": "product",
+          "settings": {
+            "product": "baby-sparrow-evening-pink"
+          }
+        },
+        "product_y9CGjn": {
+          "type": "product",
+          "settings": {
+            "product": "baby-shark-evening-pink-1"
+          }
+        },
+        "product_RFeWNn": {
+          "type": "product",
+          "settings": {
+            "product": "baby-dragon-thyme-green-thyme-green"
+          }
+        }
+      },
+      "block_order": [
+        "product_gaAznV",
+        "product_y9CGjn",
+        "product_RFeWNn"
+      ],
       "name": "go featured products",
       "settings": {
         "header": "Accessory bundles",
