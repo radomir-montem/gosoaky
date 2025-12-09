@@ -590,6 +590,7 @@ cart-upsell-form form {
 
 .go-featured-collection-slider {
   max-width: 100%;
+  width: 100%;
 }
 
 .go-featured-collection-slider .go-product-card-atc__overlap {
