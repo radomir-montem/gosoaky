@@ -98,19 +98,13 @@
         "product_Ez6YbC": {
           "type": "product",
           "settings": {
-            "product": "desert-fox-sky-captain-blue-sky-captain-blue"
+            "product": "rock-lobster-marina-blue-multi-marina-blue-multi"
           }
         },
         "product_x7infk": {
           "type": "product",
           "settings": {
-            "product": "dragon-eye-marina-blue-marina-blue"
-          }
-        },
-        "product_w8hbLN": {
-          "type": "product",
-          "settings": {
-            "product": "tiger-eye-bronze-green-bronze-green"
+            "product": "sleeping-lion-sky-captain-blue-teddy-sky-captain-blue-teddy"
           }
         }
       },
@@ -118,8 +112,7 @@
         "product_ptgqBN",
         "product_gWPfQH",
         "product_Ez6YbC",
-        "product_x7infk",
-        "product_w8hbLN"
+        "product_x7infk"
       ],
       "custom_css": [
         ".go-section-featured-collection {padding-top: 0px !important;}"
