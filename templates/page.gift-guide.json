@@ -219,7 +219,7 @@
       "name": "go featured products",
       "settings": {
         "header": "Accessory bundles",
-        "text": "",
+        "text": "<p>Bundle two AW25 accessories and get a 15% off</p>",
         "image_aspect_ratio": 75,
         "product_1": "bull-parade-deep-dark-blue-multi-deep-dark-blue-multi",
         "product_2": "bull-parade-orchid-lilac-multi-orchid-lilac-multi",
