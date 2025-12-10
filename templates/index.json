@@ -52,10 +52,10 @@
           "settings": {
             "image": "shopify://shop_images/BF_AW24_C.jpg",
             "mobile_image": "shopify://shop_images/BF_AW24_C_1.jpg",
-            "header_text": "OUTERPROOFS™",
+            "header_text": "HOLIDAY GIFT GUIDE",
             "header_subtitle": "",
-            "button_1_text": "SHOP AW25",
-            "url_1": "shopify://collections/kids-autumn-winter-2025",
+            "button_1_text": "EXPLORE NOW",
+            "url_1": "shopify://pages/gift-guide",
             "button_1_style": "go-light",
             "button_2_text": "Button 2",
             "url_2": "",
