@@ -50,6 +50,7 @@
     {{ 'component-price.css' | asset_url | stylesheet_tag }}
     {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
     {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
 
     {%- liquid
@@ -342,8 +343,6 @@
     {%- endif -%}
   {% render 'preorder-now' %}
   </body>
-
-  <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'cart-upsell-form.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'cart-function.js' |  asset_url }}" defer="defer"></script>
