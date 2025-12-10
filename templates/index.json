@@ -12,25 +12,9 @@
     "hero_slideshow_q67epj": {
       "type": "hero-slideshow",
       "blocks": {
-        "slide_BxGHr8": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/1-1_858d0daa-5fe3-4cea-8a3c-518ec6ace7e3.jpg",
-            "mobile_image": "shopify://shop_images/GS_SALE_Mobile.jpg",
-            "header_text": "",
-            "header_subtitle": "",
-            "button_1_text": "SHOP SALE WEEK",
-            "url_1": "shopify://collections/sale-week",
-            "button_1_style": "go-light",
-            "button_2_text": "Button 2",
-            "url_2": "",
-            "button_2_style": "go-light",
-            "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
-          }
-        },
         "slide_hbLrNR": {
           "type": "slide",
+          "name": "SNOWWEAR",
           "settings": {
             "image": "shopify://shop_images/2_AW25_SNOWWEAR.jpg",
             "mobile_image": "shopify://shop_images/5_AW25_SNOWWEAR_081e37e9-942e-4285-80ad-8340fae3cf79.jpg",
@@ -47,9 +31,27 @@
         },
         "slide_KjanyX": {
           "type": "slide",
+          "name": "AW25",
           "settings": {
             "image": "shopify://shop_images/DESKTOP_VERSION_GO_SOAKY_AW250853.jpg",
             "mobile_image": "shopify://shop_images/PHONE_VERSION_GO_SOAKY_AW250853.jpg",
+            "header_text": "OUTERPROOFS™",
+            "header_subtitle": "",
+            "button_1_text": "SHOP AW25",
+            "url_1": "shopify://collections/kids-autumn-winter-2025",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT | WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT"
+          }
+        },
+        "slide_ARpbK3": {
+          "type": "slide",
+          "name": "GIFT GUIDE",
+          "settings": {
+            "image": "shopify://shop_images/BF_AW24_C_1.jpg",
+            "mobile_image": "shopify://shop_images/BF_AW24_C_1.jpg",
             "header_text": "OUTERPROOFS™",
             "header_subtitle": "",
             "button_1_text": "SHOP AW25",
@@ -97,16 +99,18 @@
         }
       },
       "block_order": [
-        "slide_BxGHr8",
         "slide_hbLrNR",
         "slide_KjanyX",
+        "slide_ARpbK3",
         "slide_TbYLVm",
         "slide_a9HwnF"
       ],
       "settings": {
         "autoplay": true,
         "autoplay_speed": 5,
-        "enable_arrow": true
+        "enable_arrow": true,
+        "adapt_image": false,
+        "overlay_background": true
       }
     },
     "16606505673e469e8c": {
@@ -159,13 +163,15 @@
       "type": "go-featured-products",
       "settings": {
         "header": "Our wardrobe heroes",
+        "text": "",
         "image_aspect_ratio": 75,
         "product_1": "rock-lobster-marina-blue-multi-marina-blue-multi",
         "product_2": "dragon-eye-marina-blue-multi-print-marina-blue-multi-print",
         "product_3": "smiling-dove-denim-multi-denim-multi",
         "product_4": "tiger-eye-dazzling-blue-dazzling-blue",
         "button_1_text": "See full collection",
-        "url_1": "shopify://collections/kids-autumn-winter-2025"
+        "url_1": "shopify://collections/kids-autumn-winter-2025",
+        "enalbe_slider": false
       }
     },
     "16606515163a80a91e": {
