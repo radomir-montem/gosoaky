@@ -126,7 +126,7 @@
         "product_2": "tiger-eye-dazzling-blue-dazzling-blue",
         "product_3": "rock-lobster-marina-blue-multi-marina-blue-multi",
         "product_4": "sleeping-lion-sky-captain-blue-teddy-sky-captain-blue-teddy",
-        "button_1_text": "",
+        "button_1_text": "SEE MORE",
         "url_1": "shopify://collections/autumn-winter-2025-outerwear",
         "enalbe_slider": true
       }
@@ -145,8 +145,8 @@
         "product_2": "dragon-eye-marina-blue-multi-print-marina-blue-multi-print",
         "product_3": "smiling-dove-denim-multi-denim-multi",
         "product_4": "tiger-eye-dazzling-blue-dazzling-blue",
-        "button_1_text": "",
-        "url_1": "",
+        "button_1_text": "SEE MORE",
+        "url_1": "https://www.gosoaky.com/collections/kids-autumn-winter-2025?filter.v.price.gte=&filter.v.price.lte=&sort_by=best-selling",
         "enalbe_slider": false
       }
     },
@@ -193,7 +193,7 @@
         "product_2": "bull-parade-orchid-lilac-multi-orchid-lilac-multi",
         "product_3": "red-dragon-linen-white-linen-white",
         "product_4": "busy-bug-orchid-lilac-multi-orchid-lilac-multi",
-        "button_1_text": "SEE ALL ACCESSORIES",
+        "button_1_text": "SEE MORE",
         "url_1": "https://www.gosoaky.com/collections/autumn-winter-2025-accessories",
         "enalbe_slider": true
       }
