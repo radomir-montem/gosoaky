@@ -49,10 +49,9 @@
         "slide_ARpbK3": {
           "type": "slide",
           "name": "GIFT GUIDE",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/BF_AW24_C.jpg",
-            "mobile_image": "shopify://shop_images/BF_AW24_C_1.jpg",
+            "mobile_image": "shopify://shop_images/giftguide_mobile.jpg",
             "header_text": "HOLIDAY GIFT GUIDE",
             "header_subtitle": "",
             "button_1_text": "EXPLORE NOW",
