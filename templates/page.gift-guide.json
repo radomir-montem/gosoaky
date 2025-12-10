@@ -156,26 +156,33 @@
         "product_gaAznV": {
           "type": "product",
           "settings": {
-            "product": "baby-sparrow-evening-pink"
+            "product": "bull-parade-deep-dark-blue-multi-deep-dark-blue-multi"
           }
         },
         "product_y9CGjn": {
           "type": "product",
           "settings": {
-            "product": "baby-shark-evening-pink-1"
+            "product": "bull-parade-orchid-lilac-multi-orchid-lilac-multi"
           }
         },
         "product_RFeWNn": {
           "type": "product",
           "settings": {
-            "product": "baby-dragon-thyme-green-thyme-green"
+            "product": "red-dragon-linen-white-linen-white"
+          }
+        },
+        "product_tFhM8t": {
+          "type": "product",
+          "settings": {
+            "product": "busy-bug-orchid-lilac-multi-orchid-lilac-multi"
           }
         }
       },
       "block_order": [
         "product_gaAznV",
         "product_y9CGjn",
-        "product_RFeWNn"
+        "product_RFeWNn",
+        "product_tFhM8t"
       ],
       "name": "go featured products",
       "settings": {
