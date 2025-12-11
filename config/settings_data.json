@@ -112,15 +112,15 @@
         "blocks": {
           "announcement_WqkBY9": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "HOLIDAY GIFTS - JACKET + ACCESSORY WITH 15% OFF",
+              "text": "GIFT SEASON - JACKET + ACCESSORY WITH 15% OFF",
               "color_scheme": "accent-1",
-              "link": "shopify://collections/sale-week"
+              "link": "shopify://pages/gift-guide"
             }
           },
           "announcement_zzjiiP": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "FREE SHIPPING IN NL, BE, DE, LU",
               "color_scheme": "accent-1",
