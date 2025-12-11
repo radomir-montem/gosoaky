@@ -12,6 +12,23 @@
     "hero_slideshow_q67epj": {
       "type": "hero-slideshow",
       "blocks": {
+        "slide_ARpbK3": {
+          "type": "slide",
+          "name": "GIFT GUIDE",
+          "settings": {
+            "image": "shopify://shop_images/BF_AW24_C.jpg",
+            "mobile_image": "shopify://shop_images/giftguide_mobile.jpg",
+            "header_text": "HOLIDAY GIFT GUIDE",
+            "header_subtitle": "",
+            "button_1_text": "EXPLORE NOW",
+            "url_1": "shopify://pages/gift-guide",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT | WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT"
+          }
+        },
         "slide_hbLrNR": {
           "type": "slide",
           "name": "SNOWWEAR",
@@ -39,24 +56,6 @@
             "header_subtitle": "",
             "button_1_text": "SHOP AW25",
             "url_1": "shopify://collections/kids-autumn-winter-2025",
-            "button_1_style": "go-light",
-            "button_2_text": "Button 2",
-            "url_2": "",
-            "button_2_style": "go-light",
-            "usps": "WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT | WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT"
-          }
-        },
-        "slide_ARpbK3": {
-          "type": "slide",
-          "name": "GIFT GUIDE",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/BF_AW24_C.jpg",
-            "mobile_image": "shopify://shop_images/giftguide_mobile.jpg",
-            "header_text": "HOLIDAY GIFT GUIDE",
-            "header_subtitle": "",
-            "button_1_text": "EXPLORE NOW",
-            "url_1": "shopify://pages/gift-guide",
             "button_1_style": "go-light",
             "button_2_text": "Button 2",
             "url_2": "",
@@ -100,9 +99,9 @@
         }
       },
       "block_order": [
+        "slide_ARpbK3",
         "slide_hbLrNR",
         "slide_KjanyX",
-        "slide_ARpbK3",
         "slide_TbYLVm",
         "slide_a9HwnF"
       ],
