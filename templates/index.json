@@ -20,7 +20,7 @@
             "mobile_image": "shopify://shop_images/AW25_MOBILE_BANNER_EOS.jpg",
             "header_text": "END OF SEASON SALE 25% OFF",
             "header_subtitle": "",
-            "button_1_text": "Button 1",
+            "button_1_text": "SHOP NOW",
             "url_1": "",
             "button_1_style": "go-light",
             "button_2_text": "Button 2",
@@ -79,49 +79,13 @@
             "button_2_style": "go-light",
             "usps": "WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT | WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT"
           }
-        },
-        "slide_TbYLVm": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/DSC_1749_copy_f4a67584-3f7c-486d-b056-93c66c0278d5.jpg",
-            "mobile_image": "shopify://shop_images/DSC_1749_copy_f4a67584-3f7c-486d-b056-93c66c0278d5.jpg",
-            "header_text": "SALE AT 30% OFF",
-            "header_subtitle": "",
-            "button_1_text": "SHOP NOW",
-            "url_1": "shopify://collections/archive-sale",
-            "button_1_style": "go-light",
-            "button_2_text": "Button 2",
-            "url_2": "",
-            "button_2_style": "go-light",
-            "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
-          }
-        },
-        "slide_a9HwnF": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_2.png",
-            "mobile_image": "shopify://shop_images/SS25_WESBITE_GOSOAKY_IN_THE_CITY_6.png",
-            "header_text": "#GOSOAKYINTHECITY",
-            "header_subtitle": "",
-            "button_1_text": "",
-            "url_1": "",
-            "button_1_style": "go-light",
-            "button_2_text": "Button 2",
-            "url_2": "",
-            "button_2_style": "go-light",
-            "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
-          }
         }
       },
       "block_order": [
         "slide_CwaPgC",
         "slide_ARpbK3",
         "slide_hbLrNR",
-        "slide_KjanyX",
-        "slide_TbYLVm",
-        "slide_a9HwnF"
+        "slide_KjanyX"
       ],
       "settings": {
         "autoplay": true,
