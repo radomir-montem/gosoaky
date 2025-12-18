@@ -34,6 +34,7 @@
         },
         "text_mjT9L4": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom.note | metafield_tag }}"
           }
@@ -89,14 +90,6 @@
         "selleasy_lb_upsell_widget_bl_nTmee7": {
           "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
           "settings": {}
-        },
-        "growave_loyalty_wishlist_block_product_fave_button_FbGyUy": {
-          "type": "shopify://apps/growave-loyalty-wishlist/blocks/block.product.faveButton/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
-          "settings": {
-            "option_button_class": "",
-            "custom_css": "",
-            "shadow_root_options": "null"
-          }
         }
       },
       "block_order": [
@@ -110,8 +103,7 @@
         "collapsible_tab_TqcMUy",
         "collapsible_tab_3wnUdz",
         "collapsible_tab_4Ynqx6",
-        "selleasy_lb_upsell_widget_bl_nTmee7",
-        "growave_loyalty_wishlist_block_product_fave_button_FbGyUy"
+        "selleasy_lb_upsell_widget_bl_nTmee7"
       ],
       "custom_css": [],
       "settings": {
