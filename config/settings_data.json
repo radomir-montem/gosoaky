@@ -112,6 +112,7 @@
         "blocks": {
           "announcement_WqkBY9": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "FREE SHIPPING IN NL, BE, DE, LU",
               "color_scheme": "accent-1",
@@ -120,11 +121,10 @@
           },
           "announcement_zzjiiP": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "EOS SALE IS LIVE - 25% OFF SELECTED ITEMS",
               "color_scheme": "accent-1",
-              "link": "https://www.gosoaky.com/collections/autumn-winter-2025-outerwear"
+              "link": "https://www.gosoaky.com/collections/sale"
             }
           }
         },
