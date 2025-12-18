@@ -14,7 +14,6 @@
       "blocks": {
         "slide_CwaPgC": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/AW25_DESKTOP_BANNER_EOS.jpg",
             "mobile_image": "shopify://shop_images/AW25_MOBILE_BANNER_EOS.jpg",
@@ -65,7 +64,8 @@
         },
         "slide_KjanyX": {
           "type": "slide",
-          "name": "AW25",
+          "name": "AW25 SALE",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DESKTOP_VERSION_GO_SOAKY_AW250853.jpg",
             "mobile_image": "shopify://shop_images/PHONE_VERSION_GO_SOAKY_AW250853.jpg",
