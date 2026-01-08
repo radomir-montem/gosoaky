@@ -23,7 +23,7 @@
       <div class="sg-product-page-label">{{ product_color }}</div>
     </div>
     <div class="swiper">
-      <div class="swiper-wrapper sg-color-swatches">
+      <div class="swiper-wrapper">
         {% for color_product in product.metafields.product_information.product_color_collection.value.products %}
           {% assign color_image = color_product.metafields.custom.color_swatch_image | default: color_product.featured_media %}
           {% if color_product == product %}
