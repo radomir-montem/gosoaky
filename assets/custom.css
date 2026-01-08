@@ -617,3 +617,12 @@ cart-upsell-form form {
   max-width: 100%;
   width: 100%;
 }
+
+.sg-product-page-wrapper .swiper-button-next, .sg-product-page-wrapper .swiper-button-prev {
+  display: flex;
+}
+
+.sg-product-page-wrapper .swiper-button-next[aria-disabled="true"],
+.sg-product-page-wrapper .swiper-button-prev[aria-disabled="true"] {
+  display: none;
+}
