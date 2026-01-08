@@ -3922,8 +3922,8 @@ li {
 
 .sg-colour-block {
   flex: none;
-  width: 70px;
-  height: 85px;
+  width: 70px !important;
+  height: 85px !important;
 }
 
 .sg-colour-block.sg-selected {
