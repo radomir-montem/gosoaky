@@ -22,38 +22,43 @@
       <h2 class="sg-product-page-h2-title">color:</h2>
       <div class="sg-product-page-label">{{ product_color }}</div>
     </div>
-    <div class="sg-color-swatches">
-      {% for color_product in product.metafields.product_information.product_color_collection.value.products %}
-        {% assign color_image = color_product.metafields.custom.color_swatch_image | default: color_product.featured_media %}
-        {% if color_product == product %}
-          <div class="sg-colour-block sg-selected">
-            {{
-              color_image
-              | image_url: width: 1500
-              | image_tag:
-                loading: 'lazy',
-                class: 'sg-colour-block-image',
-                sizes: '(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw',
-                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-                alt: prdct.title
-            }}
-          </div>
-        {% else %}
-          <a href="{{ color_product.url }}" class="sg-colour-block sg-unselected w-inline-block">
-            {{
-              color_image
-              | image_url: width: 1500
-              | image_tag:
-                loading: 'lazy',
-                class: 'sg-colour-block-image',
-                sizes: '(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw',
-                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-                alt: prdct.title
-            }}
-          </a>
-        {% endif %}
-      {% endfor %}
+    <div class="swiper">
+      <div class="swiper-wrapper sg-color-swatches">
+        {% for color_product in product.metafields.product_information.product_color_collection.value.products %}
+          {% assign color_image = color_product.metafields.custom.color_swatch_image | default: color_product.featured_media %}
+          {% if color_product == product %}
+            <div class="swiper-slide sg-colour-block sg-selected">
+              {{
+                color_image
+                | image_url: width: 1500
+                | image_tag:
+                  loading: 'lazy',
+                  class: 'sg-colour-block-image',
+                  sizes: '(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw',
+                  widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                  alt: prdct.title
+              }}
+            </div>
+          {% else %}
+            <a href="{{ color_product.url }}" class="swiper-slide sg-colour-block sg-unselected w-inline-block">
+              {{
+                color_image
+                | image_url: width: 1500
+                | image_tag:
+                  loading: 'lazy',
+                  class: 'sg-colour-block-image',
+                  sizes: '(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw',
+                  widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                  alt: prdct.title
+              }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
+    
   </div>
 {% endif %}
 
@@ -146,3 +151,13 @@
   </div>
 </noscript>
 </div>
+
+<script>
+  const variantSwiper = new Swiper('.swiper', {
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
+</script>
