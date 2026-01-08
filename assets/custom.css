@@ -612,7 +612,8 @@ cart-upsell-form form {
   color: #000;
 }
 
-.sg-product-page-wrapper {
+.sg-product-page-wrapper,
+.sg-product-page-wrapper .swiper {
   max-width: 100%;
   width: 100%;
 }
