@@ -1,0 +1,272 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "center_header": false
+      }
+    },
+    "hero_slideshow_tLUx9f": {
+      "type": "hero-slideshow",
+      "blocks": {
+        "slide_nkdiFb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BF_AW24_C.jpg",
+            "mobile_image": "shopify://shop_images/BF_AW24_C_1.jpg",
+            "header_text": "Holiday gift guide",
+            "header_subtitle": "",
+            "button_1_text": "",
+            "url_1": "",
+            "button_1_style": "go-light",
+            "button_2_text": "",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_nkdiFb"
+      ],
+      "custom_css": [
+        ".go-section-hero {height: 60vh;}",
+        "@media (max-width: 749px) {.go-hero-container {margin-bottom: 0; }}"
+      ],
+      "name": "Hero Slideshow",
+      "settings": {
+        "autoplay": false,
+        "autoplay_speed": 3,
+        "enable_arrow": false,
+        "adapt_image": true,
+        "overlay_background": false
+      }
+    },
+    "rich_text_UEQBYC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_pMcNNn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The season of giving is here, and we have something special just for you.<br/><br/>Bundle up with a jacket and an accessory to enjoy 15% off at checkout. Discover the perfect holiday gifts below!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_pMcNNn"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 100%; width: 100%; padding: 0 60px;}",
+        "p {text-align: left; margin: 0;}",
+        "@media (max-width: 767px) {.rich-text__blocks {padding: 0 16px; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "go_featured_products_7U48YD": {
+      "type": "go-featured-products",
+      "blocks": {
+        "product_ptgqBN": {
+          "type": "product",
+          "settings": {
+            "product": "bull-parade-deep-dark-blue-multi-deep-dark-blue-multi"
+          }
+        },
+        "product_gWPfQH": {
+          "type": "product",
+          "settings": {
+            "product": "tiger-eye-dazzling-blue-dazzling-blue"
+          }
+        },
+        "product_Ez6YbC": {
+          "type": "product",
+          "settings": {
+            "product": "rock-lobster-marina-blue-multi-marina-blue-multi"
+          }
+        },
+        "product_x7infk": {
+          "type": "product",
+          "settings": {
+            "product": "sleeping-lion-sky-captain-blue-teddy-sky-captain-blue-teddy"
+          }
+        }
+      },
+      "block_order": [
+        "product_ptgqBN",
+        "product_gWPfQH",
+        "product_Ez6YbC",
+        "product_x7infk"
+      ],
+      "custom_css": [
+        ".go-section-featured-collection {padding-top: 0px !important;}"
+      ],
+      "name": "go featured products",
+      "settings": {
+        "header": "Jacket + accessory bundles",
+        "text": "<p>Bundle any AW25 jacket & accessory and get a 15% off</p>",
+        "image_aspect_ratio": 75,
+        "product_1": "chicken-run-bright-marina-linen-white-bright-marina-linen-white",
+        "product_2": "tiger-eye-dazzling-blue-dazzling-blue",
+        "product_3": "rock-lobster-marina-blue-multi-marina-blue-multi",
+        "product_4": "sleeping-lion-sky-captain-blue-teddy-sky-captain-blue-teddy",
+        "button_1_text": "SEE MORE",
+        "url_1": "shopify://collections/autumn-winter-2025-outerwear",
+        "enalbe_slider": false
+      }
+    },
+    "go_featured_products_qNUigg": {
+      "type": "go-featured-products",
+      "blocks": {
+        "product_4LU8kj": {
+          "type": "product",
+          "settings": {
+            "product": "desert-fox-sky-captain-blue-sky-captain-blue"
+          }
+        },
+        "product_cYjcV4": {
+          "type": "product",
+          "settings": {
+            "product": "tiger-eye-sky-captain-blue-sky-captain-blue"
+          }
+        },
+        "product_ExTw7p": {
+          "type": "product",
+          "settings": {
+            "product": "desert-fox-bronze-green-bronze-green"
+          }
+        },
+        "product_h4CNRy": {
+          "type": "product",
+          "settings": {
+            "product": "dragon-eye-deep-black-deep-black"
+          }
+        }
+      },
+      "block_order": [
+        "product_4LU8kj",
+        "product_cYjcV4",
+        "product_ExTw7p",
+        "product_h4CNRy"
+      ],
+      "custom_css": [
+        ".go-section-featured-collection {padding-top: 0px !important;}"
+      ],
+      "name": "go featured products",
+      "settings": {
+        "header": "Best sellers",
+        "text": "",
+        "image_aspect_ratio": 75,
+        "product_1": "desert-fox-bronze-green-bronze-green",
+        "product_2": "dragon-eye-marina-blue-multi-print-marina-blue-multi-print",
+        "product_3": "smiling-dove-denim-multi-denim-multi",
+        "product_4": "tiger-eye-dazzling-blue-dazzling-blue",
+        "button_1_text": "SEE MORE",
+        "url_1": "https://www.gosoaky.com/collections/kids-autumn-winter-2025?filter.v.price.gte=&filter.v.price.lte=&sort_by=best-selling",
+        "enalbe_slider": false
+      }
+    },
+    "go_featured_products_GE7pUr": {
+      "type": "go-featured-products",
+      "blocks": {
+        "product_gaAznV": {
+          "type": "product",
+          "settings": {
+            "product": "bull-parade-deep-dark-blue-multi-deep-dark-blue-multi"
+          }
+        },
+        "product_y9CGjn": {
+          "type": "product",
+          "settings": {
+            "product": "bull-parade-orchid-lilac-multi-orchid-lilac-multi"
+          }
+        },
+        "product_RFeWNn": {
+          "type": "product",
+          "settings": {
+            "product": "red-dragon-linen-white-linen-white"
+          }
+        },
+        "product_tFhM8t": {
+          "type": "product",
+          "settings": {
+            "product": "busy-bug-orchid-lilac-multi-orchid-lilac-multi"
+          }
+        }
+      },
+      "block_order": [
+        "product_gaAznV",
+        "product_y9CGjn",
+        "product_RFeWNn",
+        "product_tFhM8t"
+      ],
+      "name": "go featured products",
+      "settings": {
+        "header": "Accessory bundles",
+        "text": "<p>Bundle two AW25 accessories and get a 15% off</p>",
+        "image_aspect_ratio": 75,
+        "product_1": "bull-parade-deep-dark-blue-multi-deep-dark-blue-multi",
+        "product_2": "bull-parade-orchid-lilac-multi-orchid-lilac-multi",
+        "product_3": "red-dragon-linen-white-linen-white",
+        "product_4": "busy-bug-orchid-lilac-multi-orchid-lilac-multi",
+        "button_1_text": "SEE MORE",
+        "url_1": "https://www.gosoaky.com/collections/autumn-winter-2025-accessories",
+        "enalbe_slider": false
+      }
+    },
+    "17652947337b3a77ca": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "176529462829b3388a": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "go_double_image_NecTUe": {
+      "type": "go-double-image",
+      "disabled": true,
+      "custom_css": [
+        ".go-section-two-images {padding-top: 0px !important;}",
+        "@media (max-width: 750px) {.go-two-images-container {flex-direction: row; } .go-image-heading2 {font-size: 28px; } .go-image-block-aligned-left {height: 250px; }}"
+      ],
+      "name": "go double image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/GOSOAKY_AW24_SNAKEKISS_CARAMELMULTI_1copy.jpg",
+        "header_1_text": "Scarfs",
+        "button_1_text": "",
+        "url_1": "#",
+        "image_2": "shopify://shop_images/GOSOAKY_AW25_BABYDRAGON_BRIGHTMARINA_2.jpg",
+        "header_2_text": "Beanies",
+        "button_2_text": "",
+        "url_2": "#"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_slideshow_tLUx9f",
+    "rich_text_UEQBYC",
+    "go_featured_products_7U48YD",
+    "go_featured_products_qNUigg",
+    "go_featured_products_GE7pUr",
+    "17652947337b3a77ca",
+    "176529462829b3388a",
+    "go_double_image_NecTUe"
+  ]
+}
