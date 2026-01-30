@@ -9,22 +9,117 @@
  */
 {
   "sections": {
-    "contact_form_njHW7T": {
-      "type": "contact-form",
-      "settings": {
-        "heading": "Contact Us",
-        "heading_size": "h0",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28,
         "center_header": false
+      }
+    },
+    "go_text_with_buttons_qd4Az3": {
+      "type": "go-text-with-buttons",
+      "name": "Text with buttons",
+      "settings": {
+        "title": "section title",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra sodales justo non auctor. Etiam eu faucibus leo, at tincidunt velit. Ut non tristique dolor, et porttitor odio. Phasellus eget interdum mi.",
+        "button_text1": "",
+        "button_link1": "",
+        "button_1_style": "go-light",
+        "button_text2": "Button Text",
+        "button_link2": "",
+        "button_2_style": "go-light"
+      }
+    },
+    "multicolumn_BgYGmq": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_YHLwYH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AW25_MOBILE_BANNER_EOS.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_kV7eKm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AW25_MOBILE_BANNER_EOS.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jjHtqe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AW25_MOBILE_BANNER_EOS.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_G3cdgx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AW25_MOBILE_BANNER_EOS.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jrHpQA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AW25_MOBILE_BANNER_EOS.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_LPhTj9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AW25_MOBILE_BANNER_EOS.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_YHLwYH",
+        "column_kV7eKm",
+        "column_jjHtqe",
+        "column_G3cdgx",
+        "column_jrHpQA",
+        "column_LPhTj9"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "172121212892250054": {
@@ -56,8 +151,9 @@
     }
   },
   "order": [
-    "contact_form_njHW7T",
     "main",
+    "go_text_with_buttons_qd4Az3",
+    "multicolumn_BgYGmq",
     "172121212892250054"
   ]
 }
