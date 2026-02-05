@@ -12,6 +12,23 @@
     "hero_slideshow_q67epj": {
       "type": "hero-slideshow",
       "blocks": {
+        "slide_EAYjh4": {
+          "type": "slide",
+          "name": "SNEAK PEEK SS26",
+          "settings": {
+            "image": "shopify://shop_images/DESKTOP_Go_Soaky_SS267116.jpg",
+            "mobile_image": "shopify://shop_images/mobile_Go_Soaky_SS267116.jpg",
+            "header_text": "NEW COLELECTION SS26",
+            "header_subtitle": "Coming soon",
+            "button_1_text": "Button 1",
+            "url_1": "",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
+          }
+        },
         "slide_CwaPgC": {
           "type": "slide",
           "name": "AW25 - EOS SALE",
@@ -83,6 +100,7 @@
         }
       },
       "block_order": [
+        "slide_EAYjh4",
         "slide_CwaPgC",
         "slide_ARpbK3",
         "slide_hbLrNR",
@@ -94,22 +112,6 @@
         "enable_arrow": true,
         "adapt_image": false,
         "overlay_background": true
-      }
-    },
-    "16606505673e469e8c": {
-      "type": "go-hero",
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/SS25_GS_EOS_30__131.jpg",
-        "header_text": "SS25 SALE",
-        "header_subtitle": "",
-        "button_1_text": "NEW COLLECTION",
-        "url_1": "shopify://collections/spring-summer-2025",
-        "button_1_style": "go-light",
-        "button_2_text": "",
-        "url_2": "",
-        "button_2_style": "go-light",
-        "usps": "WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT | WINDPROOF | WATERPROOF 8K COLUMN PRESSURE | BREATHABLE 3K | BIONIC FINISH®ECO WATER REPELLENT"
       }
     },
     "16606506679e84436b": {
@@ -269,7 +271,6 @@
   },
   "order": [
     "hero_slideshow_q67epj",
-    "16606505673e469e8c",
     "16606506679e84436b",
     "go_double_image_CMb7n3",
     "166065142438dc25e1",
