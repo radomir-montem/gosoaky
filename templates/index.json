@@ -15,11 +15,10 @@
         "slide_EAYjh4": {
           "type": "slide",
           "name": "SNEAK PEEK SS26",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DESKTOP_Go_Soaky_SS267116.jpg",
             "mobile_image": "shopify://shop_images/mobile_Go_Soaky_SS267116.jpg",
-            "header_text": "NEW COLELECTION SS26",
+            "header_text": "NEW COLLECTION SS26",
             "header_subtitle": "Coming soon",
             "button_1_text": "Button 1",
             "url_1": "",
