@@ -22,8 +22,8 @@
       "type": "go-text-with-buttons",
       "name": "Text with buttons",
       "settings": {
-        "title": "SS26 play along the lines.",
-        "description": "This season, stripes take the lead; bold, vibrant, and full of energy! Made for kids who move as freely as ribbons in the wind, every piece in SS26 is designed to keep up with curious minds and endless adventures.",
+        "title": "SS26 LET IT FLY",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra sodales justo non auctor. Etiam eu faucibus leo, at tincidunt velit. Ut non tristique dolor, et porttitor odio. Phasellus eget interdum mi.",
         "button_text1": "",
         "button_link1": "",
         "button_1_style": "go-light",
@@ -116,8 +116,8 @@
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
