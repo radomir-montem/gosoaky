@@ -268,6 +268,53 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "multicolumn_gacnMT": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Y3JxhC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Go_Soaky_SS266188_copy.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_4EWz9A": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Go_Soaky_SS266299_copy.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Y3JxhC",
+        "column_4EWz9A"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -282,6 +329,7 @@
     "go_collection_promotion_TYJF8B",
     "172856617126700031",
     "recently_products_QxK44i",
-    "17561255548f9bffbc"
+    "17561255548f9bffbc",
+    "multicolumn_gacnMT"
   ]
 }
