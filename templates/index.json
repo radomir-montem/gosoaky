@@ -12,23 +12,6 @@
     "hero_slideshow_q67epj": {
       "type": "hero-slideshow",
       "blocks": {
-        "slide_EAYjh4": {
-          "type": "slide",
-          "name": "SNEAK PEEK SS26",
-          "settings": {
-            "image": "shopify://shop_images/DESKTOP_Go_Soaky_SS267116.jpg",
-            "mobile_image": "shopify://shop_images/mobile_Go_Soaky_SS267116.jpg",
-            "header_text": "NEW COLLECTION SS26",
-            "header_subtitle": "",
-            "button_1_text": "SNEAK PEEK",
-            "url_1": "shopify://pages/ss26-lookbook",
-            "button_1_style": "go-light",
-            "button_2_text": "Button 2",
-            "url_2": "",
-            "button_2_style": "go-light",
-            "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
-          }
-        },
         "slide_CwaPgC": {
           "type": "slide",
           "name": "AW25 - EOS SALE",
@@ -39,6 +22,23 @@
             "header_subtitle": "",
             "button_1_text": "SHOP NOW",
             "url_1": "shopify://collections/sale",
+            "button_1_style": "go-light",
+            "button_2_text": "Button 2",
+            "url_2": "",
+            "button_2_style": "go-light",
+            "usps": "WINDPROOF | WATERPROOF 20K COLUMN PRESSURE | BREATHABLE 8K | BIONIC FINISH®ECO WATER REPELLENT |"
+          }
+        },
+        "slide_EAYjh4": {
+          "type": "slide",
+          "name": "SNEAK PEEK SS26",
+          "settings": {
+            "image": "shopify://shop_images/DESKTOP_Go_Soaky_SS267116.jpg",
+            "mobile_image": "shopify://shop_images/mobile_Go_Soaky_SS267116.jpg",
+            "header_text": "NEW COLLECTION SS26",
+            "header_subtitle": "",
+            "button_1_text": "SNEAK PEEK",
+            "url_1": "shopify://pages/ss26-lookbook",
             "button_1_style": "go-light",
             "button_2_text": "Button 2",
             "url_2": "",
@@ -100,8 +100,8 @@
         }
       },
       "block_order": [
-        "slide_EAYjh4",
         "slide_CwaPgC",
+        "slide_EAYjh4",
         "slide_ARpbK3",
         "slide_hbLrNR",
         "slide_KjanyX"
