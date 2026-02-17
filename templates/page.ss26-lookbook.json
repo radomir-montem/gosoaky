@@ -22,7 +22,7 @@
       "type": "go-text-with-buttons",
       "name": "Text with buttons",
       "settings": {
-        "title": "SS26 play along the lines.",
+        "title": "SS26 plays along the lines",
         "description": "This season, stripes take the lead; bold, vibrant, and full of energy! Made for kids who move as freely as ribbons in the wind, every piece in SS26 is designed to keep up with curious minds and endless adventures. Coming soon!",
         "button_text1": "",
         "button_link1": "",
@@ -106,6 +106,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
+        "full_width": true,
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
