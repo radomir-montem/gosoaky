@@ -30,7 +30,7 @@
                   <path id="Shape" d="M.293.293a1,1,0,0,1,1.414,0l5,5a1,1,0,0,1,0,1.414l-5,5A1,1,0,0,1,.293,10.293L4.586,6,.293,1.707A1,1,0,0,1,.293.293Z" fill="#05060f"></path>
                 </svg></div><div class="breadcrumbs__text">{{ product.title }}</div></a>
             </li>
-          {%- when 'collection' and collection.handle -%}
+          {%- when 'collection' -%}
             {%- if current_tags -%}
               <li class="breadcrumbs__item">
                   <a href="{{ collection.url }}" class="breadcrumbs__link w-inline-block"><div class="breadcrumbs__arrow w-embed-breadcrumbs"><svg id="Shevron_right" data-name="Shevron right" xmlns="http://www.w3.org/2000/svg" width="5,83" height="10" viewBox="0 0 7 12">
@@ -96,4 +96,13 @@
         {%- endcase -%}
       </ol>
     </nav>
-    {%- endunless -%}
+    {%- endunless -%}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- when 'collection' and collection.handle -%}"
+  to: "{%- when 'collection' -%}"
+  position: 2437..2462
+{%- endcomment -%}
